@@ -167,7 +167,7 @@
             border-top: 4px solid var(--bronze); 
         }
 
-        /* --- PÓDIO REGIONAIS (Direita - Mesma altura das Unidades, largura ajustada) --- */
+        /* --- PÓDIO REGIONAIS (Direita) --- */
         .podium-wrapper-regionals {
             flex-shrink: 0;
             display: flex;
@@ -258,7 +258,7 @@
         }
         .step-1 .podium-pct-box { color: #fff; background: var(--v4-red); border-color: var(--v4-red); font-size: 1.4em; }
 
-        /* --- LISTAS COMPACTAS (Sem barra de progresso) --- */
+        /* --- LISTAS COMPACTAS --- */
         .ranking-list {
             flex-grow: 1;
             display: flex;
@@ -347,7 +347,7 @@
                 <div class="ranking-list" id="units-others-container"></div>
             </div>
 
-            <!-- DIREITA: RANKING POR REGIONAL -->
+            <!-- DIREITA: RANKING POR REGIONAL (TOP 10) -->
             <div class="col-right">
                 <div class="section-title">REGIONAL</div>
                 <div class="podium-wrapper-regionals" id="regionals-podium-container"></div>
@@ -366,6 +366,12 @@
         
         window.addEventListener('resize', autoScaleDashboard);
         autoScaleDashboard();
+
+        // Limpa o prefixo "V4 Company" ou "V4" dos nomes das regionais
+        function cleanRegionalName(rawName) {
+            if (!rawName) return 'Regional';
+            return rawName.replace(/^V4\s*(Company)?\s*/i, '').trim() || rawName;
+        }
 
         async function fetchAndRenderDashboard() {
             // --- 1. CARREGA UNIDADES (dados.json) ---
@@ -414,7 +420,7 @@
                 unitsOthers.innerHTML = `<div class="error-msg">Aguardando dados.json...</div>`;
             }
 
-            // --- 2. CARREGA REGIONAIS (dados2.json) ---
+            // --- 2. CARREGA REGIONAIS (dados2.json - CORTA EM 10) ---
             const regPodium = document.getElementById('regionals-podium-container');
             const regOthers = document.getElementById('regionals-others-container');
 
@@ -422,13 +428,17 @@
                 const resReg = await fetch('./dados2.json');
                 if (!resReg.ok) throw new Error("Erro ao carregar dados2.json");
                 const dataReg = await resReg.json();
+                
+                // Corta estritamente na 10ª posição
+                const top10Reg = dataReg.slice(0, 10);
 
                 regPodium.innerHTML = '';
                 regOthers.innerHTML = '';
 
-                dataReg.forEach((item, index) => {
+                top10Reg.forEach((item, index) => {
                     const rank = index + 1;
-                    const nome = item.regional || item.unidade || item.nome || 'Regional';
+                    const rawName = item.regional || item.unidade || item.nome || 'Regional';
+                    const nome = cleanRegionalName(rawName);
                     const pct = item['%'] || item.realizado || '0,00%';
 
                     if (rank <= 3) {
