@@ -43,7 +43,7 @@
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             display: flex;
             flex-direction: column;
-            padding: 20px 30px;
+            padding: 25px 35px;
             transform-origin: center center;
         }
 
@@ -55,7 +55,7 @@
             align-items: center;
             border-bottom: 2px solid var(--v4-red);
             padding-bottom: 12px;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         .header h1 {
@@ -87,13 +87,13 @@
             letter-spacing: 2px;
         }
 
-        /* Layout Principal 100% */
+        /* Layout Principal */
         .main-content {
             display: flex;
             flex-direction: column;
             flex-grow: 1;
             min-height: 0;
-            gap: 15px;
+            gap: 20px;
         }
 
         /* Pódio (Top 3) */
@@ -103,14 +103,14 @@
             justify-content: center;
             align-items: flex-end;
             gap: 25px;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
 
         .podium-step {
             background: linear-gradient(180deg, #111111 0%, #050505 100%);
             border: 1px solid var(--border);
-            width: 31%;
-            max-width: 360px;
+            width: 32%;
+            max-width: 370px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -124,7 +124,7 @@
 
         .step-1 { 
             order: 2; 
-            height: 190px; 
+            height: 195px; 
             border-top: 4px solid var(--v4-red); 
             box-shadow: 0 -15px 40px var(--v4-red-glow);
             z-index: 2;
@@ -132,13 +132,13 @@
         
         .step-2 { 
             order: 1; 
-            height: 165px; 
+            height: 170px; 
             border-top: 4px solid var(--silver); 
         }
 
         .step-3 { 
             order: 3; 
-            height: 150px; 
+            height: 155px; 
             border-top: 4px solid var(--bronze); 
         }
 
@@ -164,7 +164,7 @@
 
         .hunter-name {
             font-weight: 800;
-            font-size: 1em;
+            font-size: 1.05em;
             line-height: 1.2;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -176,36 +176,31 @@
             display: block;
         }
 
-        .step-1 .hunter-name { font-size: 1.15em; color: var(--v4-red); }
+        .step-1 .hunter-name { font-size: 1.2em; color: var(--v4-red); }
 
         .podium-pct-box {
-            font-size: 1.35em;
+            font-size: 1.4em;
             font-weight: 900;
             color: var(--green);
             background: #151515;
             border: 1px solid #222;
-            padding: 6px 20px;
+            padding: 6px 22px;
             text-align: center;
         }
-        .step-1 .podium-pct-box { color: #fff; background: var(--v4-red); border-color: var(--v4-red); font-size: 1.5em; }
+        .step-1 .podium-pct-box { color: #fff; background: var(--v4-red); border-color: var(--v4-red); font-size: 1.55em; }
 
-        /* Lista Fixa (4º ao 18º) */
+        /* Lista das posições 4 a 10 */
         .ranking-list {
             flex-grow: 1;
             display: flex;
             flex-direction: column;
-            gap: 6px; 
-            overflow-y: auto;
-            padding-right: 6px;
+            gap: 8px; 
+            overflow: hidden;
         }
-
-        .ranking-list::-webkit-scrollbar { width: 5px; }
-        .ranking-list::-webkit-scrollbar-track { background: transparent; }
-        .ranking-list::-webkit-scrollbar-thumb { background: var(--v4-red); }
 
         .ranking-card {
             flex: 0 0 auto; 
-            height: 40px;
+            height: 48px;
             background: var(--card-bg);
             padding: 0 20px;
             display: flex;
@@ -222,10 +217,10 @@
         }
 
         .badge-rank-list {
-            font-size: 0.95em;
+            font-size: 1em;
             font-weight: 900;
-            width: 26px;
-            height: 26px;
+            width: 28px;
+            height: 28px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -249,7 +244,7 @@
 
         .progress-bar-bg {
             background: #1a1a1a;
-            height: 6px;
+            height: 7px;
             flex: 1;
             overflow: hidden;
         }
@@ -260,12 +255,21 @@
         }
 
         .pct-label-side {
-            font-size: 1.05em;
+            font-size: 1.15em;
             font-weight: 900;
             color: var(--green);
             white-space: nowrap;
-            min-width: 70px;
+            min-width: 75px;
             text-align: right;
+        }
+
+        /* Estilo de erro ao carregar JSON */
+        .error-msg {
+            color: var(--v4-red);
+            font-weight: 800;
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 50px;
         }
     </style>
 </head>
@@ -288,6 +292,7 @@
     </div>
 
     <script>
+        // Ajuste de escala automático para TV / Monitores 16:9
         function autoScaleDashboard() {
             const board = document.getElementById('tv-board');
             const scale = Math.min(window.innerWidth / 1280, window.innerHeight / 720);
@@ -297,64 +302,77 @@
         window.addEventListener('resize', autoScaleDashboard);
         autoScaleDashboard();
 
-        const dataRanking = [
-            { rank: 1, unidade: "V4 Company Rodrigues Menezes & Associados", realizado: 100.00 },
-            { rank: 2, unidade: "V4 Company Weekes e Guedes & Co", realizado: 62.40 },
-            { rank: 3, unidade: "V4 Company Sanzovo & Co.", realizado: 50.30 },
-            { rank: 4, unidade: "V4 Company Leal Vieira & Co.", realizado: 45.40 },
-            { rank: 5, unidade: "V4 Company Sacon Baseggio & Co", realizado: 44.57 },
-            { rank: 6, unidade: "V4 Company Romano & Associados", realizado: 39.63 },
-            { rank: 7, unidade: "V4 Company Oxicore & Co.", realizado: 35.43 },
-            { rank: 8, unidade: "V4 Company Calvão & Associados", realizado: 33.83 },
-            { rank: 9, unidade: "V4 Company GM & Co", realizado: 32.46 },
-            { rank: 10, unidade: "V4 Company Dittert & Meister Associados", realizado: 29.93 },
-            { rank: 11, unidade: "V4 Company MS & Co", realizado: 28.07 },
-            { rank: 12, unidade: "V4 Company Carvalho & Co.", realizado: 27.99 },
-            { rank: 13, unidade: "V4 Company Viana Palavre & Associados", realizado: 26.51 },
-            { rank: 14, unidade: "V4 Company Cipulla & Associados", realizado: 26.48 },
-            { rank: 15, unidade: "V4 Company Campelo AM & Co", realizado: 23.85 },
-            { rank: 16, unidade: "V4 Company Gulias & Associados", realizado: 23.66 },
-            { rank: 17, unidade: "V4 Company Fernandes & Co", realizado: 21.49 },
-            { rank: 18, unidade: "V4 Company Elias Rodrigues & Associados", realizado: 21.14 }
-        ];
-
-        function render() {
-            const podiumContainer = document.getElementById('podium-container');
-            const othersContainer = document.getElementById('others-container');
-            podiumContainer.innerHTML = '';
-            othersContainer.innerHTML = '';
-
-            dataRanking.forEach((item) => {
-                if (item.rank <= 3) {
-                    const step = document.createElement('div');
-                    step.className = `podium-step step-${item.rank}`;
-                    step.innerHTML = `
-                        <div class="podium-badge">${item.rank}º</div>
-                        <div class="hunter-name" title="${item.unidade}">${item.unidade}</div>
-                        <div class="podium-pct-box">${item.realizado.toFixed(2)}%</div>
-                    `;
-                    podiumContainer.appendChild(step);
-                } else {
-                    const card = document.createElement('div');
-                    card.className = 'ranking-card';
-                    card.innerHTML = `
-                        <div class="badge-rank-list">${item.rank}</div>
-                        <div class="unit-title-container">
-                            <div class="hunter-name" style="font-size: 0.95em; text-align: left; margin: 0;" title="${item.unidade}">${item.unidade}</div>
-                        </div>
-                        <div class="progress-row">
-                            <div class="progress-bar-bg">
-                                <div class="progress-bar-fill" style="width: ${Math.min(item.realizado, 100)}%;"></div>
-                            </div>
-                            <span class="pct-label-side">${item.realizado.toFixed(2)}%</span>
-                        </div>
-                    `;
-                    othersContainer.appendChild(card);
-                }
-            });
+        // Converte a string de porcentagem (ex: "62,40%") em número float (62.4)
+        function parsePct(pctStr) {
+            if (!pctStr) return 0;
+            return parseFloat(String(pctStr).replace('%', '').replace(',', '.').trim()) || 0;
         }
 
-        render();
+        // Função principal que busca os dados do dados.json e renderiza o Top 10
+        async function fetchAndRenderRanking() {
+            const podiumContainer = document.getElementById('podium-container');
+            const othersContainer = document.getElementById('others-container');
+
+            try {
+                // Puxa o arquivo dados.json que está no repositório do GitHub
+                const response = await fetch('./dados.json');
+                
+                if (!response.ok) {
+                    throw new Error(`Erro ao carregar dados.json (${response.status})`);
+                }
+
+                const data = await response.json();
+
+                // Filtra para pegar APENAS os 10 primeiros itens do JSON
+                const top10 = data.slice(0, 10);
+
+                podiumContainer.innerHTML = '';
+                othersContainer.innerHTML = '';
+
+                top10.forEach((item, index) => {
+                    const rank = index + 1;
+                    const nomeUnidade = item.unidade || 'Unidade';
+                    const pctString = item['%'] || '0,00%';
+                    const pctFloat = parsePct(pctString);
+
+                    if (rank <= 3) {
+                        // Monta o Pódio (1º, 2º e 3º)
+                        const step = document.createElement('div');
+                        step.className = `podium-step step-${rank}`;
+                        step.innerHTML = `
+                            <div class="podium-badge">${rank}º</div>
+                            <div class="hunter-name" title="${nomeUnidade}">${nomeUnidade}</div>
+                            <div class="podium-pct-box">${pctString}</div>
+                        `;
+                        podiumContainer.appendChild(step);
+                    } else {
+                        // Monta as posições do 4º ao 10º lugar
+                        const card = document.createElement('div');
+                        card.className = 'ranking-card';
+                        card.innerHTML = `
+                            <div class="badge-rank-list">${rank}</div>
+                            <div class="unit-title-container">
+                                <div class="hunter-name" style="font-size: 0.95em; text-align: left; margin: 0;" title="${nomeUnidade}">${nomeUnidade}</div>
+                            </div>
+                            <div class="progress-row">
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" style="width: ${Math.min(pctFloat, 100)}%;"></div>
+                                </div>
+                                <span class="pct-label-side">${pctString}</span>
+                            </div>
+                        `;
+                        othersContainer.appendChild(card);
+                    }
+                });
+
+            } catch (error) {
+                console.error("Erro na integração:", error);
+                othersContainer.innerHTML = `<div class="error-msg">Não foi possível carregar o dados.json. Verifique se o arquivo está na raiz do repositório do GitHub.</div>`;
+            }
+        }
+
+        // Executa a busca assim que a página carregar
+        fetchAndRenderRanking();
     </script>
 </body>
 </html>
