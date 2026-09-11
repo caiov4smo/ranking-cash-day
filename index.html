@@ -367,9 +367,9 @@
         window.addEventListener('resize', autoScaleDashboard);
         autoScaleDashboard();
 
-        // Limpa o prefixo "V4 Company" ou "V4" dos nomes das regionais
-        function cleanRegionalName(rawName) {
-            if (!rawName) return 'Regional';
+        // Remove o prefixo "V4 Company" ou "V4" dos nomes das UNIDADES
+        function cleanName(rawName) {
+            if (!rawName) return '';
             return rawName.replace(/^V4\s*(Company)?\s*/i, '').trim() || rawName;
         }
 
@@ -389,7 +389,8 @@
 
                 top10Units.forEach((item, index) => {
                     const rank = index + 1;
-                    const nome = item.unidade || item.nome || 'Unidade';
+                    const rawName = item.unidade || item.nome || 'Unidade';
+                    const nome = cleanName(rawName);
                     const pct = item['%'] || '0,00%';
 
                     if (rank <= 3) {
@@ -437,8 +438,7 @@
 
                 top10Reg.forEach((item, index) => {
                     const rank = index + 1;
-                    const rawName = item.regional || item.unidade || item.nome || 'Regional';
-                    const nome = cleanRegionalName(rawName);
+                    const nome = item.regional || item.unidade || item.nome || 'Regional';
                     const pct = item['%'] || item.realizado || '0,00%';
 
                     if (rank <= 3) {
