@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RANKING - CASH DAY</title>
+    <style>
+        :root {
+            --bg: #030303;
+            --card-bg: #0a0a0a;
+            --v4-red: #ed1c24;
+            --v4-red-glow: rgba(237, 28, 36, 0.4);
+            --border: #1a1a1a;
+            --text-main: #ffffff;
+            --text-muted: #777777;
+            --green: #52cc5a; 
+            --silver: #e2e8f0;
+            --bronze: #cd7f32;
+        }
+
+        * {
+            box-sizing: border-box;
+            border-radius: 0px !important;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: var(--bg);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #tv-board {
+            width: 1280px;
+            height: 720px;
+            background-color: var(--bg);
+            color: var(--text-main);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 30px;
+            transform-origin: center center;
+        }
+
+        /* Header */
+        .header {
+            flex-shrink: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--v4-red);
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            font-weight: 900;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+            color: var(--v4-red);
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #data-atual {
+            font-size: 1.2em;
+            font-weight: 800;
+            color: var(--text-main);
+            letter-spacing: 0.5px;
+        }
+
+        .brand-tag {
+            font-weight: 900;
+            font-size: 1.2em;
+            color: var(--v4-red);
+            letter-spacing: 2px;
+        }
+
+        /* Layout Principal 100% */
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            min-height: 0;
+            gap: 15px;
+        }
+
+        /* Pódio (Top 3) */
+        .podium-wrapper {
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 25px;
+            margin-bottom: 10px;
+        }
+
+        .podium-step {
+            background: linear-gradient(180deg, #111111 0%, #050505 100%);
+            border: 1px solid var(--border);
+            width: 31%;
+            max-width: 360px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 25px 15px 18px;
+            position: relative;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .step-1 { 
+            order: 2; 
+            height: 190px; 
+            border-top: 4px solid var(--v4-red); 
+            box-shadow: 0 -15px 40px var(--v4-red-glow);
+            z-index: 2;
+        }
+        
+        .step-2 { 
+            order: 1; 
+            height: 165px; 
+            border-top: 4px solid var(--silver); 
+        }
+
+        .step-3 { 
+            order: 3; 
+            height: 150px; 
+            border-top: 4px solid var(--bronze); 
+        }
+
+        .podium-step:hover { transform: translateY(-3px); }
+
+        .podium-badge {
+            position: absolute;
+            top: -18px;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            font-weight: 900;
+            background: #111;
+            border: 2px solid;
+            color: #fff;
+        }
+        .step-1 .podium-badge { border-color: var(--v4-red); background: var(--v4-red); top: -22px; width: 44px; height: 44px; font-size: 1.4em; }
+        .step-2 .podium-badge { border-color: var(--silver); color: var(--silver); }
+        .step-3 .podium-badge { border-color: var(--bronze); color: var(--bronze); }
+
+        .hunter-name {
+            font-weight: 800;
+            font-size: 1em;
+            line-height: 1.2;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            width: 100%;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: block;
+        }
+
+        .step-1 .hunter-name { font-size: 1.15em; color: var(--v4-red); }
+
+        .podium-pct-box {
+            font-size: 1.35em;
+            font-weight: 900;
+            color: var(--green);
+            background: #151515;
+            border: 1px solid #222;
+            padding: 6px 20px;
+            text-align: center;
+        }
+        .step-1 .podium-pct-box { color: #fff; background: var(--v4-red); border-color: var(--v4-red); font-size: 1.5em; }
+
+        /* Lista Fixa (4º ao 18º) */
+        .ranking-list {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 6px; 
+            overflow-y: auto;
+            padding-right: 6px;
+        }
+
+        .ranking-list::-webkit-scrollbar { width: 5px; }
+        .ranking-list::-webkit-scrollbar-track { background: transparent; }
+        .ranking-list::-webkit-scrollbar-thumb { background: var(--v4-red); }
+
+        .ranking-card {
+            flex: 0 0 auto; 
+            height: 40px;
+            background: var(--card-bg);
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border: 1px solid var(--border);
+            border-left: 3px solid #333;
+            transition: transform 0.2s ease;
+        }
+
+        .ranking-card:hover {
+            border-color: #444;
+            transform: translateX(4px);
+        }
+
+        .badge-rank-list {
+            font-size: 0.95em;
+            font-weight: 900;
+            width: 26px;
+            height: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #151515;
+            color: var(--text-muted);
+            border: 1px solid #333;
+            flex-shrink: 0;
+        }
+
+        .unit-title-container {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .progress-row {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex: 1.5;
+        }
+
+        .progress-bar-bg {
+            background: #1a1a1a;
+            height: 6px;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .progress-bar-fill {
+            background: var(--v4-red);
+            height: 100%;
+        }
+
+        .pct-label-side {
+            font-size: 1.05em;
+            font-weight: 900;
+            color: var(--green);
+            white-space: nowrap;
+            min-width: 70px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="tv-board">
+        <!-- Header -->
+        <div class="header">
+            <h1>RANKING - CASH DAY</h1>
+            <div class="header-right">
+                <span id="data-atual">10/09/2026</span>
+                <div class="brand-tag">V4 COMPANY</div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="podium-wrapper" id="podium-container"></div>
+            <div class="ranking-list" id="others-container"></div>
+        </div>
+    </div>
+
+    <script>
+        function autoScaleDashboard() {
+            const board = document.getElementById('tv-board');
+            const scale = Math.min(window.innerWidth / 1280, window.innerHeight / 720);
+            board.style.transform = `scale(${scale})`;
+        }
+        
+        window.addEventListener('resize', autoScaleDashboard);
+        autoScaleDashboard();
+
+        const dataRanking = [
+            { rank: 1, unidade: "V4 Company Rodrigues Menezes & Associados", realizado: 100.00 },
+            { rank: 2, unidade: "V4 Company Weekes e Guedes & Co", realizado: 62.40 },
+            { rank: 3, unidade: "V4 Company Sanzovo & Co.", realizado: 50.30 },
+            { rank: 4, unidade: "V4 Company Leal Vieira & Co.", realizado: 45.40 },
+            { rank: 5, unidade: "V4 Company Sacon Baseggio & Co", realizado: 44.57 },
+            { rank: 6, unidade: "V4 Company Romano & Associados", realizado: 39.63 },
+            { rank: 7, unidade: "V4 Company Oxicore & Co.", realizado: 35.43 },
+            { rank: 8, unidade: "V4 Company Calvão & Associados", realizado: 33.83 },
+            { rank: 9, unidade: "V4 Company GM & Co", realizado: 32.46 },
+            { rank: 10, unidade: "V4 Company Dittert & Meister Associados", realizado: 29.93 },
+            { rank: 11, unidade: "V4 Company MS & Co", realizado: 28.07 },
+            { rank: 12, unidade: "V4 Company Carvalho & Co.", realizado: 27.99 },
+            { rank: 13, unidade: "V4 Company Viana Palavre & Associados", realizado: 26.51 },
+            { rank: 14, unidade: "V4 Company Cipulla & Associados", realizado: 26.48 },
+            { rank: 15, unidade: "V4 Company Campelo AM & Co", realizado: 23.85 },
+            { rank: 16, unidade: "V4 Company Gulias & Associados", realizado: 23.66 },
+            { rank: 17, unidade: "V4 Company Fernandes & Co", realizado: 21.49 },
+            { rank: 18, unidade: "V4 Company Elias Rodrigues & Associados", realizado: 21.14 }
+        ];
+
+        function render() {
+            const podiumContainer = document.getElementById('podium-container');
+            const othersContainer = document.getElementById('others-container');
+            podiumContainer.innerHTML = '';
+            othersContainer.innerHTML = '';
+
+            dataRanking.forEach((item) => {
+                if (item.rank <= 3) {
+                    const step = document.createElement('div');
+                    step.className = `podium-step step-${item.rank}`;
+                    step.innerHTML = `
+                        <div class="podium-badge">${item.rank}º</div>
+                        <div class="hunter-name" title="${item.unidade}">${item.unidade}</div>
+                        <div class="podium-pct-box">${item.realizado.toFixed(2)}%</div>
+                    `;
+                    podiumContainer.appendChild(step);
+                } else {
+                    const card = document.createElement('div');
+                    card.className = 'ranking-card';
+                    card.innerHTML = `
+                        <div class="badge-rank-list">${item.rank}</div>
+                        <div class="unit-title-container">
+                            <div class="hunter-name" style="font-size: 0.95em; text-align: left; margin: 0;" title="${item.unidade}">${item.unidade}</div>
+                        </div>
+                        <div class="progress-row">
+                            <div class="progress-bar-bg">
+                                <div class="progress-bar-fill" style="width: ${Math.min(item.realizado, 100)}%;"></div>
+                            </div>
+                            <span class="pct-label-side">${item.realizado.toFixed(2)}%</span>
+                        </div>
+                    `;
+                    othersContainer.appendChild(card);
+                }
+            });
+        }
+
+        render();
+    </script>
+</body>
+</html>
