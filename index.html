@@ -9,10 +9,10 @@
             --bg: #030303;
             --card-bg: #0a0a0a;
             --v4-red: #ed1c24;
-            --v4-red-glow: rgba(237, 28, 36, 0.4);
-            --border: #1a1a1a;
+            --v4-red-glow: rgba(237, 28, 36, 0.45);
+            --border: #1e1e1e;
             --text-main: #ffffff;
-            --text-muted: #777777;
+            --text-muted: #888888;
             --green: #52cc5a; 
             --silver: #e2e8f0;
             --bronze: #cd7f32;
@@ -21,6 +21,7 @@
         * {
             box-sizing: border-box;
             border-radius: 0px !important;
+            -webkit-font-smoothing: antialiased;
         }
 
         html, body {
@@ -40,10 +41,10 @@
             height: 720px;
             background-color: var(--bg);
             color: var(--text-main);
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             display: flex;
             flex-direction: column;
-            padding: 20px 25px;
+            padding: 18px 24px;
             transform-origin: center center;
         }
 
@@ -54,15 +55,15 @@
             justify-content: space-between;
             align-items: center;
             border-bottom: 2px solid var(--v4-red);
-            padding-bottom: 10px;
-            margin-bottom: 15px;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
         }
 
         .header h1 {
             margin: 0;
-            font-size: 2em;
+            font-size: 2.1em;
             font-weight: 900;
-            letter-spacing: -1px;
+            letter-spacing: -0.5px;
             text-transform: uppercase;
             color: var(--v4-red);
         }
@@ -74,30 +75,30 @@
         }
 
         #data-atual {
-            font-size: 1.15em;
-            font-weight: 800;
+            font-size: 1.25em;
+            font-weight: 900;
             color: var(--text-main);
             letter-spacing: 0.5px;
         }
 
         .logo-v4 {
-            height: 32px;
+            height: 36px;
             object-fit: contain;
         }
 
-        /* Layout Principal dividido (62% Unidades / 38% Regionais) */
+        /* Layout Principal (60% Unidades / 40% Regionais) */
         .main-content {
             display: flex;
             flex-grow: 1;
             min-height: 0;
-            gap: 25px;
+            gap: 22px;
         }
 
         .col-left {
-            flex: 1.6;
+            flex: 1.5;
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 10px;
             min-width: 0;
         }
 
@@ -105,18 +106,18 @@
             flex: 1;
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 10px;
             min-width: 0;
             border-left: 1px solid var(--border);
-            padding-left: 20px;
+            padding-left: 18px;
         }
 
         .section-title {
-            font-size: 1.1em;
+            font-size: 1.25em;
             font-weight: 900;
             color: var(--v4-red);
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
             margin-bottom: 2px;
             display: flex;
             align-items: center;
@@ -129,12 +130,12 @@
             display: flex;
             justify-content: center;
             align-items: flex-end;
-            gap: 15px;
-            height: 175px;
+            gap: 12px;
+            height: 170px;
         }
 
         .podium-step-unit {
-            background: linear-gradient(180deg, #111111 0%, #050505 100%);
+            background: linear-gradient(180deg, #121212 0%, #050505 100%);
             border: 1px solid var(--border);
             width: 32%;
             display: flex;
@@ -142,14 +143,14 @@
             align-items: center;
             justify-content: center;
             gap: 8px;
-            padding: 15px 10px 12px;
+            padding: 12px 8px 10px;
             position: relative;
             text-align: center;
         }
 
         .podium-step-unit.step-1 { 
             order: 2; 
-            height: 165px; 
+            height: 162px; 
             border-top: 4px solid var(--v4-red); 
             box-shadow: 0 -15px 35px var(--v4-red-glow);
             z-index: 2;
@@ -157,13 +158,13 @@
         
         .podium-step-unit.step-2 { 
             order: 1; 
-            height: 142px; 
+            height: 140px; 
             border-top: 4px solid var(--silver); 
         }
 
         .podium-step-unit.step-3 { 
             order: 3; 
-            height: 128px; 
+            height: 126px; 
             border-top: 4px solid var(--bronze); 
         }
 
@@ -173,8 +174,8 @@
             display: flex;
             justify-content: center;
             align-items: flex-end;
-            gap: 12px;
-            height: 175px;
+            gap: 10px;
+            height: 170px;
         }
 
         .podium-step-reg {
@@ -186,14 +187,14 @@
             align-items: center;
             justify-content: center;
             gap: 8px;
-            padding: 15px 8px 12px;
+            padding: 12px 6px 10px;
             position: relative;
             text-align: center;
         }
 
         .podium-step-reg.step-1 { 
             order: 2; 
-            height: 165px; 
+            height: 162px; 
             border-top: 4px solid var(--v4-red); 
             box-shadow: 0 -15px 35px var(--v4-red-glow);
             z-index: 2;
@@ -201,13 +202,13 @@
         
         .podium-step-reg.step-2 { 
             order: 1; 
-            height: 142px; 
+            height: 140px; 
             border-top: 4px solid var(--silver); 
         }
 
         .podium-step-reg.step-3 { 
             order: 3; 
-            height: 128px; 
+            height: 126px; 
             border-top: 4px solid var(--bronze); 
         }
 
@@ -220,22 +221,22 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1em;
+            font-size: 1.05em;
             font-weight: 900;
             background: #111;
             border: 2px solid;
             color: #fff;
         }
-        .step-1 .podium-badge { border-color: var(--v4-red); background: var(--v4-red); top: -18px; width: 38px; height: 38px; font-size: 1.2em; }
+        .step-1 .podium-badge { border-color: var(--v4-red); background: var(--v4-red); top: -18px; width: 38px; height: 38px; font-size: 1.25em; }
         .step-2 .podium-badge { border-color: var(--silver); color: var(--silver); }
         .step-3 .podium-badge { border-color: var(--bronze); color: var(--bronze); }
 
         .hunter-name {
-            font-weight: 800;
-            font-size: 0.95em;
+            font-weight: 900;
+            font-size: 1.05em;
             line-height: 1.2;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.3px;
             width: 100%;
             text-align: center;
             white-space: nowrap;
@@ -244,32 +245,32 @@
             display: block;
         }
 
-        .step-1 .hunter-name { font-size: 1.05em; color: var(--v4-red); }
+        .step-1 .hunter-name { font-size: 1.15em; color: var(--v4-red); }
 
         .podium-pct-box {
-            font-size: 1.25em;
+            font-size: 1.35em;
             font-weight: 900;
             color: var(--green);
             background: #151515;
-            border: 1px solid #222;
-            padding: 5px 14px;
+            border: 1px solid #282828;
+            padding: 5px 12px;
             text-align: center;
-            width: 90%;
+            width: 92%;
         }
-        .step-1 .podium-pct-box { color: #fff; background: var(--v4-red); border-color: var(--v4-red); font-size: 1.4em; }
+        .step-1 .podium-pct-box { color: #fff; background: var(--v4-red); border-color: var(--v4-red); font-size: 1.5em; }
 
-        /* --- LISTAS COMPACTAS --- */
+        /* --- LISTAS COMPACTAS (Fontes Maiores & Negrito) --- */
         .ranking-list {
             flex-grow: 1;
             display: flex;
             flex-direction: column;
-            gap: 6px; 
+            gap: 5px; 
             overflow: hidden;
         }
 
         .ranking-card {
             flex: 0 0 auto; 
-            height: 42px;
+            height: 44px;
             background: var(--card-bg);
             padding: 0 16px;
             display: flex;
@@ -277,13 +278,13 @@
             justify-content: space-between;
             gap: 15px;
             border: 1px solid var(--border);
-            border-left: 3px solid #333;
+            border-left: 4px solid #333;
             transition: transform 0.2s ease;
         }
 
         .ranking-card:hover {
             border-color: #444;
-            transform: translateX(4px);
+            transform: translateX(3px);
         }
 
         .card-left-group {
@@ -295,26 +296,40 @@
         }
 
         .badge-rank-list {
-            font-size: 0.9em;
+            font-size: 1em;
             font-weight: 900;
-            width: 26px;
-            height: 26px;
+            width: 28px;
+            height: 28px;
             display: flex;
             align-items: center;
             justify-content: center;
             background: #151515;
-            color: var(--text-muted);
+            color: var(--text-main);
             border: 1px solid #333;
             flex-shrink: 0;
         }
 
+        .hunter-name-list {
+            font-weight: 900;
+            font-size: 1.1em;
+            color: var(--text-main);
+            text-align: left;
+            margin: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
         .pct-label-pure {
-            font-size: 1.15em;
+            font-size: 1.25em;
             font-weight: 900;
             color: var(--green);
             white-space: nowrap;
             text-align: right;
             flex-shrink: 0;
+            letter-spacing: 0.5px;
         }
 
         .error-msg {
@@ -408,7 +423,7 @@
                         card.innerHTML = `
                             <div class="card-left-group">
                                 <div class="badge-rank-list">${rank}</div>
-                                <div class="hunter-name" style="text-align: left; margin: 0; font-size: 0.95em;" title="${nome}">${nome}</div>
+                                <div class="hunter-name-list" title="${nome}">${nome}</div>
                             </div>
                             <span class="pct-label-pure">${pct}</span>
                         `;
@@ -421,7 +436,7 @@
                 unitsOthers.innerHTML = `<div class="error-msg">Aguardando dados.json...</div>`;
             }
 
-            // --- 2. CARREGA REGIONAIS (dados2.json - CORTA EM 10) ---
+            // --- 2. CARREGA REGIONAIS (dados2.json) ---
             const regPodium = document.getElementById('regionals-podium-container');
             const regOthers = document.getElementById('regionals-others-container');
 
@@ -430,7 +445,6 @@
                 if (!resReg.ok) throw new Error("Erro ao carregar dados2.json");
                 const dataReg = await resReg.json();
                 
-                // Corta estritamente na 10ª posição
                 const top10Reg = dataReg.slice(0, 10);
 
                 regPodium.innerHTML = '';
@@ -456,7 +470,7 @@
                         card.innerHTML = `
                             <div class="card-left-group">
                                 <div class="badge-rank-list">${rank}</div>
-                                <div class="hunter-name" style="text-align: left; margin: 0; font-size: 0.9em;" title="${nome}">${nome}</div>
+                                <div class="hunter-name-list" title="${nome}">${nome}</div>
                             </div>
                             <span class="pct-label-pure">${pct}</span>
                         `;
