@@ -44,7 +44,7 @@
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             display: flex;
             flex-direction: column;
-            padding: 18px 24px;
+            padding: 16px 22px;
             transform-origin: center center;
         }
 
@@ -56,12 +56,12 @@
             align-items: center;
             border-bottom: 2px solid var(--v4-red);
             padding-bottom: 8px;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
 
         .header h1 {
             margin: 0;
-            font-size: 2.1em;
+            font-size: 2.2em;
             font-weight: 900;
             letter-spacing: -0.5px;
             text-transform: uppercase;
@@ -75,7 +75,7 @@
         }
 
         #data-atual {
-            font-size: 1.25em;
+            font-size: 1.3em;
             font-weight: 900;
             color: var(--text-main);
             letter-spacing: 0.5px;
@@ -86,19 +86,19 @@
             object-fit: contain;
         }
 
-        /* Layout Principal (60% Unidades / 40% Regionais) */
+        /* Layout Principal (58% Unidades / 42% Regionais) */
         .main-content {
             display: flex;
             flex-grow: 1;
             min-height: 0;
-            gap: 22px;
+            gap: 20px;
         }
 
         .col-left {
-            flex: 1.5;
+            flex: 1.4;
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 8px;
             min-width: 0;
         }
 
@@ -106,14 +106,14 @@
             flex: 1;
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 8px;
             min-width: 0;
             border-left: 1px solid var(--border);
             padding-left: 18px;
         }
 
         .section-title {
-            font-size: 1.25em;
+            font-size: 1.35em;
             font-weight: 900;
             color: var(--v4-red);
             text-transform: uppercase;
@@ -124,14 +124,14 @@
             gap: 8px;
         }
 
-        /* --- PÓDIO UNIDADES (Esquerda) --- */
+        /* --- PÓDIO UNIDADES --- */
         .podium-wrapper-units {
             flex-shrink: 0;
             display: flex;
             justify-content: center;
             align-items: flex-end;
-            gap: 12px;
-            height: 170px;
+            gap: 10px;
+            height: 168px;
         }
 
         .podium-step-unit {
@@ -142,15 +142,15 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 8px;
-            padding: 12px 8px 10px;
+            gap: 6px;
+            padding: 10px 6px 8px;
             position: relative;
             text-align: center;
         }
 
         .podium-step-unit.step-1 { 
             order: 2; 
-            height: 162px; 
+            height: 160px; 
             border-top: 4px solid var(--v4-red); 
             box-shadow: 0 -15px 35px var(--v4-red-glow);
             z-index: 2;
@@ -158,24 +158,24 @@
         
         .podium-step-unit.step-2 { 
             order: 1; 
-            height: 140px; 
+            height: 138px; 
             border-top: 4px solid var(--silver); 
         }
 
         .podium-step-unit.step-3 { 
             order: 3; 
-            height: 126px; 
+            height: 124px; 
             border-top: 4px solid var(--bronze); 
         }
 
-        /* --- PÓDIO REGIONAIS (Direita) --- */
+        /* --- PÓDIO REGIONAIS --- */
         .podium-wrapper-regionals {
             flex-shrink: 0;
             display: flex;
             justify-content: center;
             align-items: flex-end;
-            gap: 10px;
-            height: 170px;
+            gap: 8px;
+            height: 168px;
         }
 
         .podium-step-reg {
@@ -186,15 +186,15 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 8px;
-            padding: 12px 6px 10px;
+            gap: 6px;
+            padding: 10px 4px 8px;
             position: relative;
             text-align: center;
         }
 
         .podium-step-reg.step-1 { 
             order: 2; 
-            height: 162px; 
+            height: 160px; 
             border-top: 4px solid var(--v4-red); 
             box-shadow: 0 -15px 35px var(--v4-red-glow);
             z-index: 2;
@@ -202,17 +202,17 @@
         
         .podium-step-reg.step-2 { 
             order: 1; 
-            height: 140px; 
+            height: 138px; 
             border-top: 4px solid var(--silver); 
         }
 
         .podium-step-reg.step-3 { 
             order: 3; 
-            height: 126px; 
+            height: 124px; 
             border-top: 4px solid var(--bronze); 
         }
 
-        /* Badges e Textos do Pódio */
+        /* Badges do Pódio */
         .podium-badge {
             position: absolute;
             top: -14px;
@@ -221,20 +221,21 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.05em;
+            font-size: 1.1em;
             font-weight: 900;
             background: #111;
             border: 2px solid;
             color: #fff;
         }
-        .step-1 .podium-badge { border-color: var(--v4-red); background: var(--v4-red); top: -18px; width: 38px; height: 38px; font-size: 1.25em; }
+        .step-1 .podium-badge { border-color: var(--v4-red); background: var(--v4-red); top: -18px; width: 38px; height: 38px; font-size: 1.3em; }
         .step-2 .podium-badge { border-color: var(--silver); color: var(--silver); }
         .step-3 .podium-badge { border-color: var(--bronze); color: var(--bronze); }
 
+        /* Nomes no Pódio (Grandes e Destacados) */
         .hunter-name {
             font-weight: 900;
-            font-size: 1.05em;
-            line-height: 1.2;
+            font-size: 1.25em;
+            line-height: 1.15;
             text-transform: uppercase;
             letter-spacing: 0.3px;
             width: 100%;
@@ -245,21 +246,21 @@
             display: block;
         }
 
-        .step-1 .hunter-name { font-size: 1.15em; color: var(--v4-red); }
+        .step-1 .hunter-name { font-size: 1.4em; color: var(--v4-red); }
 
         .podium-pct-box {
-            font-size: 1.35em;
+            font-size: 1.45em;
             font-weight: 900;
             color: var(--green);
             background: #151515;
             border: 1px solid #282828;
-            padding: 5px 12px;
+            padding: 4px 10px;
             text-align: center;
-            width: 92%;
+            width: 95%;
         }
-        .step-1 .podium-pct-box { color: #fff; background: var(--v4-red); border-color: var(--v4-red); font-size: 1.5em; }
+        .step-1 .podium-pct-box { color: #fff; background: var(--v4-red); border-color: var(--v4-red); font-size: 1.6em; }
 
-        /* --- LISTAS COMPACTAS (Fontes Maiores & Negrito) --- */
+        /* --- LISTAS COMPACTAS (Fontes Maiores & Negrito Pesado) --- */
         .ranking-list {
             flex-grow: 1;
             display: flex;
@@ -270,7 +271,7 @@
 
         .ranking-card {
             flex: 0 0 auto; 
-            height: 44px;
+            height: 46px;
             background: var(--card-bg);
             padding: 0 16px;
             display: flex;
@@ -290,16 +291,16 @@
         .card-left-group {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 14px;
             min-width: 0;
             flex: 1;
         }
 
         .badge-rank-list {
-            font-size: 1em;
+            font-size: 1.1em;
             font-weight: 900;
-            width: 28px;
-            height: 28px;
+            width: 30px;
+            height: 30px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -311,7 +312,7 @@
 
         .hunter-name-list {
             font-weight: 900;
-            font-size: 1.1em;
+            font-size: 1.35em;
             color: var(--text-main);
             text-align: left;
             margin: 0;
@@ -323,7 +324,7 @@
         }
 
         .pct-label-pure {
-            font-size: 1.25em;
+            font-size: 1.45em;
             font-weight: 900;
             color: var(--green);
             white-space: nowrap;
