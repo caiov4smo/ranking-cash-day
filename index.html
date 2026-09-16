@@ -3,534 +3,539 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RANKING - CASH DAY</title>
+    <title>Dashboard Cash SC - V4 Company</title>
+    <!-- Fonte Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg: #030303;
-            --card-bg: #0a0a0a;
-            --v4-red: #ed1c24;
-            --v4-red-glow: rgba(237, 28, 36, 0.5);
-            --border: #1e1e1e;
+            --bg-color: #0a0a0a;
+            --panel-bg: #141414;
+            --card-bg: #1c1c1c;
             --text-main: #ffffff;
-            --text-muted: #888888;
-            --green: #52cc5a; 
-            --silver: #e2e8f0;
-            --bronze: #cd7f32;
+            --text-muted: #8c8c8c;
+            --v4-red: #E50914;
+            --v4-red-dark: #80050b;
+            --v4-red-glow: rgba(229, 9, 20, 0.4);
+            --bar-bg: #2a2a2a;
+            --gold: #FFD700;
+            --silver: #E0E0E0;
+            --bronze: #CD7F32;
         }
 
         * {
-            box-sizing: border-box;
-            border-radius: 0px !important;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        html, body {
             margin: 0;
             padding: 0;
-            width: 100vw;
-            height: 100vh;
-            background-color: var(--bg);
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
         }
 
-        #tv-board {
-            width: 1280px;
-            height: 720px;
-            background-color: var(--bg);
+        body {
+            background-color: var(--bg-color);
             color: var(--text-main);
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            height: 100vh;
             display: flex;
             flex-direction: column;
-            padding: 18px 24px;
-            transform-origin: center center;
+            overflow: hidden;
         }
 
-        /* Header */
-        .header {
-            flex-shrink: 0;
+        /* HEADER V4 STYLE */
+        header {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 1.2rem 3rem;
+            background: #0d0d0d;
             border-bottom: 2px solid var(--v4-red);
-            padding-bottom: 8px;
-            margin-bottom: 12px;
+            box-shadow: 0 4px 20px rgba(229, 9, 20, 0.15);
         }
 
-        .header h1 {
-            margin: 0;
-            font-size: 2.2em;
-            font-weight: 900;
-            letter-spacing: -0.5px;
-            text-transform: uppercase;
-            color: var(--v4-red);
-        }
-
-        .header-right {
+        .header-brand {
             display: flex;
             align-items: center;
-            gap: 20px;
+            gap: 1.5rem;
         }
 
-        #data-atual {
-            font-size: 1.3em;
-            font-weight: 900;
-            color: var(--text-main);
-            letter-spacing: 0.5px;
-        }
-
-        .logo-v4 {
-            height: 36px;
+        .v4-logo {
+            height: 45px;
+            width: auto;
+            border-radius: 4px;
             object-fit: contain;
         }
 
-        /* Layout Principal */
-        .main-content {
-            display: flex;
-            flex-grow: 1;
-            min-height: 0;
-            gap: 24px;
-        }
-
-        .col-left {
-            flex: 1.4;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            min-width: 0;
-        }
-
-        .col-right {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            min-width: 0;
-            border-left: 1px solid var(--border);
-            padding-left: 20px;
-        }
-
-        .section-title {
-            font-size: 1.35em;
-            font-weight: 900;
-            color: var(--v4-red);
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            margin-bottom: 2px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        /* --- PÓDIO UNIDADES --- */
-        .podium-wrapper-units {
-            flex-shrink: 0;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            gap: 12px;
-            height: 280px;
-            margin-bottom: 10px;
-        }
-
-        .podium-step-unit {
-            background: linear-gradient(180deg, #141414 0%, #050505 100%);
-            border: 1px solid var(--border);
-            width: 32%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            padding: 24px 6px 14px;
-            position: relative;
-            text-align: center;
-        }
-
-        .podium-step-unit.step-1 { 
-            order: 2; 
-            height: 270px; 
-            border-top: 6px solid var(--v4-red); 
-            box-shadow: 0 -20px 50px var(--v4-red-glow);
-            z-index: 2;
-        }
-        
-        .podium-step-unit.step-2 { 
-            order: 1; 
-            height: 235px; 
-            border-top: 6px solid var(--silver); 
-        }
-
-        .podium-step-unit.step-3 { 
-            order: 3; 
-            height: 210px; 
-            border-top: 6px solid var(--bronze); 
-        }
-
-        .podium-step-unit .hunter-name {
-            font-weight: 900;
-            font-size: 1.35em;
-            line-height: 1.15;
-            text-transform: uppercase;
-            letter-spacing: 0.2px;
-            width: 100%;
-            text-align: center;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            word-break: break-word;
-            margin: auto 0;
-            padding: 0 4px;
-        }
-
-        .podium-step-unit.step-1 .hunter-name { 
-            font-size: 1.6em; 
-            color: var(--v4-red); 
-        }
-
-        /* --- PÓDIO REGIONAIS (FONTE MUITO MAIOR) --- */
-        .podium-wrapper-regionals {
-            flex-shrink: 0;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            gap: 10px;
-            height: 280px;
-            margin-bottom: 10px;
-        }
-
-        .podium-step-reg {
-            background: linear-gradient(180deg, #141414 0%, #050505 100%);
-            border: 1px solid var(--border);
-            width: 31%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            padding: 24px 4px 14px;
-            position: relative;
-            text-align: center;
-        }
-
-        .podium-step-reg.step-1 { 
-            order: 2; 
-            height: 270px; 
-            border-top: 6px solid var(--v4-red); 
-            box-shadow: 0 -20px 50px var(--v4-red-glow);
-            z-index: 2;
-        }
-        
-        .podium-step-reg.step-2 { 
-            order: 1; 
-            height: 235px; 
-            border-top: 6px solid var(--silver); 
-        }
-
-        .podium-step-reg.step-3 { 
-            order: 3; 
-            height: 210px; 
-            border-top: 6px solid var(--bronze); 
-        }
-
-        .podium-step-reg .hunter-name {
-            font-weight: 900;
-            font-size: 2.2em;
-            line-height: 1.1;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            width: 100%;
-            text-align: center;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: block;
-            margin: auto 0;
-            padding: 0 2px;
-        }
-
-        .podium-step-reg.step-1 .hunter-name { 
-            font-size: 2.7em; 
-            color: var(--v4-red); 
-        }
-
-        /* Badges Hero */
-        .podium-badge {
-            position: absolute;
-            top: -18px;
-            width: 38px;
-            height: 38px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.25em;
-            font-weight: 900;
-            background: #111;
-            border: 2px solid;
-            color: #fff;
-        }
-        .step-1 .podium-badge { border-color: var(--v4-red); background: var(--v4-red); top: -22px; width: 48px; height: 48px; font-size: 1.55em; }
-        .step-2 .podium-badge { border-color: var(--silver); color: var(--silver); }
-        .step-3 .podium-badge { border-color: var(--bronze); color: var(--bronze); }
-
-        .podium-pct-box {
-            font-size: 1.75em;
-            font-weight: 900;
-            color: var(--green);
-            background: #151515;
-            border: 1px solid #282828;
-            padding: 8px 10px;
-            text-align: center;
-            width: 95%;
-            margin-top: auto;
-        }
-        .step-1 .podium-pct-box { color: #fff; background: var(--v4-red); border-color: var(--v4-red); font-size: 2.1em; }
-
-        /* --- LISTAS SECUNDÁRIAS --- */
-        .ranking-list {
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            gap: 8px; 
-            overflow: hidden;
-        }
-
-        .ranking-card {
-            flex: 0 0 auto; 
-            height: 56px;
-            background: var(--card-bg);
-            padding: 0 18px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 15px;
-            border: 1px solid var(--border);
-            border-left: 4px solid #333;
-            transition: transform 0.2s ease;
-        }
-
-        .ranking-card:hover {
-            border-color: #444;
-            transform: translateX(3px);
-        }
-
-        .card-left-group {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            min-width: 0;
-            flex: 1;
-        }
-
-        .badge-rank-list {
-            font-size: 1.15em;
-            font-weight: 900;
-            width: 32px;
-            height: 32px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #151515;
-            color: var(--text-main);
-            border: 1px solid #333;
-            flex-shrink: 0;
-        }
-
-        /* Fonte das Unidades na Lista (Aumentada um pouco) */
-        .col-left .hunter-name-list {
-            font-weight: 900;
-            font-size: 1.5em;
-            color: var(--text-main);
-            text-align: left;
-            margin: 0;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            text-transform: uppercase;
-            letter-spacing: 0.3px;
-        }
-
-        /* Fonte das Regionais na Lista (AUMENTADA BASTANTE) */
-        .col-right .hunter-name-list {
-            font-weight: 900;
-            font-size: 1.85em;
-            color: var(--text-main);
-            text-align: left;
-            margin: 0;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .pct-label-pure {
-            font-size: 1.55em;
-            font-weight: 900;
-            color: var(--green);
-            white-space: nowrap;
-            text-align: right;
-            flex-shrink: 0;
-            letter-spacing: 0.5px;
-        }
-
-        .error-msg {
-            color: var(--v4-red);
+        .header-title h1 {
+            font-size: 2rem;
             font-weight: 800;
-            text-align: center;
-            font-size: 0.9em;
-            padding: 10px;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
+
+        .header-title span {
+            font-size: 0.9rem;
+            color: var(--v4-red);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .header-controls {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .v4-select {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            border: 1px solid var(--v4-red);
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            outline: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 5px rgba(229, 9, 20, 0.1);
+        }
+
+        .v4-select:focus, .v4-select:hover {
+            box-shadow: 0 0 12px var(--v4-red-glow);
+            border-color: #ff1a26;
+        }
+
+        .header-date {
+            text-align: right;
+        }
+
+        .header-date #time {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+
+        .header-date #date {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-transform: capitalize;
+        }
+
+        /* PÓDIO TOP 3 */
+        .podium-section {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding: 1.5rem 0;
+            gap: 1.5rem;
+            min-height: 250px;
+        }
+
+        .podium-card {
+            background: var(--panel-bg);
+            border-radius: 8px 8px 0 0;
+            padding: 1.2rem;
+            text-align: center;
+            width: 300px;
+            box-shadow: 0 -8px 25px rgba(0,0,0,0.8);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-bottom: none;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .podium-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; height: 4px;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .podium-card.rank-1 { height: 230px; width: 340px; z-index: 3; background: #181818; }
+        .podium-card.rank-1::before { background: var(--gold); box-shadow: 0 0 15px var(--gold); }
+        .podium-card.rank-2 { height: 200px; z-index: 2; }
+        .podium-card.rank-2::before { background: var(--silver); box-shadow: 0 0 10px var(--silver); }
+        .podium-card.rank-3 { height: 170px; z-index: 1; }
+        .podium-card.rank-3::before { background: var(--bronze); box-shadow: 0 0 10px var(--bronze); }
+
+        .podium-rank {
+            font-size: 2.2rem;
+            font-weight: 900;
+            margin-bottom: 0.3rem;
+        }
+        
+        .rank-1 .podium-rank { color: var(--gold); }
+        .rank-2 .podium-rank { color: var(--silver); }
+        .rank-3 .podium-rank { color: var(--bronze); }
+
+        .podium-photo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--v4-red);
+            margin-bottom: 0.5rem;
+            background-color: #2a2a2a;
+        }
+
+        .podium-name {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 0.4rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: #fff;
+            width: 100%;
+        }
+
+        .podium-score {
+            font-size: 2rem;
+            font-weight: 900;
+            color: var(--v4-red);
+            text-shadow: 0 0 10px var(--v4-red-glow);
+        }
+
+        /* TABELA DE DADOS */
+        .table-section {
+            flex: 1;
+            padding: 0 2rem 1.5rem 2rem;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        .table-section::-webkit-scrollbar { width: 8px; }
+        .table-section::-webkit-scrollbar-track { background: var(--bg-color); }
+        .table-section::-webkit-scrollbar-thumb { background: #2a2a2a; border-radius: 4px; }
+        .table-section::-webkit-scrollbar-thumb:hover { background: var(--v4-red); }
+
+        .table-wrapper { width: 100%; }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 6px;
+        }
+
+        thead {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background-color: var(--bg-color);
+        }
+
+        th {
+            padding: 0.6rem 1rem;
+            text-align: right;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--text-muted);
+            white-space: nowrap;
+        }
+
+        th span {
+            background-color: #171717;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            border-bottom: 2px solid var(--v4-red);
+            color: #ffffff;
+        }
+
+        /* Alinhamento especifico das colunas */
+        th:nth-child(1), th:nth-child(2), th:nth-child(3) { text-align: left; }
+        th:nth-child(3) { width: 22%; } /* Hunter */
+
+        tr {
+            background-color: var(--panel-bg);
+            transition: background-color 0.2s;
+            border-radius: 4px;
+        }
+        tr:hover { background-color: #1a1a1a; }
+
+        td {
+            padding: 0.5rem 1rem;
+            font-size: 0.95rem;
+            text-align: right;
+            font-weight: 500;
+            color: #e5e5e5;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            vertical-align: middle;
+        }
+
+        td:nth-child(1), td:nth-child(2), td:nth-child(3) { text-align: left; }
+
+        td.rank-col { 
+            font-weight: 800; 
+            color: var(--v4-red); 
+            text-align: center;
+            font-size: 1.1rem;
+            width: 60px;
+        }
+
+        .hunter-photo {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--v4-red);
+            display: block;
+            background-color: #2a2a2a;
+        }
+
+        td.regional-col { font-weight: 700; color: #a0a0a0; text-align: center; }
+        td.unit-col { font-weight: 600; color: #ffffff; }
+
+        .progress-cell {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+
+        .progress-text { font-weight: 700; width: 65px; text-align: right; color: #fff; }
+        .progress-bar-bg { width: 80px; height: 8px; background-color: var(--bar-bg); border-radius: 2px; overflow: hidden; }
+        .progress-bar-fill { height: 100%; background-color: var(--v4-red); border-radius: 2px; box-shadow: 0 0 8px var(--v4-red-glow); }
     </style>
 </head>
 <body>
 
-    <div id="tv-board">
-        <!-- Header -->
-        <div class="header">
-            <h1>RANKING - CASH DAY</h1>
-            <div class="header-right">
-                <span id="data-atual">10/09/2026</span>
-                <img src="./logo-v4.jpg" class="logo-v4" alt="V4 Company" onerror="this.style.display='none'">
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="header-brand">
+            <!-- Substituir com a sua logo real depois se quiser -->
+            <div style="width: 45px; height: 45px; background: var(--v4-red); border-radius: 4px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: white;">V4</div>
+            <div class="header-title">
+                <h1>Cash SC</h1>
+                <span>Ranking de Alta Performance</span>
             </div>
         </div>
-
-        <div class="main-content">
-            
-            <!-- ESQUERDA: RANKING POR UNIDADE (TOP 6) -->
-            <div class="col-left">
-                <div class="section-title">UNIDADES</div>
-                <div class="podium-wrapper-units" id="units-podium-container"></div>
-                <div class="ranking-list" id="units-others-container"></div>
+        <div class="header-controls">
+            <!-- Filtro por Regional -->
+            <select id="regional-filter" class="v4-select" style="display: none;">
+                <option value="all">Todas as Regionais</option>
+            </select>
+            <div class="header-date">
+                <div id="time">00:00:00</div>
+                <div id="date">Carregando data...</div>
             </div>
-
-            <!-- DIREITA: RANKING POR REGIONAL (TOP 6) -->
-            <div class="col-right">
-                <div class="section-title">REGIONAL</div>
-                <div class="podium-wrapper-regionals" id="regionals-podium-container"></div>
-                <div class="ranking-list" id="regionals-others-container"></div>
-            </div>
-
         </div>
-    </div>
+    </header>
+
+    <!-- PÓDIO TOP 3 -->
+    <section class="podium-section" id="podium-container">
+    </section>
+
+    <!-- TABELA DE DADOS -->
+    <section class="table-section">
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th><span>Rank</span></th>
+                        <th><span>Foto</span></th>
+                        <th><span>Hunter</span></th>
+                        <th><span>Meta Mês</span></th>
+                        <th><span>Meta Semana</span></th>
+                        <th><span>Recebido</span></th>
+                        <th><span>Faltante Meta</span></th>
+                        <th><span>Realizado</span></th>
+                        <th><span>Disponível Ano</span></th>
+                        <th><span>Regional</span></th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                </tbody>
+            </table>
+        </div>
+    </section>
 
     <script>
-        function autoScaleDashboard() {
-            const board = document.getElementById('tv-board');
-            const scale = Math.min(window.innerWidth / 1280, window.innerHeight / 720);
-            board.style.transform = `scale(${scale})`;
+        let allData = [];
+
+        // RELÓGIO E DATA DINÂMICA
+        function updateDateTime() {
+            const now = new Date();
+            const timeOptions = { hour: '2-digit', minute: '2-digit', second: '2-digit' };
+            document.getElementById('time').textContent = now.toLocaleTimeString('pt-BR', timeOptions);
+            
+            const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            let dateStr = now.toLocaleDateString('pt-BR', dateOptions);
+            document.getElementById('date').textContent = dateStr.charAt(0).toUpperCase() + dateStr.slice(1);
         }
-        
-        window.addEventListener('resize', autoScaleDashboard);
-        autoScaleDashboard();
+        setInterval(updateDateTime, 1000);
+        updateDateTime();
 
-        // Remove o prefixo "V4 Company" ou "V4" dos nomes das UNIDADES
-        function cleanName(rawName) {
-            if (!rawName) return '';
-            return rawName.replace(/^V4\s*(Company)?\s*/i, '').trim() || rawName;
+        // FUNÇÃO PARA FORMATAR MOEDA
+        function formatMoney(value) {
+            if (value === undefined || value === null || value === '') return 'R$ 0,00';
+            let str = String(value).trim();
+            if (str === '-' || str === '0') return 'R$ 0,00';
+            if (str.toLowerCase().startsWith('r$')) return str;
+            return 'R$ ' + str;
         }
 
-        async function fetchAndRenderDashboard() {
-            // --- 1. CARREGA UNIDADES (dados.json - TOP 6) ---
-            const unitsPodium = document.getElementById('units-podium-container');
-            const unitsOthers = document.getElementById('units-others-container');
-
+        // CARREGAMENTO DO JSON
+        async function loadData() {
             try {
-                const resUnits = await fetch('./dados.json');
-                if (!resUnits.ok) throw new Error("Erro ao carregar dados.json");
-                const dataUnits = await resUnits.json();
-                
-                // Corta estritamente nas 6 primeiras posições (Pódio + 3)
-                const top6Units = dataUnits.slice(0, 6);
-
-                unitsPodium.innerHTML = '';
-                unitsOthers.innerHTML = '';
-
-                top6Units.forEach((item, index) => {
-                    const rank = index + 1;
-                    const rawName = item.unidade || item.nome || 'Unidade';
-                    const nome = cleanName(rawName);
-                    const pct = item['%'] || '0,00%';
-
-                    if (rank <= 3) {
-                        const step = document.createElement('div');
-                        step.className = `podium-step-unit step-${rank}`;
-                        step.innerHTML = `
-                            <div class="podium-badge">${rank}º</div>
-                            <div class="hunter-name" title="${nome}">${nome}</div>
-                            <div class="podium-pct-box">${pct}</div>
-                        `;
-                        unitsPodium.appendChild(step);
-                    } else {
-                        const card = document.createElement('div');
-                        card.className = 'ranking-card';
-                        card.innerHTML = `
-                            <div class="card-left-group">
-                                <div class="badge-rank-list">${rank}</div>
-                                <div class="hunter-name-list" title="${nome}">${nome}</div>
-                            </div>
-                            <span class="pct-label-pure">${pct}</span>
-                        `;
-                        unitsOthers.appendChild(card);
-                    }
-                });
-
-            } catch (err) {
-                console.error("Erro Unidades:", err);
-                unitsOthers.innerHTML = `<div class="error-msg">Aguardando dados.json...</div>`;
-            }
-
-            // --- 2. CARREGA REGIONAIS (dados2.json - TOP 6) ---
-            const regPodium = document.getElementById('regionals-podium-container');
-            const regOthers = document.getElementById('regionals-others-container');
-
-            try {
-                const resReg = await fetch('./dados2.json');
-                if (!resReg.ok) throw new Error("Erro ao carregar dados2.json");
-                const dataReg = await resReg.json();
-                
-                // Corta estritamente nas 6 primeiras posições (Pódio + 3)
-                const top6Reg = dataReg.slice(0, 6);
-
-                regPodium.innerHTML = '';
-                regOthers.innerHTML = '';
-
-                top6Reg.forEach((item, index) => {
-                    const rank = index + 1;
-                    const nome = item.regional || item.unidade || item.nome || 'Regional';
-                    const pct = item['%'] || item.realizado || '0,00%';
-
-                    if (rank <= 3) {
-                        const step = document.createElement('div');
-                        step.className = `podium-step-reg step-${rank}`;
-                        step.innerHTML = `
-                            <div class="podium-badge">${rank}º</div>
-                            <div class="hunter-name" title="${nome}">${nome}</div>
-                            <div class="podium-pct-box">${pct}</div>
-                        `;
-                        regPodium.appendChild(step);
-                    } else {
-                        const card = document.createElement('div');
-                        card.className = 'ranking-card';
-                        card.innerHTML = `
-                            <div class="card-left-group">
-                                <div class="badge-rank-list">${rank}</div>
-                                <div class="hunter-name-list" title="${nome}">${nome}</div>
-                            </div>
-                            <span class="pct-label-pure">${pct}</span>
-                        `;
-                        regOthers.appendChild(card);
-                    }
-                });
-
-            } catch (err) {
-                console.error("Erro Regionais:", err);
-                regOthers.innerHTML = `<div class="error-msg">Aguardando dados2.json...</div>`;
+                // Tenta carregar o arquivo JSON local
+                const response = await fetch('dados.json');
+                if (!response.ok) throw new Error('Falha ao carregar o arquivo JSON.');
+                const data = await response.json();
+                processData(data);
+            } catch (error) {
+                console.warn("Erro ao carregar dados.json, usando dados de exemplo anexados:", error);
+                // Fallback com os dados anexados na conversa
+                const fallbackData = [
+                    {"rank":"1","foto":"https://lh3.googleusercontent.com/d/1llI2R5YQCzsm-1BBgujAiSEKAosLtIas","hunter":"Eric de Paula","recebido":"518.211,51","provisionado":"1.250.635,64","realizado":"41,44%"},
+                    {"rank":"2","foto":"https://lh3.googleusercontent.com/d/1I9zHbh7UQjw0G8E62BgBM-T1SJ2_phxh","hunter":"Deborah Reynaldo","recebido":"543.172,77","provisionado":"1.440.861,02","realizado":"37,7%"},
+                    {"rank":"3","foto":"https://lh3.googleusercontent.com/d/1fOojkC6HIy2p62LNsCSIPoT2uDkcoa_Y","hunter":"Izabela Mattano","recebido":"411.882,36","provisionado":"1.111.626,57","realizado":"37,05%"},
+                    {"rank":"4","foto":"https://lh3.googleusercontent.com/d/1PRm-1_2A2mcj4OLwwEW2lBFYT166eAzc","hunter":"Bruno Ferreira","recebido":"420.302,94","provisionado":"1.166.610,54","realizado":"36,03%"},
+                    {"rank":"5","foto":"https://lh3.googleusercontent.com/d/1lbvSP_l1b1DxtEhbz0ix8g83DKh2qEq0","hunter":"Gerson Xavier","recebido":"336.118,78","provisionado":"1.030.266,22","realizado":"32,62%"}
+                ];
+                processData(fallbackData);
             }
         }
 
-        fetchAndRenderDashboard();
+        function processData(data) {
+            allData = data.map(item => {
+                let realizadoLimpo = (item.realizado || '0').replace('%', '').replace(',', '.');
+                let realizadoNum = parseFloat(realizadoLimpo);
+                if (isNaN(realizadoNum)) realizadoNum = 0;
+
+                return {
+                    ...item,
+                    realizadoNum: realizadoNum
+                };
+            });
+
+            populateFilter(allData);
+            renderDashboard(allData);
+        }
+
+        // POPULAR FILTRO DE REGIONAIS
+        function populateFilter(data) {
+            const filter = document.getElementById('regional-filter');
+            const regionais = [...new Set(data.map(item => item.str_regional).filter(r => r && r.trim() !== ''))].sort();
+            
+            if (regionais.length === 0) {
+                filter.style.display = 'none'; // Esconde se não houver regionais no JSON
+                return;
+            }
+            
+            filter.style.display = 'block';
+            filter.innerHTML = '<option value="all">Todas as Regionais</option>';
+
+            regionais.forEach(reg => {
+                const option = document.createElement('option');
+                option.value = reg;
+                option.textContent = reg;
+                filter.appendChild(option);
+            });
+
+            filter.addEventListener('change', (e) => {
+                const selected = e.target.value;
+                if (selected === 'all') {
+                    renderDashboard(allData);
+                } else {
+                    const filtered = allData.filter(item => item.str_regional === selected);
+                    renderDashboard(filtered);
+                }
+            });
+        }
+
+        // RENDERIZAR DASHBOARD
+        function renderDashboard(data) {
+            // Ordena os dados em ordem decrescente (do maior realizadoNum para o menor)
+            const sortedData = [...data].sort((a, b) => b.realizadoNum - a.realizadoNum);
+            renderPodium(sortedData);
+            renderTable(sortedData);
+        }
+
+        // RENDERIZAR PÓDIO TOP 3
+        function renderPodium(data) {
+            const podiumContainer = document.getElementById('podium-container');
+            podiumContainer.innerHTML = '';
+            
+            if (data.length === 0) return;
+
+            const top3 = [];
+            if (data[1]) top3.push({ rank: 2, class: 'rank-2', data: data[1] });
+            if (data[0]) top3.push({ rank: 1, class: 'rank-1', data: data[0] });
+            if (data[2]) top3.push({ rank: 3, class: 'rank-3', data: data[2] });
+
+            let html = '';
+            top3.forEach(item => {
+                const hunterName = item.data.hunter || item.data.unidade || '-';
+                const fotoImg = item.data.foto ? `<img src="${item.data.foto}" class="podium-photo" alt="Foto">` : `<div class="podium-photo"></div>`;
+                
+                html += `
+                    <div class="podium-card ${item.class}">
+                        <div class="podium-rank">${item.rank || item.rank}º</div>
+                        ${fotoImg}
+                        <div class="podium-name" title="${hunterName}">${hunterName}</div>
+                        <div class="podium-score">${item.data.realizado || '0%'}</div>
+                    </div>
+                `;
+            });
+
+            podiumContainer.innerHTML = html;
+        }
+
+        // RENDERIZAR TABELA DE RANKING
+        function renderTable(data) {
+            const tableBody = document.getElementById('table-body');
+            let html = '';
+
+            if (data.length === 0) {
+                tableBody.innerHTML = '<tr><td colspan="10" style="text-align:center;">Nenhum dado encontrado.</td></tr>';
+                return;
+            }
+
+            data.forEach((row, index) => {
+                const realRank = row.rank || (index + 1); 
+                const progressWidth = row.realizadoNum > 100 ? 100 : row.realizadoNum;
+                
+                const hunterName = row.hunter || row.unidade || '-';
+                const fotoImg = row.foto ? `<img src="${row.foto}" class="hunter-photo" alt="Foto">` : `<div class="hunter-photo"></div>`;
+                
+                // Ajuste Monetário e de Colunas (Usando semana_corte, com fallback para semana_3)
+                const metaMes = formatMoney(row.provisionado);
+                const metaSemana = formatMoney(row.semana_corte || row.semana_3);
+                const recebido = formatMoney(row.recebido);
+                const faltanteMeta = formatMoney(row.valor_faltante_meta);
+                const disponivelAno = formatMoney(row.disponivel_ano);
+
+                html += `
+                    <tr>
+                        <td class="rank-col">${realRank}º</td>
+                        <td>${fotoImg}</td>
+                        <td class="unit-col" title="${hunterName}">${hunterName}</td>
+                        <td>${metaMes}</td>
+                        <td>${metaSemana}</td>
+                        <td>${recebido}</td>
+                        <td>${faltanteMeta}</td>
+                        <td>
+                            <div class="progress-cell">
+                                <span class="progress-text">${row.realizado || '0%'}</span>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" style="width: ${progressWidth}%;"></div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>${disponivelAno}</td>
+                        <td class="regional-col">${row.str_regional || '-'}</td>
+                    </tr>
+                `;
+            });
+
+            tableBody.innerHTML = html;
+        }
+
+        document.addEventListener('DOMContentLoaded', loadData);
     </script>
 </body>
 </html>
