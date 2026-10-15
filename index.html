@@ -129,9 +129,9 @@
   </style>
 </head>
 
-<body class="min-h-screen w-full flex flex-col justify-center items-center p-2 sm:p-4 lg:p-6 select-none">
+<body class="min-h-screen w-full flex flex-col p-2 sm:p-3 select-none bg-dark-950">
 
-  <main class="w-full max-w-5xl bg-dark-900 border border-dark-800 rounded-2xl sm:rounded-3xl p-4 sm:p-5 lg:p-6 shadow-2xl relative flex flex-col justify-between">
+  <main class="w-full flex-1 bg-dark-900 border border-dark-800 rounded-2xl p-3 sm:p-4 lg:p-5 shadow-2xl relative flex flex-col justify-between">
     
     <div class="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-v4red to-transparent opacity-90"></div>
 
@@ -178,8 +178,7 @@
 
     </header>
 
-    <!-- Barra de Controles: apenas seleção Hoje vs Mês -->
-    <section class="flex justify-end items-center pt-1 pb-1">
+    <section class="flex justify-end items-center pt-1 pb-1 gap-2">
       <div class="inline-flex bg-dark-850 p-0.5 rounded-lg border border-dark-800 text-[11px]">
         <button id="view-hoje" class="px-2.5 py-0.5 rounded-md font-semibold bg-dark-700 text-white transition">
           Hoje
@@ -188,6 +187,12 @@
           Mês
         </button>
       </div>
+
+      <button id="btn-fullscreen" title="Tela Cheia" class="bg-dark-850 hover:bg-dark-750 text-gray-400 hover:text-white border border-dark-800 p-1 rounded-lg text-[11px] flex items-center justify-center transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+        </svg>
+      </button>
     </section>
 
     <div id="podium-container" class="grid grid-cols-3 gap-2.5 sm:gap-3 items-end my-1.5"></div>
@@ -231,9 +236,7 @@
 
     function cleanFranchiseName(name) {
       if (!name) return '';
-      return String(name)
-        .replace(/^V4\s+(Company\s+)?/i, '')
-        .trim();
+      return String(name).replace(/^V4\s+(Company\s+)?/i, '').trim();
     }
 
     function parseBr(val) {
@@ -446,7 +449,6 @@
 
       setCashDayTargetPct(totalAtingimento);
 
-      // Sempre ordenado pelo percentual atingido de forma decrescente
       items.sort((a, b) => b.pctAtingido - a.pctAtingido);
 
       const podiumContainer = document.getElementById('podium-container');
@@ -788,44 +790,4 @@
         btnViewMes.className = "px-2.5 py-1 rounded-md font-semibold text-gray-400 hover:text-white transition";
       } else {
         btnViewMes.className = "px-2.5 py-1 rounded-md font-semibold bg-dark-700 text-white transition";
-        btnViewHoje.className = "px-2.5 py-1 rounded-md font-semibold text-gray-400 hover:text-white transition";
-      }
-    }
-
-    async function loadData() {
-      try {
-        const res = await fetch('./dados.json', { cache: 'no-store' });
-        if (!res.ok) throw new Error('dados.json não encontrado');
-        
-        const json = await res.json();
-        if (Array.isArray(json) && json.length > 0) {
-          rawData = json;
-        } else {
-          throw new Error('Formato inválido');
-        }
-      } catch (err) {
-        rawData = FALLBACK_DATA;
-      }
-
-      renderDashboard();
-    }
-
-    window.addEventListener('DOMContentLoaded', () => {
-      document.getElementById('view-hoje').addEventListener('click', () => {
-        currentMode = 'hoje';
-        updateControlsUI();
-        renderDashboard();
-      });
-
-      document.getElementById('view-mes').addEventListener('click', () => {
-        currentMode = 'mes';
-        updateControlsUI();
-        renderDashboard();
-      });
-
-      initCashDayCoinsAnimation();
-      loadData();
-    });
-  </script>
-</body>
-</html>
+        btnViewHoje.className = "px-2.5 py-1 rounded
