@@ -1,541 +1,935 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
+  <html lang="pt-BR" class="dark">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Cash SC - V4 Company</title>
-    <!-- Fonte Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>V4 Company · Cash Day</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&family=Kanit:ital,wght@1,900&display=swap" rel="stylesheet">
+    
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              bebas: ['"Bebas Neue"', 'sans-serif'],
+              sans: ['Inter', 'sans-serif'],
+              cashday: ['Kanit', 'sans-serif'],
+            },
+            colors: {
+              v4red: {
+                DEFAULT: '#FF0000',
+                hover: '#E00000',
+                dark: '#8A0000',
+                card: '#ED1424',
+                glow: 'rgba(255, 0, 0, 0.45)'
+              },
+              dark: {
+                950: '#07080A',
+                900: '#0E1015',
+                850: '#14171E',
+                800: '#1B1F2A',
+                750: '#232836',
+                700: '#2D3445',
+              }
+            }
+          }
+        }
+      }
+    </script>
+
     <style>
-        :root {
-            --bg-color: #0a0a0a;
-            --panel-bg: #141414;
-            --card-bg: #1c1c1c;
-            --text-main: #ffffff;
-            --text-muted: #8c8c8c;
-            --v4-red: #E50914;
-            --v4-red-dark: #80050b;
-            --v4-red-glow: rgba(229, 9, 20, 0.4);
-            --bar-bg: #2a2a2a;
-            --gold: #FFD700;
-            --silver: #E0E0E0;
-            --bronze: #CD7F32;
+      body {
+        background-color: #07080a;
+        color: #f3f4f6;
+        font-family: 'Inter', sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .font-bebas {
+        font-family: 'Bebas Neue', sans-serif;
+        letter-spacing: 0.04em;
+      }
+
+      .font-cashday {
+        font-family: 'Kanit', sans-serif;
+        font-style: italic;
+        font-weight: 900;
+        letter-spacing: 0.02em;
+      }
+
+      /* Scrollbar sutil */
+      ::-webkit-scrollbar {
+        width: 5px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0e1015;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #232836;
+        border-radius: 9999px;
+      }
+
+      /* Transição suave nas barras */
+      .progress-bar-fill {
+        transition: width 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      /* Efeitos de brilho e pedestais dinâmicos */
+      .podium-gold {
+        background: linear-gradient(180deg, rgba(234, 179, 8, 0.16) 0%, rgba(20, 23, 30, 0.98) 100%);
+        border: 1px solid rgba(234, 179, 8, 0.55);
+        box-shadow: 0 10px 30px -10px rgba(234, 179, 8, 0.35), inset 0 1px 0 rgba(234, 179, 8, 0.4);
+      }
+      .podium-silver {
+        background: linear-gradient(180deg, rgba(203, 213, 225, 0.12) 0%, rgba(20, 23, 30, 0.98) 100%);
+        border: 1px solid rgba(203, 213, 225, 0.35);
+        box-shadow: 0 10px 25px -10px rgba(203, 213, 225, 0.18), inset 0 1px 0 rgba(203, 213, 225, 0.3);
+      }
+      .podium-bronze {
+        background: linear-gradient(180deg, rgba(217, 119, 6, 0.12) 0%, rgba(20, 23, 30, 0.98) 100%);
+        border: 1px solid rgba(217, 119, 6, 0.35);
+        box-shadow: 0 10px 25px -10px rgba(217, 119, 6, 0.18), inset 0 1px 0 rgba(217, 119, 6, 0.3);
+      }
+
+      /* Textura dinâmica estilo F1 para a barra de progresso */
+      .striped-bar {
+        background-image: repeating-linear-gradient(
+          45deg,
+          rgba(255, 255, 255, 0.15),
+          rgba(255, 255, 255, 0.15) 5px,
+          transparent 5px,
+          transparent 10px
+        );
+      }
+
+      .glow-red {
+        box-shadow: 0 0 25px rgba(255, 0, 0, 0.35);
+      }
+
+      /* Grid estilo F1: baia de largada e escalonamento */
+      .f1-slot-left {
+        transform: translateY(-3px);
+        border-left: 3px solid #ED1424;
+      }
+      .f1-slot-right {
+        transform: translateY(3px);
+        border-left: 3px solid #4B5563;
+      }
+      @media (max-width: 768px) {
+        .f1-slot-left, .f1-slot-right {
+          transform: none;
         }
+      }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-        }
-
-        /* HEADER V4 STYLE */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.2rem 3rem;
-            background: #0d0d0d;
-            border-bottom: 2px solid var(--v4-red);
-            box-shadow: 0 4px 20px rgba(229, 9, 20, 0.15);
-        }
-
-        .header-brand {
-            display: flex;
-            align-items: center;
-            gap: 1.5rem;
-        }
-
-        .v4-logo {
-            height: 45px;
-            width: auto;
-            border-radius: 4px;
-            object-fit: contain;
-        }
-
-        .header-title h1 {
-            font-size: 2rem;
-            font-weight: 800;
-            color: #ffffff;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .header-title span {
-            font-size: 0.9rem;
-            color: var(--v4-red);
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        .header-controls {
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-        }
-
-        .v4-select {
-            background-color: #1a1a1a;
-            color: #ffffff;
-            border: 1px solid var(--v4-red);
-            padding: 0.6rem 1.2rem;
-            border-radius: 6px;
-            font-size: 0.95rem;
-            font-weight: 600;
-            outline: none;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 0 5px rgba(229, 9, 20, 0.1);
-        }
-
-        .v4-select:focus, .v4-select:hover {
-            box-shadow: 0 0 12px var(--v4-red-glow);
-            border-color: #ff1a26;
-        }
-
-        .header-date {
-            text-align: right;
-        }
-
-        .header-date #time {
-            font-size: 2.2rem;
-            font-weight: 800;
-            color: #fff;
-            letter-spacing: 1px;
-        }
-
-        .header-date #date {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            text-transform: capitalize;
-        }
-
-        /* PÓDIO TOP 3 */
-        .podium-section {
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            padding: 1.5rem 0;
-            gap: 1.5rem;
-            min-height: 250px;
-        }
-
-        .podium-card {
-            background: var(--panel-bg);
-            border-radius: 8px 8px 0 0;
-            padding: 1.2rem;
-            text-align: center;
-            width: 300px;
-            box-shadow: 0 -8px 25px rgba(0,0,0,0.8);
-            border: 1px solid rgba(255,255,255,0.05);
-            border-bottom: none;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .podium-card::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0; height: 4px;
-            border-radius: 8px 8px 0 0;
-        }
-
-        .podium-card.rank-1 { height: 230px; width: 340px; z-index: 3; background: #181818; }
-        .podium-card.rank-1::before { background: var(--gold); box-shadow: 0 0 15px var(--gold); }
-        .podium-card.rank-2 { height: 200px; z-index: 2; }
-        .podium-card.rank-2::before { background: var(--silver); box-shadow: 0 0 10px var(--silver); }
-        .podium-card.rank-3 { height: 170px; z-index: 1; }
-        .podium-card.rank-3::before { background: var(--bronze); box-shadow: 0 0 10px var(--bronze); }
-
-        .podium-rank {
-            font-size: 2.2rem;
-            font-weight: 900;
-            margin-bottom: 0.3rem;
-        }
-        
-        .rank-1 .podium-rank { color: var(--gold); }
-        .rank-2 .podium-rank { color: var(--silver); }
-        .rank-3 .podium-rank { color: var(--bronze); }
-
-        .podium-photo {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid var(--v4-red);
-            margin-bottom: 0.5rem;
-            background-color: #2a2a2a;
-        }
-
-        .podium-name {
-            font-size: 1.05rem;
-            font-weight: 700;
-            margin-bottom: 0.4rem;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            color: #fff;
-            width: 100%;
-        }
-
-        .podium-score {
-            font-size: 2rem;
-            font-weight: 900;
-            color: var(--v4-red);
-            text-shadow: 0 0 10px var(--v4-red-glow);
-        }
-
-        /* TABELA DE DADOS */
-        .table-section {
-            flex: 1;
-            padding: 0 2rem 1.5rem 2rem;
-            overflow-y: auto;
-            position: relative;
-        }
-
-        .table-section::-webkit-scrollbar { width: 8px; }
-        .table-section::-webkit-scrollbar-track { background: var(--bg-color); }
-        .table-section::-webkit-scrollbar-thumb { background: #2a2a2a; border-radius: 4px; }
-        .table-section::-webkit-scrollbar-thumb:hover { background: var(--v4-red); }
-
-        .table-wrapper { width: 100%; }
-
-        table {
-            width: 100%;
-            border-collapse: separate;
-            border-spacing: 0 6px;
-        }
-
-        thead {
-            position: sticky;
-            top: 0;
-            z-index: 10;
-            background-color: var(--bg-color);
-        }
-
-        th {
-            padding: 0.6rem 1rem;
-            text-align: right;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            font-weight: 700;
-            color: var(--text-muted);
-            white-space: nowrap;
-        }
-
-        th span {
-            background-color: #171717;
-            padding: 0.4rem 0.8rem;
-            border-radius: 4px;
-            border-bottom: 2px solid var(--v4-red);
-            color: #ffffff;
-        }
-
-        /* Alinhamento especifico das colunas */
-        th:nth-child(1), th:nth-child(2), th:nth-child(3) { text-align: left; }
-        th:nth-child(3) { width: 22%; } /* Hunter */
-
-        tr {
-            background-color: var(--panel-bg);
-            transition: background-color 0.2s;
-            border-radius: 4px;
-        }
-        tr:hover { background-color: #1a1a1a; }
-
-        td {
-            padding: 0.5rem 1rem;
-            font-size: 0.95rem;
-            text-align: right;
-            font-weight: 500;
-            color: #e5e5e5;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            vertical-align: middle;
-        }
-
-        td:nth-child(1), td:nth-child(2), td:nth-child(3) { text-align: left; }
-
-        td.rank-col { 
-            font-weight: 800; 
-            color: var(--v4-red); 
-            text-align: center;
-            font-size: 1.1rem;
-            width: 60px;
-        }
-
-        .hunter-photo {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 2px solid var(--v4-red);
-            display: block;
-            background-color: #2a2a2a;
-        }
-
-        td.regional-col { font-weight: 700; color: #a0a0a0; text-align: center; }
-        td.unit-col { font-weight: 600; color: #ffffff; }
-
-        .progress-cell {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            gap: 10px;
-        }
-
-        .progress-text { font-weight: 700; width: 65px; text-align: right; color: #fff; }
-        .progress-bar-bg { width: 80px; height: 8px; background-color: var(--bar-bg); border-radius: 2px; overflow: hidden; }
-        .progress-bar-fill { height: 100%; background-color: var(--v4-red); border-radius: 2px; box-shadow: 0 0 8px var(--v4-red-glow); }
+      /* Suporte garantido para quebra em até 2 linhas */
+      .line-clamp-2 {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
     </style>
-</head>
-<body>
+  </head>
 
-    <!-- CABEÇALHO -->
-    <header>
-        <div class="header-brand">
-            <!-- Substituir com a sua logo real depois se quiser -->
-            <div style="width: 45px; height: 45px; background: var(--v4-red); border-radius: 4px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: white;">V4</div>
-            <div class="header-title">
-                <h1>Cash SC</h1>
-                <span>Ranking de Alta Performance</span>
+  <body class="min-h-screen w-full flex flex-col justify-center items-center p-2 sm:p-4 lg:p-6 select-none">
+
+    <main class="w-full max-w-5xl bg-dark-900 border border-dark-800 rounded-2xl sm:rounded-3xl p-4 sm:p-5 lg:p-6 shadow-2xl relative flex flex-col justify-between">
+      
+      <!-- Linha decorativa de topo V4 -->
+      <div class="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-v4red to-transparent opacity-90"></div>
+
+      <!-- Cabeçalho alinhado na mesma altura: CASH DAY | META | REALIZADO | DELTA | ATINGIMENTO % -->
+      <header class="flex flex-col md:flex-row items-stretch justify-between gap-2.5 sm:gap-3 pb-3 mb-1 border-b border-dark-800/80">
+        
+        <!-- Esquerda: CASH DAY com animação de moedas douradas e nível de preenchimento dinâmico -->
+        <div id="cashday-card" class="bg-dark-850 border border-dark-750/70 rounded-xl px-2.5 py-1 sm:px-3 sm:py-1 flex items-center justify-center shrink-0 min-w-[150px] sm:min-w-[195px] overflow-hidden relative group shadow-inner">
+          <!-- Canvas dinâmico de líquido dourado e moedas balançando -->
+          <canvas id="cashday-canvas" class="absolute inset-0 w-full h-full pointer-events-none z-0"></canvas>
+          <div class="absolute inset-0 bg-gradient-to-t from-dark-950/60 via-transparent to-transparent pointer-events-none z-[1]"></div>
+          
+          <h1 class="font-cashday text-3xl sm:text-4xl lg:text-[42px] text-white tracking-wider leading-none text-center select-none w-full italic uppercase drop-shadow-[0_3px_12px_rgba(0,0,0,0.95)] relative z-10">
+            CASH DAY
+          </h1>
+        </div>
+
+        <!-- Centro: Cards mais estreitos (META, REALIZADO e DELTA) -->
+        <div class="flex-1 grid grid-cols-3 gap-2 sm:gap-3 items-stretch">
+          
+          <!-- Card 1: META -->
+          <div class="bg-dark-850 border border-dark-750/70 rounded-xl p-2.5 sm:p-3 flex flex-col justify-between">
+            <span class="text-[9px] sm:text-[10px] font-bold text-gray-400 uppercase tracking-wider">META</span>
+            <div class="mt-0.5">
+              <span id="kpi-deveria" class="font-bebas text-lg sm:text-2xl text-white tracking-wide leading-none">R$ 0</span>
             </div>
-        </div>
-        <div class="header-controls">
-            <!-- Filtro por Regional -->
-            <select id="regional-filter" class="v4-select" style="display: none;">
-                <option value="all">Todas as Regionais</option>
-            </select>
-            <div class="header-date">
-                <div id="time">00:00:00</div>
-                <div id="date">Carregando data...</div>
+          </div>
+
+          <!-- Card 2: REALIZADO -->
+          <div class="bg-dark-850 border border-dark-750/70 rounded-xl p-2.5 sm:p-3 flex flex-col justify-between">
+            <span class="text-[9px] sm:text-[10px] font-bold text-gray-400 uppercase tracking-wider">REALIZADO</span>
+            <div class="mt-0.5">
+              <span id="kpi-recebido" class="font-bebas text-lg sm:text-2xl text-white tracking-wide leading-none">R$ 0</span>
             </div>
-        </div>
-    </header>
+          </div>
 
-    <!-- PÓDIO TOP 3 -->
-    <section class="podium-section" id="podium-container">
-    </section>
-
-    <!-- TABELA DE DADOS -->
-    <section class="table-section">
-        <div class="table-wrapper">
-            <table>
-                <thead>
-                    <tr>
-                        <th><span>Rank</span></th>
-                        <th><span>Foto</span></th>
-                        <th><span>Hunter</span></th>
-                        <th><span>Meta Mês</span></th>
-                        <th><span>Meta Semana</span></th>
-                        <th><span>Recebido</span></th>
-                        <th><span>Faltante Meta</span></th>
-                        <th><span>Realizado</span></th>
-                        <th><span>Disponível Ano</span></th>
-                        <th><span>Regional</span></th>
-                    </tr>
-                </thead>
-                <tbody id="table-body">
-                </tbody>
-            </table>
+          <!-- Card 3: DELTA (Destaque Vermelho) -->
+          <div class="bg-v4red rounded-xl p-2.5 sm:p-3 flex flex-col justify-between glow-red shadow-lg">
+            <span class="text-[9px] sm:text-[10px] font-bold text-white/95 uppercase tracking-wider">DELTA</span>
+            <div class="mt-0.5">
+              <span id="kpi-falta" class="font-bebas text-lg sm:text-2xl text-white tracking-wide leading-none">R$ 0</span>
+            </div>
+          </div>
         </div>
-    </section>
+
+        <!-- Direita: Card estreito de Atingimento % sem setinha -->
+        <div class="bg-dark-850 border border-dark-750/70 rounded-xl px-3 py-2 flex flex-col items-center justify-center shrink-0 min-w-[85px] sm:min-w-[105px]">
+          <span class="text-[9px] sm:text-[10px] font-semibold text-gray-400 uppercase tracking-wider mb-0.5">ATING.</span>
+          <div id="kpi-atingimento-geral" class="font-bebas text-3xl sm:text-4xl text-v4red leading-none">
+            0%
+          </div>
+        </div>
+
+      </header>
+
+      <section class="flex justify-end items-center pt-1 pb-1">
+        <div class="flex items-center gap-2">
+          <!-- Toggle: Meta Hoje vs Mês -->
+          <div class="inline-flex bg-dark-850 p-0.5 rounded-lg border border-dark-800 text-[11px]">
+            <button id="view-hoje" class="px-2.5 py-0.5 rounded-md font-semibold bg-dark-700 text-white transition">
+              Hoje
+            </button>
+            <button id="view-mes" class="px-2.5 py-0.5 rounded-md font-semibold text-gray-400 hover:text-white transition">
+              Mês
+            </button>
+          </div>
+
+          <!-- Botões de ordenação -->
+          <div class="inline-flex bg-dark-850 p-0.5 rounded-lg border border-dark-800 text-[11px]">
+            <button id="btn-sort-pct" class="px-3 py-0.5 rounded-md font-bold transition bg-v4red text-white">
+              % atingido
+            </button>
+            <button id="btn-sort-falta" class="px-3 py-0.5 rounded-md font-bold transition text-gray-400 hover:text-white">
+              Falta trazer
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pódio Top 3 -->
+      <div id="podium-container" class="grid grid-cols-3 gap-2.5 sm:gap-3 items-end my-1.5">
+        <!-- O pódio será injetado dinamicamente via JS na ordem: 2º (esquerda), 1º (centro/alto), 3º (direita) -->
+      </div>
+
+      <!-- Grid Estilo F1 da 4ª posição em diante (duas colunas escalonadas) -->
+      <div class="mt-2 flex flex-col gap-1.5">
+        <!-- Container das posições 4 a 13 em formato de grid F1 de 2 colunas com espaço vertical para as tags flutuantes -->
+        <div id="f1-grid-container" class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-2.5 items-center pt-1">
+          <!-- Injetado dinamicamente via JS com 4 e 5 emparelhados e escalonados -->
+        </div>
+      </div>
+    </main>
 
     <script>
-        let allData = [];
+      const FRANCHISE_MAP = {
+        "Sem preenchimento": "V4 Digital & Co.",
+        "RS": "V4 Colpo & Co.",
+        "MG1": "V4 Albuquerque & Associados",
+        "PR": "V4 Prado & Associados",
+        "NE": "V4 Salvador Prime",
+        "RJ": "V4 Ipanema Growth",
+        "SC": "V4 Floripa Tech",
+        "Sem Regional": "V4 Expansão & Co.",
+        "SP1": "V4 Faria Lima Partners",
+        "SP3": "V4 Paulista Growth",
+        "MG2": "V4 Savassi & Co.",
+        "NUNES": "V4 Nunes & Associados",
+        "COLLI": "V4 Colli Partners"
+      };
 
-        // RELÓGIO E DATA DINÂMICA
-        function updateDateTime() {
-            const now = new Date();
-            const timeOptions = { hour: '2-digit', minute: '2-digit', second: '2-digit' };
-            document.getElementById('time').textContent = now.toLocaleTimeString('pt-BR', timeOptions);
+      const FALLBACK_DATA = [
+        {"rank":"1","regional":"Sem preenchimento","recebido":"19.792,91","provisionado":"30.237,21","realizado":"65,46%","dif":"10.444,3","meta_hoje":"24.051,09","realizado_hoje":"82,3%","destaque":"V4 Digital & Co."},
+        {"rank":"2","regional":"RS","recebido":"1.414.149,54","provisionado":"3.554.010,94","realizado":"39,79%","dif":"2.139.861,4","meta_hoje":"1.590.825,02","realizado_hoje":"88,89%","destaque":"V4 Colpo & Co."},
+        {"rank":"3","regional":"MG1","recebido":"1.460.042,88","provisionado":"3.696.155,32","realizado":"39,5%","dif":"2.236.112,44","meta_hoje":"1.661.901,63","realizado_hoje":"87,85%","destaque":"V4 Albuquerque & Associados"},
+        {"rank":"4","regional":"PR","recebido":"323.778,98","provisionado":"824.953,15","realizado":"39,25%","dif":"501.174,17","meta_hoje":"325.228,46","realizado_hoje":"99,55%","destaque":"V4 Prado & Associados"},
+        {"rank":"5","regional":"NE","recebido":"875.712,93","provisionado":"2.312.098,03","realizado":"37,88%","dif":"1.436.385,1","meta_hoje":"1.136.210,45","realizado_hoje":"77,07%","destaque":"V4 Salvador Prime"},
+        {"rank":"6","regional":"RJ","recebido":"738.210,97","provisionado":"2.053.233,62","realizado":"35,95%","dif":"1.315.022,65","meta_hoje":"868.325,61","realizado_hoje":"85,02%","destaque":"V4 Ipanema Growth"},
+        {"rank":"7","regional":"SC","recebido":"1.084.345,85","provisionado":"3.135.146,45","realizado":"34,59%","dif":"2.050.800,6","meta_hoje":"1.296.751,9","realizado_hoje":"83,62%","destaque":"V4 Floripa Tech"},
+        {"rank":"8","regional":"Sem Regional","recebido":"66.432,68","provisionado":"199.254,38","realizado":"33,34%","dif":"132.821,7","meta_hoje":"136.442,29","realizado_hoje":"48,69%","destaque":"V4 Expansão & Co."},
+        {"rank":"9","regional":"SP1","recebido":"1.729.211,34","provisionado":"5.591.684,39","realizado":"30,92%","dif":"3.862.473,05","meta_hoje":"2.415.757,58","realizado_hoje":"71,58%","destaque":"V4 Faria Lima Partners"},
+        {"rank":"10","regional":"SP3","recebido":"1.118.782,72","provisionado":"3.758.754,85","realizado":"29,76%","dif":"2.639.972,13","meta_hoje":"1.601.587,44","realizado_hoje":"69,85%","destaque":"V4 Paulista Growth"},
+        {"rank":"11","regional":"MG2","recebido":"448.504,15","provisionado":"1.595.799,47","realizado":"28,11%","dif":"1.147.295,32","meta_hoje":"544.767,3","realizado_hoje":"82,33%","destaque":"V4 Savassi & Co."},
+        {"rank":"12","regional":"NUNES","recebido":"267.412,75","provisionado":"993.856,33","realizado":"26,91%","dif":"726.443,58","meta_hoje":"398.555,23","realizado_hoje":"67,1%","destaque":"V4 Nunes & Associados"},
+        {"rank":"13","regional":"COLLI","recebido":"452.142,86","provisionado":"1.968.745,97","realizado":"22,97%","dif":"1.516.603,11","meta_hoje":"875.840,4","realizado_hoje":"51,62%","destaque":"V4 Colli Partners"}
+      ];
+
+      let rawData = [];
+      let currentSort = 'pct'; // 'pct' ou 'falta'
+      let currentMode = 'hoje'; // 'hoje' ou 'mes'
+      let showAll = false;
+
+      function parseBr(val) {
+        if (val === undefined || val === null) return 0;
+        if (typeof val === 'number') return val;
+        const clean = String(val).replace(/\./g, '').replace(',', '.').replace('%', '').trim();
+        const num = parseFloat(clean);
+        return isNaN(num) ? 0 : num;
+      }
+
+      function formatMoney(num) {
+        return 'R$ ' + Math.round(num).toLocaleString('pt-BR');
+      }
+
+      function formatPct(val) {
+        return Math.round(val) + '%';
+      }
+
+      function getStatusBadge(pct) {
+        if (pct >= 90) {
+          return `<span class="text-[10px] font-bold text-emerald-400">Na meta</span>`;
+        } else if (pct >= 60) {
+          return `<span class="text-[10px] font-bold text-amber-400">Em curso</span>`;
+        } else {
+          return `<span class="text-[10px] font-bold text-rose-500">Atenção</span>`;
+        }
+      }
+
+      function renderPodiumCard(item, place) {
+        if (!item) return '';
+
+        const isFirst = place === 1;
+        const isSecond = place === 2;
+
+        let cardClass = '';
+        let badgeBg = '';
+        let badgeLabel = '';
+        let rankWatermark = '';
+
+        if (isFirst) {
+          cardClass = 'podium-gold z-10 sm:-translate-y-1';
+          badgeBg = 'bg-yellow-500 text-black shadow-md shadow-yellow-500/30';
+          badgeLabel = '1º LUGAR';
+          rankWatermark = 'text-yellow-400/[0.12]';
+        } else if (isSecond) {
+          cardClass = 'podium-silver';
+          badgeBg = 'bg-slate-300 text-slate-900';
+          badgeLabel = '2º LUGAR';
+          rankWatermark = 'text-slate-300/[0.08]';
+        } else {
+          cardClass = 'podium-bronze';
+          badgeBg = 'bg-amber-600 text-white';
+          badgeLabel = '3º LUGAR';
+          rankWatermark = 'text-amber-500/[0.08]';
+        }
+
+        const barWidth = Math.min(100, Math.max(0, item.pctAtingido));
+
+        return `
+          <div class="rounded-xl sm:rounded-2xl p-2.5 sm:p-3 flex flex-col justify-between relative overflow-hidden transition-all duration-300 hover:scale-[1.01] ${cardClass}">
             
-            const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-            let dateStr = now.toLocaleDateString('pt-BR', dateOptions);
-            document.getElementById('date').textContent = dateStr.charAt(0).toUpperCase() + dateStr.slice(1);
+            <!-- Marca d'água dinâmica no fundo para profundidade -->
+            <div class="absolute -right-1 -bottom-4 font-bebas text-7xl sm:text-8xl ${rankWatermark} select-none pointer-events-none leading-none">
+              ${place}
+            </div>
+
+            <!-- Topo: Franquia na esquerda (centralizada verticalmente), Sigla rigorosamente no centro e % na direita -->
+            <div class="relative z-10 min-h-[50px] flex items-center justify-between">
+              
+              <!-- Canto Esquerdo: Badge e Franquia Destaque com quebra em até 2 linhas e alinhamento vertical centralizado -->
+              <div class="flex flex-col items-start justify-center min-w-0 w-[35%] z-10">
+                <span class="text-[8px] font-black px-1.5 py-0.5 rounded ${badgeBg} tracking-wider uppercase shrink-0">
+                  ${badgeLabel}
+                </span>
+                <div class="min-h-[28px] flex items-center mt-1">
+                  <span class="text-[9px] sm:text-[10px] text-gray-200 font-bold leading-tight line-clamp-2 break-words" title="${item.destaque}">
+                    <span class="text-v4red font-black mr-0.5">★</span>${item.destaque}
+                  </span>
+                </div>
+              </div>
+
+              <!-- Meio: Sigla da Regional rigorosamente centralizada no eixo horizontal do card -->
+              <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center text-center z-10 pointer-events-none">
+                <span class="text-[7px] uppercase tracking-wider text-gray-400 font-semibold block">Regional</span>
+                <span class="font-bebas text-2xl sm:text-3xl lg:text-[34px] text-white tracking-wide leading-none">
+                  ${item.regional}
+                </span>
+              </div>
+
+              <!-- Canto Direito: Status e Porcentagem -->
+              <div class="text-right flex flex-col items-end justify-center min-w-0 w-[35%] z-10 shrink-0">
+                ${getStatusBadge(item.pctAtingido)}
+                <span class="font-bebas text-2xl sm:text-3xl leading-none text-white mt-0.5">${formatPct(item.pctAtingido)}</span>
+              </div>
+
+            </div>
+
+            <!-- Meio: Dados preenchidos (Realizado vs Meta) eliminando o vazio -->
+            <div class="relative z-10 grid grid-cols-2 gap-1 my-1.5 pt-1.5 border-t border-white/10 text-[9px]">
+              <div class="bg-dark-900/70 rounded p-1 border border-white/5">
+                <span class="text-gray-400 block text-[8px] uppercase font-semibold">Realizado</span>
+                <span class="font-bold text-white font-bebas text-xs sm:text-sm tracking-wide">${formatMoney(item.recebido)}</span>
+              </div>
+              <div class="bg-dark-900/70 rounded p-1 border border-white/5">
+                <span class="text-gray-400 block text-[8px] uppercase font-semibold">Meta</span>
+                <span class="font-bold text-gray-300 font-bebas text-xs sm:text-sm tracking-wide">${formatMoney(item.metaAlvo)}</span>
+              </div>
+            </div>
+
+            <!-- Base: Barra com textura e Tag de Delta -->
+            <div class="relative z-10 space-y-1">
+              <div class="w-full bg-dark-950/80 h-1.5 rounded-full overflow-hidden border border-white/5">
+                <div class="h-full bg-v4red rounded-full progress-bar-fill relative" style="width: ${barWidth}%;">
+                  <div class="absolute inset-0 striped-bar opacity-35"></div>
+                </div>
+              </div>
+
+              <div class="flex justify-between items-center text-[9px] bg-dark-950/60 px-1.5 py-0.5 rounded border border-white/5">
+                <span class="text-gray-400 uppercase tracking-wider text-[8px] font-semibold">Delta</span>
+                <span class="font-black text-rose-400 font-bebas text-[11px] sm:text-xs tracking-wide">
+                  ${item.faltaTrazer > 0 ? 'Falta ' + formatMoney(item.faltaTrazer) : 'META ATINGIDA!'}
+                </span>
+              </div>
+            </div>
+
+          </div>
+        `;
+      }
+
+      function renderF1GridItem(item, rankPos, isLeftColumn) {
+        const barWidth = Math.min(100, Math.max(0, item.pctAtingido));
+        const staggerClass = isLeftColumn ? 'f1-slot-left' : 'f1-slot-right';
+
+        // Tag de status com o mesmo visual textual do pódio, posicionada no canto superior direito vazando para fora
+        let statusTag = '';
+        if (item.pctAtingido >= 90) {
+          statusTag = `<span class="absolute -top-2.5 right-3 z-20 px-1.5 py-0.5 rounded bg-dark-900 text-[10px] font-bold text-emerald-400 leading-none">Na meta</span>`;
+        } else if (item.pctAtingido >= 60) {
+          statusTag = `<span class="absolute -top-2.5 right-3 z-20 px-1.5 py-0.5 rounded bg-dark-900 text-[10px] font-bold text-amber-400 leading-none">Em curso</span>`;
+        } else {
+          statusTag = `<span class="absolute -top-2.5 right-3 z-20 px-1.5 py-0.5 rounded bg-dark-900 text-[10px] font-bold text-rose-500 leading-none">Atenção</span>`;
         }
-        setInterval(updateDateTime, 1000);
-        updateDateTime();
 
-        // FUNÇÃO PARA FORMATAR MOEDA
-        function formatMoney(value) {
-            if (value === undefined || value === null || value === '') return 'R$ 0,00';
-            let str = String(value).trim();
-            if (str === '-' || str === '0') return 'R$ 0,00';
-            if (str.toLowerCase().startsWith('r$')) return str;
-            return 'R$ ' + str;
+        return `
+          <div class="bg-dark-850 hover:bg-dark-800 border border-dark-800/80 rounded-xl p-1.5 sm:p-2 transition-all flex flex-col gap-1 relative ${staggerClass}">
+            
+            <!-- Tag de Status Minimalista -->
+            ${statusTag}
+
+            <div class="flex items-center justify-between gap-1.5 min-w-0">
+              
+              <!-- Bloco 1: Rank + Regional + Nome do Destaque -->
+              <div class="flex items-center gap-1.5 min-w-0 flex-1">
+                <div class="w-4 h-4 rounded-full bg-dark-750 text-gray-300 flex items-center justify-center font-bold text-[9px] shrink-0">
+                  ${rankPos}
+                </div>
+                <span class="font-extrabold text-white text-xs tracking-tight shrink-0">${item.regional}</span>
+                
+                <!-- Nome do Destaque entre o status e os valores -->
+                <span class="text-[10px] text-gray-300 truncate font-semibold flex items-center gap-0.5 min-w-0" title="${item.destaque}">
+                  <span class="text-v4red text-[9px]">★</span>
+                  <span class="truncate">${item.destaque}</span>
+                </span>
+              </div>
+
+              <!-- Bloco 2: Apenas [Recebido] / [Meta] e a % -->
+              <div class="flex items-center gap-2 shrink-0 text-right pr-0.5">
+                <div class="text-[11px] text-gray-300 flex items-center gap-1 font-bebas tracking-wide">
+                  <span class="text-white text-xs sm:text-sm">${formatMoney(item.recebido)}</span>
+                  <span class="text-gray-500 font-sans text-[10px]">/</span>
+                  <span class="text-gray-400 text-xs sm:text-sm">${formatMoney(item.metaAlvo)}</span>
+                </div>
+                <div class="text-right pl-1.5 border-l border-dark-750">
+                  <span class="font-bebas text-xs sm:text-sm font-bold text-white tracking-wide">${formatPct(item.pctAtingido)}</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Barra de Progresso Fina -->
+            <div class="w-full bg-dark-700/80 h-1 rounded-full overflow-hidden">
+              <div class="h-full bg-v4red rounded-full progress-bar-fill" style="width: ${barWidth}%;"></div>
+            </div>
+          </div>
+        `;
+      }
+
+      function renderDashboard() {
+        if (!rawData || rawData.length === 0) return;
+
+        const items = rawData.map(item => {
+          const recebido = parseBr(item.recebido);
+          const metaHoje = parseBr(item.meta_hoje);
+          const provisionado = parseBr(item.provisionado);
+          
+          const metaAlvo = currentMode === 'hoje' ? metaHoje : provisionado;
+          const pctAtingido = metaAlvo > 0 ? (recebido / metaAlvo) * 100 : 0;
+          const faltaTrazer = Math.max(0, metaAlvo - recebido);
+
+          const regionalName = item.regional || 'Sem Nome';
+          const destaque = item.destaque || item.franchise_destaque || item.franquia || FRANCHISE_MAP[regionalName] || 'V4 Franchising';
+
+          return {
+            regional: regionalName,
+            destaque,
+            recebido,
+            metaAlvo,
+            pctAtingido,
+            faltaTrazer
+          };
+        });
+
+        // Totais gerais
+        const totalRecebido = items.reduce((acc, curr) => acc + curr.recebido, 0);
+        const totalMeta = items.reduce((acc, curr) => acc + curr.metaAlvo, 0);
+        const totalFalta = Math.max(0, totalMeta - totalRecebido);
+        const totalAtingimento = totalMeta > 0 ? (totalRecebido / totalMeta) * 100 : 0;
+
+        // Atualizar Cards Globais
+        document.getElementById('kpi-deveria').innerText = formatMoney(totalMeta);
+        document.getElementById('kpi-recebido').innerText = formatMoney(totalRecebido);
+        document.getElementById('kpi-falta').innerText = formatMoney(totalFalta);
+        document.getElementById('kpi-atingimento-geral').innerText = formatPct(totalAtingimento);
+
+        // Atualiza a meta de preenchimento de moedas no logo CASH DAY
+        setCashDayTargetPct(totalAtingimento);
+
+        // Ordenar lista
+        if (currentSort === 'pct') {
+          items.sort((a, b) => b.pctAtingido - a.pctAtingido);
+        } else {
+          items.sort((a, b) => b.faltaTrazer - a.faltaTrazer);
         }
 
-        // CARREGAMENTO DO JSON
-        async function loadData() {
-            try {
-                // Tenta carregar o arquivo JSON local
-                const response = await fetch('dados.json');
-                if (!response.ok) throw new Error('Falha ao carregar o arquivo JSON.');
-                const data = await response.json();
-                processData(data);
-            } catch (error) {
-                console.warn("Erro ao carregar dados.json, usando dados de exemplo anexados:", error);
-                // Fallback com os dados anexados na conversa
-                const fallbackData = [
-                    {"rank":"1","foto":"https://lh3.googleusercontent.com/d/1llI2R5YQCzsm-1BBgujAiSEKAosLtIas","hunter":"Eric de Paula","recebido":"518.211,51","provisionado":"1.250.635,64","realizado":"41,44%"},
-                    {"rank":"2","foto":"https://lh3.googleusercontent.com/d/1I9zHbh7UQjw0G8E62BgBM-T1SJ2_phxh","hunter":"Deborah Reynaldo","recebido":"543.172,77","provisionado":"1.440.861,02","realizado":"37,7%"},
-                    {"rank":"3","foto":"https://lh3.googleusercontent.com/d/1fOojkC6HIy2p62LNsCSIPoT2uDkcoa_Y","hunter":"Izabela Mattano","recebido":"411.882,36","provisionado":"1.111.626,57","realizado":"37,05%"},
-                    {"rank":"4","foto":"https://lh3.googleusercontent.com/d/1PRm-1_2A2mcj4OLwwEW2lBFYT166eAzc","hunter":"Bruno Ferreira","recebido":"420.302,94","provisionado":"1.166.610,54","realizado":"36,03%"},
-                    {"rank":"5","foto":"https://lh3.googleusercontent.com/d/1lbvSP_l1b1DxtEhbz0ix8g83DKh2qEq0","hunter":"Gerson Xavier","recebido":"336.118,78","provisionado":"1.030.266,22","realizado":"32,62%"}
-                ];
-                processData(fallbackData);
-            }
+        // 1. Renderizar PÓDIO (2º na esquerda, 1º no centro, 3º na direita)
+        const podiumContainer = document.getElementById('podium-container');
+        const first = items[0];
+        const second = items[1];
+        const third = items[2];
+
+        podiumContainer.innerHTML = `
+          ${renderPodiumCard(second, 2)}
+          ${renderPodiumCard(first, 1)}
+          ${renderPodiumCard(third, 3)}
+        `;
+
+        // 2. Renderizar GRID F1 (da 4ª posição em diante, em pares 4-5, 6-7, etc.)
+        const gridContainer = document.getElementById('f1-grid-container');
+        gridContainer.innerHTML = '';
+
+        const gridRacers = items.slice(3); // Posições 4 em diante
+        gridRacers.forEach((item, idx) => {
+          const rankPos = idx + 4;
+          const isLeftColumn = idx % 2 === 0; // Pares da lista (4º, 6º, 8º, etc. ficam à esquerda)
+          gridContainer.innerHTML += renderF1GridItem(item, rankPos, isLeftColumn);
+        });
+      }
+
+      let targetCashDayPct = 0;
+      let currentCashDayPct = 0;
+      let animState = 'idle'; // 'filling', 'draining', 'idle'
+
+      function setCashDayTargetPct(pct) {
+        const newTarget = Math.min(100, Math.max(0, pct));
+        if (Math.abs(newTarget - targetCashDayPct) > 0.5) {
+          if (newTarget > currentCashDayPct) {
+            animState = 'filling';
+          } else if (newTarget < currentCashDayPct) {
+            animState = 'draining';
+          }
+        }
+        targetCashDayPct = newTarget;
+      }
+
+      function initCashDayCoinsAnimation() {
+        const canvas = document.getElementById('cashday-canvas');
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
+        const parent = document.getElementById('cashday-card');
+
+        let width = 0;
+        let height = 0;
+        let dpr = 1;
+
+        function resize() {
+          if (!parent) return;
+          dpr = window.devicePixelRatio || 1;
+          width = parent.clientWidth;
+          height = parent.clientHeight;
+          canvas.width = width * dpr;
+          canvas.height = height * dpr;
+          ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+          generateStaticPile();
         }
 
-        function processData(data) {
-            allData = data.map(item => {
-                let realizadoLimpo = (item.realizado || '0').replace('%', '').replace(',', '.');
-                let realizadoNum = parseFloat(realizadoLimpo);
-                if (isNaN(realizadoNum)) realizadoNum = 0;
+        window.addEventListener('resize', resize);
 
-                return {
-                    ...item,
-                    realizadoNum: realizadoNum
-                };
+        // Estrutura das moedas estáticas na pilha (estilo montanha de ouro do Tio Patinhas)
+        let staticPileCoins = [];
+        const PILE_COIN_COUNT = 320;
+
+        function generateStaticPile() {
+          staticPileCoins = [];
+          for (let i = 0; i < PILE_COIN_COUNT; i++) {
+            // Distribuição que cria montículos naturais de moedas sobrepostas
+            const relX = 0.02 + Math.random() * 0.96;
+            // Altura relativa dentro do card (0 = fundo, 100 = topo total)
+            const levelPct = Math.pow(Math.random(), 1.15) * 100;
+            const rx = 5.5 + Math.random() * 4.2;
+            const ry = rx * (0.42 + Math.random() * 0.16);
+            const tilt = (Math.random() - 0.5) * 0.35;
+            const thickness = 1.6 + Math.random() * 1.5;
+            const goldVariant = Math.floor(Math.random() * 3);
+
+            staticPileCoins.push({
+              relX,
+              levelPct,
+              rx,
+              ry,
+              tilt,
+              thickness,
+              goldVariant,
+              sparkleDelay: Math.floor(Math.random() * 120),
+              sparkleLife: 0
             });
-
-            populateFilter(allData);
-            renderDashboard(allData);
+          }
+          // Ordena as moedas para renderizar as mais baixas primeiro (profundidade)
+          staticPileCoins.sort((a, b) => a.levelPct - b.levelPct);
         }
 
-        // POPULAR FILTRO DE REGIONAIS
-        function populateFilter(data) {
-            const filter = document.getElementById('regional-filter');
-            const regionais = [...new Set(data.map(item => item.str_regional).filter(r => r && r.trim() !== ''))].sort();
-            
-            if (regionais.length === 0) {
-                filter.style.display = 'none'; // Esconde se não houver regionais no JSON
-                return;
+        // Partículas ativas para transição (queda ao encher ou drenagem ao esvaziar)
+        const dynamicCoins = [];
+        const sparkles = [];
+
+        function spawnFallingCoin() {
+          dynamicCoins.push({
+            x: Math.random() * width,
+            y: -15 - Math.random() * 25,
+            vx: (Math.random() - 0.5) * 1.5,
+            vy: 3.5 + Math.random() * 4.5,
+            rx: 6 + Math.random() * 3.5,
+            ry: 3 + Math.random() * 2,
+            rot: Math.random() * Math.PI,
+            vRot: 0.12 + Math.random() * 0.18,
+            type: 'falling',
+            thickness: 2
+          });
+        }
+
+        function spawnDrainingCoin(startY) {
+          dynamicCoins.push({
+            x: (width * 0.2) + Math.random() * (width * 0.6),
+            y: startY + Math.random() * 15,
+            vx: (Math.random() - 0.5) * 2.2,
+            vy: 4 + Math.random() * 5.5,
+            rx: 6 + Math.random() * 3,
+            ry: 3 + Math.random() * 1.8,
+            rot: Math.random() * Math.PI,
+            vRot: 0.15 + Math.random() * 0.25,
+            type: 'draining',
+            thickness: 2
+          });
+        }
+
+        function spawnSparkle(x, y, size) {
+          sparkles.push({
+            x,
+            y,
+            size: size || (6 + Math.random() * 5),
+            life: 1.0,
+            decay: 0.04 + Math.random() * 0.03
+          });
+        }
+
+        // Desenha uma moeda individual com contorno escuro e gradiente de ouro (estilo quadrinhos Disney)
+        function drawCartoonCoin(x, y, rx, ry, tilt, thickness, variant, rotCos) {
+          ctx.save();
+          ctx.translate(x, y);
+          if (tilt) ctx.rotate(tilt);
+          if (rotCos !== undefined) ctx.scale(rotCos, 1);
+
+          const th = thickness || 2;
+
+          // 1. Borda/Espessura 3D da moeda (cilindro inferior)
+          ctx.beginPath();
+          ctx.ellipse(0, th, rx, ry, 0, 0, Math.PI);
+          ctx.lineTo(-rx, 0);
+          ctx.ellipse(0, 0, rx, ry, 0, Math.PI, 0, true);
+          ctx.lineTo(rx, th);
+          ctx.closePath();
+          ctx.fillStyle = variant === 0 ? '#B45309' : (variant === 1 ? '#92400E' : '#78350F');
+          ctx.fill();
+          ctx.strokeStyle = '#3D1A04';
+          ctx.lineWidth = 0.75;
+          ctx.stroke();
+
+          // 2. Face superior da moeda
+          ctx.beginPath();
+          ctx.ellipse(0, 0, rx, ry, 0, 0, Math.PI * 2);
+          const grad = ctx.createLinearGradient(-rx, -ry, rx, ry);
+          if (variant === 0) {
+            grad.addColorStop(0, '#FEF08A');
+            grad.addColorStop(0.35, '#FACC15');
+            grad.addColorStop(0.75, '#EAB308');
+            grad.addColorStop(1, '#CA8A04');
+          } else if (variant === 1) {
+            grad.addColorStop(0, '#FFFBEB');
+            grad.addColorStop(0.4, '#FDE047');
+            grad.addColorStop(0.8, '#F59E0B');
+            grad.addColorStop(1, '#B45309');
+          } else {
+            grad.addColorStop(0, '#FEF9C3');
+            grad.addColorStop(0.35, '#FBBF24');
+            grad.addColorStop(0.8, '#D97706');
+            grad.addColorStop(1, '#92400E');
+          }
+          ctx.fillStyle = grad;
+          ctx.fill();
+          ctx.strokeStyle = '#451A03';
+          ctx.lineWidth = 0.8;
+          ctx.stroke();
+
+          // 3. Relevo interno (anel entalhado de moeda de ouro)
+          if (rx > 3.5 && (rotCos === undefined || Math.abs(rotCos) > 0.4)) {
+            ctx.beginPath();
+            ctx.ellipse(0, 0, rx * 0.72, ry * 0.72, 0, 0, Math.PI * 2);
+            ctx.strokeStyle = 'rgba(202, 138, 4, 0.65)';
+            ctx.lineWidth = 0.55;
+            ctx.stroke();
+
+            // Ponto central de brilho
+            ctx.beginPath();
+            ctx.arc(0, 0, 0.7, 0, Math.PI * 2);
+            ctx.fillStyle = '#FEF08A';
+            ctx.fill();
+          }
+
+          ctx.restore();
+        }
+
+        // Desenha brilho estrelado (sparkle de 4 pontas clássico dos quadrinhos do Tio Patinhas)
+        function drawSparkleStar(x, y, size, alpha) {
+          ctx.save();
+          ctx.translate(x, y);
+          ctx.fillStyle = `rgba(255, 255, 255, ${alpha})`;
+          ctx.beginPath();
+          ctx.moveTo(0, -size);
+          ctx.quadraticCurveTo(0, 0, size, 0);
+          ctx.quadraticCurveTo(0, 0, 0, size);
+          ctx.quadraticCurveTo(0, 0, -size, 0);
+          ctx.quadraticCurveTo(0, 0, 0, -size);
+          ctx.closePath();
+          ctx.fill();
+
+          ctx.beginPath();
+          ctx.arc(0, 0, size * 0.28, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(254, 240, 138, ${alpha})`;
+          ctx.fill();
+          ctx.restore();
+        }
+
+        let idleSparkleTimer = 0;
+
+        function animate() {
+          ctx.clearRect(0, 0, width, height);
+
+          // Transição suave de nível quando houver mudança de aba (Hoje vs Mês)
+          const diff = targetCashDayPct - currentCashDayPct;
+          if (Math.abs(diff) > 0.3) {
+            if (diff > 0) {
+              // ENCHENDO: moedas caindo do topo até alcançar o nível correto
+              currentCashDayPct += Math.min(diff * 0.08 + 0.35, 1.8);
+              animState = 'filling';
+              if (Math.random() < 0.8) {
+                spawnFallingCoin();
+                spawnFallingCoin();
+              }
+            } else {
+              // DRENAGEM: nível baixando e moedas escoando pelo fundo
+              currentCashDayPct += Math.max(diff * 0.08 - 0.35, -1.8);
+              animState = 'draining';
+              const pileSurfaceY = height - (currentCashDayPct / 100) * height;
+              if (Math.random() < 0.75) {
+                spawnDrainingCoin(pileSurfaceY);
+                spawnDrainingCoin(height - 15);
+              }
             }
-            
-            filter.style.display = 'block';
-            filter.innerHTML = '<option value="all">Todas as Regionais</option>';
+          } else {
+            currentCashDayPct = targetCashDayPct;
+            animState = 'idle';
+          }
 
-            regionais.forEach(reg => {
-                const option = document.createElement('option');
-                option.value = reg;
-                option.textContent = reg;
-                filter.appendChild(option);
-            });
+          const fillHeight = (currentCashDayPct / 100) * height;
 
-            filter.addEventListener('change', (e) => {
-                const selected = e.target.value;
-                if (selected === 'all') {
-                    renderDashboard(allData);
-                } else {
-                    const filtered = allData.filter(item => item.str_regional === selected);
-                    renderDashboard(filtered);
+          if (fillHeight > 2) {
+            const surfaceY = height - fillHeight;
+
+            // Fundo dourado compacto na base da pilha para preencher vazios entre as moedas
+            ctx.save();
+            ctx.beginPath();
+            ctx.moveTo(0, height);
+            ctx.lineTo(0, surfaceY + 4);
+            ctx.lineTo(width, surfaceY + 4);
+            ctx.lineTo(width, height);
+            ctx.closePath();
+            const baseGrad = ctx.createLinearGradient(0, surfaceY, 0, height);
+            baseGrad.addColorStop(0, '#B45309');
+            baseGrad.addColorStop(0.3, '#92400E');
+            baseGrad.addColorStop(1, '#451A03');
+            ctx.fillStyle = baseGrad;
+            ctx.fill();
+            ctx.restore();
+
+            // 1. Renderiza a montanha estática de moedas visíveis até a altura do percentual atual
+            staticPileCoins.forEach(coin => {
+              if (coin.levelPct <= currentCashDayPct) {
+                const coinY = height - (coin.levelPct / 100) * height;
+                const coinX = coin.relX * width;
+                drawCartoonCoin(coinX, coinY, coin.rx, coin.ry, coin.tilt, coin.thickness, coin.goldVariant);
+
+                // Brilhos pontuais na superfície em repouso
+                if (animState === 'idle') {
+                  coin.sparkleDelay--;
+                  if (coin.sparkleDelay <= 0 && coin.levelPct >= (currentCashDayPct - 18)) {
+                    coin.sparkleLife = 1.0;
+                    coin.sparkleDelay = 180 + Math.floor(Math.random() * 250);
+                  }
+                  if (coin.sparkleLife > 0) {
+                    drawSparkleStar(coinX, coinY - coin.ry * 0.5, 4.5, coin.sparkleLife);
+                    coin.sparkleLife -= 0.04;
+                  }
                 }
-            });
-        }
-
-        // RENDERIZAR DASHBOARD
-        function renderDashboard(data) {
-            // Ordena os dados em ordem decrescente (do maior realizadoNum para o menor)
-            const sortedData = [...data].sort((a, b) => b.realizadoNum - a.realizadoNum);
-            renderPodium(sortedData);
-            renderTable(sortedData);
-        }
-
-        // RENDERIZAR PÓDIO TOP 3
-        function renderPodium(data) {
-            const podiumContainer = document.getElementById('podium-container');
-            podiumContainer.innerHTML = '';
-            
-            if (data.length === 0) return;
-
-            const top3 = [];
-            if (data[1]) top3.push({ rank: 2, class: 'rank-2', data: data[1] });
-            if (data[0]) top3.push({ rank: 1, class: 'rank-1', data: data[0] });
-            if (data[2]) top3.push({ rank: 3, class: 'rank-3', data: data[2] });
-
-            let html = '';
-            top3.forEach(item => {
-                const hunterName = item.data.hunter || item.data.unidade || '-';
-                const fotoImg = item.data.foto ? `<img src="${item.data.foto}" class="podium-photo" alt="Foto">` : `<div class="podium-photo"></div>`;
-                
-                html += `
-                    <div class="podium-card ${item.class}">
-                        <div class="podium-rank">${item.rank || item.rank}º</div>
-                        ${fotoImg}
-                        <div class="podium-name" title="${hunterName}">${hunterName}</div>
-                        <div class="podium-score">${item.data.realizado || '0%'}</div>
-                    </div>
-                `;
+              }
             });
 
-            podiumContainer.innerHTML = html;
-        }
-
-        // RENDERIZAR TABELA DE RANKING
-        function renderTable(data) {
-            const tableBody = document.getElementById('table-body');
-            let html = '';
-
-            if (data.length === 0) {
-                tableBody.innerHTML = '<tr><td colspan="10" style="text-align:center;">Nenhum dado encontrado.</td></tr>';
-                return;
+            // Sparkle ocasional espontâneo no topo em repouso
+            if (animState === 'idle') {
+              idleSparkleTimer++;
+              if (idleSparkleTimer > 50) {
+                idleSparkleTimer = 0;
+                const rx = 15 + Math.random() * (width - 30);
+                const ry = surfaceY + Math.random() * 8;
+                spawnSparkle(rx, ry, 5 + Math.random() * 4);
+              }
             }
+          }
 
-            data.forEach((row, index) => {
-                const realRank = row.rank || (index + 1); 
-                const progressWidth = row.realizadoNum > 100 ? 100 : row.realizadoNum;
-                
-                const hunterName = row.hunter || row.unidade || '-';
-                const fotoImg = row.foto ? `<img src="${row.foto}" class="hunter-photo" alt="Foto">` : `<div class="hunter-photo"></div>`;
-                
-                // Ajuste Monetário e de Colunas (Usando semana_corte, com fallback para semana_3)
-                const metaMes = formatMoney(row.provisionado);
-                const metaSemana = formatMoney(row.semana_corte || row.semana_3);
-                const recebido = formatMoney(row.recebido);
-                const faltanteMeta = formatMoney(row.valor_faltante_meta);
-                const disponivelAno = formatMoney(row.disponivel_ano);
+          // 2. Atualiza e desenha moedas dinâmicas (chuva de moedas ou drenagem)
+          for (let i = dynamicCoins.length - 1; i >= 0; i--) {
+            const p = dynamicCoins[i];
+            p.x += p.vx;
+            p.y += p.vy;
+            p.rot += p.vRot;
 
-                html += `
-                    <tr>
-                        <td class="rank-col">${realRank}º</td>
-                        <td>${fotoImg}</td>
-                        <td class="unit-col" title="${hunterName}">${hunterName}</td>
-                        <td>${metaMes}</td>
-                        <td>${metaSemana}</td>
-                        <td>${recebido}</td>
-                        <td>${faltanteMeta}</td>
-                        <td>
-                            <div class="progress-cell">
-                                <span class="progress-text">${row.realizado || '0%'}</span>
-                                <div class="progress-bar-bg">
-                                    <div class="progress-bar-fill" style="width: ${progressWidth}%;"></div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>${disponivelAno}</td>
-                        <td class="regional-col">${row.str_regional || '-'}</td>
-                    </tr>
-                `;
-            });
+            const rotCos = Math.cos(p.rot);
+            drawCartoonCoin(p.x, p.y, p.rx, p.ry, 0, p.thickness, 0, rotCos);
 
-            tableBody.innerHTML = html;
+            const surfaceY = height - (currentCashDayPct / 100) * height;
+
+            if (p.type === 'falling') {
+              // Atingiu a superfície da pilha
+              if (p.y >= surfaceY) {
+                spawnSparkle(p.x, surfaceY, 6);
+                dynamicCoins.splice(i, 1);
+              }
+            } else if (p.type === 'draining') {
+              // Passou do fundo do card
+              if (p.y > height + 25) {
+                dynamicCoins.splice(i, 1);
+              }
+            }
+          }
+
+          // 3. Atualiza e desenha brilhos/sparkles
+          for (let i = sparkles.length - 1; i >= 0; i--) {
+            const s = sparkles[i];
+            drawSparkleStar(s.x, s.y, s.size, s.life);
+            s.life -= s.decay;
+            if (s.life <= 0) sparkles.splice(i, 1);
+          }
+
+          requestAnimationFrame(animate);
         }
 
-        document.addEventListener('DOMContentLoaded', loadData);
+        resize();
+        animate();
+      }
+
+      function updateControlsUI() {
+        const btnSortPct = document.getElementById('btn-sort-pct');
+        const btnSortFalta = document.getElementById('btn-sort-falta');
+
+        if (currentSort === 'pct') {
+          btnSortPct.className = "px-3 py-1 rounded-md font-bold transition bg-v4red text-white shadow";
+          btnSortFalta.className = "px-3 py-1 rounded-md font-bold transition text-gray-400 hover:text-white";
+        } else {
+          btnSortFalta.className = "px-3 py-1 rounded-md font-bold transition bg-v4red text-white shadow";
+          btnSortPct.className = "px-3 py-1 rounded-md font-bold transition text-gray-400 hover:text-white";
+        }
+
+        const btnViewHoje = document.getElementById('view-hoje');
+        const btnViewMes = document.getElementById('view-mes');
+
+        if (currentMode === 'hoje') {
+          btnViewHoje.className = "px-2.5 py-1 rounded-md font-semibold bg-dark-700 text-white transition";
+          btnViewMes.className = "px-2.5 py-1 rounded-md font-semibold text-gray-400 hover:text-white transition";
+        } else {
+          btnViewMes.className = "px-2.5 py-1 rounded-md font-semibold bg-dark-700 text-white transition";
+          btnViewHoje.className = "px-2.5 py-1 rounded-md font-semibold text-gray-400 hover:text-white transition";
+        }
+      }
+
+      async function loadData() {
+        const statusEl = document.getElementById('data-source-status');
+        try {
+          const res = await fetch('./dados.json', { cache: 'no-store' });
+          if (!res.ok) throw new Error('dados.json não encontrado');
+          
+          const json = await res.json();
+          if (Array.isArray(json) && json.length > 0) {
+            rawData = json;
+            if (statusEl) statusEl.innerText = '(carregado de dados.json)';
+          } else {
+            throw new Error('Formato inválido');
+          }
+        } catch (err) {
+          console.warn('Utilizando dados fallback:', err.message);
+          rawData = FALLBACK_DATA;
+          if (statusEl) statusEl.innerText = '(dados embutidos)';
+        }
+
+        renderDashboard();
+      }
+
+      window.addEventListener('DOMContentLoaded', () => {
+        document.getElementById('btn-sort-pct').addEventListener('click', () => {
+          currentSort = 'pct';
+          updateControlsUI();
+          renderDashboard();
+        });
+
+        document.getElementById('btn-sort-falta').addEventListener('click', () => {
+          currentSort = 'falta';
+          updateControlsUI();
+          renderDashboard();
+        });
+
+        document.getElementById('view-hoje').addEventListener('click', () => {
+          currentMode = 'hoje';
+          updateControlsUI();
+          renderDashboard();
+        });
+
+        document.getElementById('view-mes').addEventListener('click', () => {
+          currentMode = 'mes';
+          updateControlsUI();
+          renderDashboard();
+        });
+
+        initCashDayCoinsAnimation();
+        loadData();
+      });
     </script>
-</body>
-</html>
+  </body>
+  </html>
