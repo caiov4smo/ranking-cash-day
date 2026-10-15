@@ -188,7 +188,7 @@
         </button>
       </div>
 
-      <button id="btn-fullscreen" title="Tela Cheia" class="bg-dark-850 hover:bg-dark-750 text-gray-400 hover:text-white border border-dark-800 p-1 rounded-lg text-[11px] flex items-center justify-center transition">
+      <button id="btn-fullscreen" title="Alternar Tela Cheia" class="bg-dark-850 hover:bg-dark-750 text-gray-400 hover:text-white border border-dark-800 p-1 rounded-lg text-[11px] flex items-center justify-center transition">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
         </svg>
@@ -231,7 +231,8 @@
       {"rank":"11","regional":"COLLI","destaque_hoje":"V4 Colli & Co.","destaque_mes":"V4 Colli & Co.","recebido":"452.142,86","provisionado":"1.964.110,92","realizado":"23,02%","dif":"1.511.968,06","meta_hoje":"873.778,4","realizado_hoje":"51,75%"}
     ];
 
-    let rawData = [];
+    // Carregado por padrão imediatamente com os dados locais
+    let rawData = [...FALLBACK_DATA];
     let currentMode = 'hoje';
 
     function cleanFranchiseName(name) {
@@ -442,35 +443,39 @@
       const totalFalta = Math.max(0, totalMeta - totalRecebido);
       const totalAtingimento = totalMeta > 0 ? (totalRecebido / totalMeta) * 100 : 0;
 
-      document.getElementById('kpi-deveria').innerText = formatMoney(totalMeta);
-      document.getElementById('kpi-recebido').innerText = formatMoney(totalRecebido);
-      document.getElementById('kpi-falta').innerText = formatMoney(totalFalta);
-      document.getElementById('kpi-atingimento-geral').innerText = formatPct(totalAtingimento);
+      const elDeveria = document.getElementById('kpi-deveria');
+      const elRecebido = document.getElementById('kpi-recebido');
+      const elFalta = document.getElementById('kpi-falta');
+      const elAting = document.getElementById('kpi-atingimento-geral');
+
+      if (elDeveria) elDeveria.innerText = formatMoney(totalMeta);
+      if (elRecebido) elRecebido.innerText = formatMoney(totalRecebido);
+      if (elFalta) elFalta.innerText = formatMoney(totalFalta);
+      if (elAting) elAting.innerText = formatPct(totalAtingimento);
 
       setCashDayTargetPct(totalAtingimento);
 
       items.sort((a, b) => b.pctAtingido - a.pctAtingido);
 
       const podiumContainer = document.getElementById('podium-container');
-      const first = items[0];
-      const second = items[1];
-      const third = items[2];
-
-      podiumContainer.innerHTML = `
-        ${renderPodiumCard(second, 2)}
-        ${renderPodiumCard(first, 1)}
-        ${renderPodiumCard(third, 3)}
-      `;
+      if (podiumContainer && items.length >= 3) {
+        podiumContainer.innerHTML = `
+          ${renderPodiumCard(items[1], 2)}
+          ${renderPodiumCard(items[0], 1)}
+          ${renderPodiumCard(items[2], 3)}
+        `;
+      }
 
       const gridContainer = document.getElementById('f1-grid-container');
-      gridContainer.innerHTML = '';
-
-      const gridRacers = items.slice(3);
-      gridRacers.forEach((item, idx) => {
-        const rankPos = idx + 4;
-        const isLeftColumn = idx % 2 === 0;
-        gridContainer.innerHTML += renderF1GridItem(item, rankPos, isLeftColumn);
-      });
+      if (gridContainer) {
+        gridContainer.innerHTML = '';
+        const gridRacers = items.slice(3);
+        gridRacers.forEach((item, idx) => {
+          const rankPos = idx + 4;
+          const isLeftColumn = idx % 2 === 0;
+          gridContainer.innerHTML += renderF1GridItem(item, rankPos, isLeftColumn);
+        });
+      }
     }
 
     let targetCashDayPct = 0;
@@ -785,9 +790,72 @@
       const btnViewHoje = document.getElementById('view-hoje');
       const btnViewMes = document.getElementById('view-mes');
 
-      if (currentMode === 'hoje') {
-        btnViewHoje.className = "px-2.5 py-1 rounded-md font-semibold bg-dark-700 text-white transition";
-        btnViewMes.className = "px-2.5 py-1 rounded-md font-semibold text-gray-400 hover:text-white transition";
-      } else {
-        btnViewMes.className = "px-2.5 py-1 rounded-md font-semibold bg-dark-700 text-white transition";
-        btnViewHoje.className = "px-2.5 py-1 rounded
+      if (btnViewHoje && btnViewMes) {
+        if (currentMode === 'hoje') {
+          btnViewHoje.className = "px-2.5 py-1 rounded-md font-semibold bg-dark-700 text-white transition";
+          btnViewMes.className = "px-2.5 py-1 rounded-md font-semibold text-gray-400 hover:text-white transition";
+        } else {
+          btnViewMes.className = "px-2.5 py-1 rounded-md font-semibold bg-dark-700 text-white transition";
+          btnViewHoje.className = "px-2.5 py-1 rounded-md font-semibold text-gray-400 hover:text-white transition";
+        }
+      }
+    }
+
+    async function loadData() {
+      try {
+        const res = await fetch('./dados.json', { cache: 'no-store' });
+        if (!res.ok) throw new Error('dados.json não encontrado');
+        
+        const json = await res.json();
+        if (Array.isArray(json) && json.length > 0) {
+          rawData = json;
+          renderDashboard();
+        }
+      } catch (err) {
+        // Mantém rawData com os dados de FALLBACK_DATA já renderizados
+      }
+    }
+
+    function safeAddListener(id, event, callback) {
+      const el = document.getElementById(id);
+      if (el) el.addEventListener(event, callback);
+    }
+
+    function initApp() {
+      safeAddListener('view-hoje', 'click', () => {
+        currentMode = 'hoje';
+        updateControlsUI();
+        renderDashboard();
+      });
+
+      safeAddListener('view-mes', 'click', () => {
+        currentMode = 'mes';
+        updateControlsUI();
+        renderDashboard();
+      });
+
+      safeAddListener('btn-fullscreen', 'click', () => {
+        if (!document.fullscreenElement) {
+          document.documentElement.requestFullscreen().catch(() => {});
+        } else {
+          document.exitFullscreen().catch(() => {});
+        }
+      });
+
+      initCashDayCoinsAnimation();
+      
+      // Renderiza imediatamente sem esperar nada da rede
+      renderDashboard();
+      
+      // Busca atualizações se existir o arquivo no servidor
+      loadData();
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initApp);
+    } else {
+      initApp();
+    }
+  </script>
+</body>
+</html>
