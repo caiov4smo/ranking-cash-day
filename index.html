@@ -106,6 +106,9 @@
     .glow-red {
       box-shadow: 0 0 25px rgba(255, 0, 0, 0.35);
     }
+    .glow-green {
+      box-shadow: 0 0 25px rgba(16, 185, 129, 0.45);
+    }
 
     .f1-slot-left {
       transform: translateY(-2px);
@@ -167,7 +170,7 @@
         </div>
 
         <!-- 3º: DELTA -->
-        <div class="bg-v4red rounded-xl p-2.5 sm:p-3 xl:p-4 flex flex-col justify-between glow-red shadow-lg">
+        <div id="card-delta" class="bg-v4red rounded-xl p-2.5 sm:p-3 xl:p-4 flex flex-col justify-between glow-red shadow-lg transition-all duration-300">
           <span class="text-[10px] sm:text-xs font-bold text-white/95 uppercase tracking-wider">DELTA</span>
           <div class="mt-1">
             <span id="kpi-falta" class="font-bebas text-lg sm:text-2xl lg:text-3xl xl:text-4xl text-white tracking-wide leading-none">R$ 0</span>
@@ -250,6 +253,17 @@
 
     function formatMoney(num) {
       return 'R$ ' + Math.round(num).toLocaleString('pt-BR');
+    }
+
+    function formatDeltaMoney(val) {
+      const rounded = Math.round(Math.abs(val)).toLocaleString('pt-BR');
+      if (val > 0) {
+        return `+ R$ ${rounded}`;
+      } else if (val < 0) {
+        return `- R$ ${rounded}`;
+      } else {
+        return 'R$ 0';
+      }
     }
 
     function formatPct(val) {
@@ -348,8 +362,8 @@
 
             <div class="flex justify-between items-center bg-dark-950/70 px-2 py-1 rounded border border-white/5">
               <span class="text-gray-400 uppercase tracking-wider text-[9px] sm:text-[10px] font-semibold">Delta</span>
-              <span class="font-black text-rose-400 font-bebas text-xs sm:text-sm lg:text-base tracking-wide">
-                ${item.faltaTrazer > 0 ? 'Falta ' + formatMoney(item.faltaTrazer) : 'META ATINGIDA!'}
+              <span class="font-black ${item.deltaVal >= 0 ? 'text-emerald-400' : 'text-rose-400'} font-bebas text-xs sm:text-sm lg:text-base tracking-wide">
+                ${formatDeltaMoney(item.deltaVal)}
               </span>
             </div>
           </div>
@@ -416,6 +430,7 @@
         
         const metaAlvo = currentMode === 'hoje' ? metaHoje : provisionado;
         const pctAtingido = metaAlvo > 0 ? (recebido / metaAlvo) * 100 : 0;
+        const deltaVal = recebido - metaAlvo;
         const faltaTrazer = Math.max(0, metaAlvo - recebido);
 
         const regionalName = item.regional || 'Sem Nome';
@@ -435,24 +450,44 @@
           recebido,
           metaAlvo,
           pctAtingido,
+          deltaVal,
           faltaTrazer
         };
       });
 
       const totalRecebido = items.reduce((acc, curr) => acc + curr.recebido, 0);
       const totalMeta = items.reduce((acc, curr) => acc + curr.metaAlvo, 0);
-      const totalFalta = Math.max(0, totalMeta - totalRecebido);
+      const totalDelta = totalRecebido - totalMeta;
       const totalAtingimento = totalMeta > 0 ? (totalRecebido / totalMeta) * 100 : 0;
 
       const elDeveria = document.getElementById('kpi-deveria');
       const elRecebido = document.getElementById('kpi-recebido');
       const elFalta = document.getElementById('kpi-falta');
+      const cardDelta = document.getElementById('card-delta');
       const elAting = document.getElementById('kpi-atingimento-geral');
 
       if (elDeveria) elDeveria.innerText = formatMoney(totalMeta);
       if (elRecebido) elRecebido.innerText = formatMoney(totalRecebido);
-      if (elFalta) elFalta.innerText = formatMoney(totalFalta);
-      if (elAting) elAting.innerText = formatPct(totalAtingimento);
+      if (elFalta) elFalta.innerText = formatDeltaMoney(totalDelta);
+
+      if (cardDelta) {
+        if (totalDelta >= 0) {
+          cardDelta.classList.remove('bg-v4red', 'glow-red');
+          cardDelta.classList.add('bg-emerald-600', 'glow-green');
+        } else {
+          cardDelta.classList.remove('bg-emerald-600', 'glow-green');
+          cardDelta.classList.add('bg-v4red', 'glow-red');
+        }
+      }
+
+      if (elAting) {
+        elAting.innerText = formatPct(totalAtingimento);
+        if (totalAtingimento >= 100) {
+          elAting.className = "font-bebas text-3xl sm:text-4xl xl:text-5xl text-emerald-400 leading-none";
+        } else {
+          elAting.className = "font-bebas text-3xl sm:text-4xl xl:text-5xl text-v4red leading-none";
+        }
+      }
 
       setCashDayTargetPct(totalAtingimento);
 
