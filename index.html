@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="icon" type="image/jpg" href="./favicon.jpg">
+  <link rel="icon" type="image/jpg" href="./favicon.jpg">
   <title>Cash Day</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -138,6 +138,7 @@
 
     <header class="flex flex-col lg:flex-row items-stretch justify-between gap-2.5 sm:gap-3 pb-3 border-b border-dark-800/80">
       
+      <!-- Card Cash Day -->
       <div id="cashday-card" class="bg-dark-850 border border-dark-750/70 rounded-xl px-3 py-2 sm:px-4 sm:py-2.5 flex items-center justify-center shrink-0 min-w-[160px] sm:min-w-[210px] overflow-hidden relative group shadow-inner">
         <canvas id="cashday-canvas" class="absolute inset-0 w-full h-full pointer-events-none z-0"></canvas>
         <div class="absolute inset-0 bg-gradient-to-t from-dark-950/60 via-transparent to-transparent pointer-events-none z-[1]"></div>
@@ -147,14 +148,9 @@
         </h1>
       </div>
 
+      <!-- Cards de Métricas: Realizado (Recebido) primeiro, Meta em segundo -->
       <div class="flex-1 grid grid-cols-3 gap-2 sm:gap-3 items-stretch">
-        <div class="bg-dark-850 border border-dark-750/70 rounded-xl p-2.5 sm:p-3 xl:p-4 flex flex-col justify-between">
-          <span class="text-[10px] sm:text-xs font-bold text-gray-400 uppercase tracking-wider">META</span>
-          <div class="mt-1">
-            <span id="kpi-deveria" class="font-bebas text-lg sm:text-2xl lg:text-3xl xl:text-4xl text-white tracking-wide leading-none">R$ 0</span>
-          </div>
-        </div>
-
+        <!-- 1º: REALIZADO (RECEBIDO) -->
         <div class="bg-dark-850 border border-dark-750/70 rounded-xl p-2.5 sm:p-3 xl:p-4 flex flex-col justify-between">
           <span class="text-[10px] sm:text-xs font-bold text-gray-400 uppercase tracking-wider">REALIZADO</span>
           <div class="mt-1">
@@ -162,6 +158,15 @@
           </div>
         </div>
 
+        <!-- 2º: META -->
+        <div class="bg-dark-850 border border-dark-750/70 rounded-xl p-2.5 sm:p-3 xl:p-4 flex flex-col justify-between">
+          <span class="text-[10px] sm:text-xs font-bold text-gray-400 uppercase tracking-wider">META</span>
+          <div class="mt-1">
+            <span id="kpi-deveria" class="font-bebas text-lg sm:text-2xl lg:text-3xl xl:text-4xl text-white tracking-wide leading-none">R$ 0</span>
+          </div>
+        </div>
+
+        <!-- 3º: DELTA -->
         <div class="bg-v4red rounded-xl p-2.5 sm:p-3 xl:p-4 flex flex-col justify-between glow-red shadow-lg">
           <span class="text-[10px] sm:text-xs font-bold text-white/95 uppercase tracking-wider">DELTA</span>
           <div class="mt-1">
@@ -170,6 +175,7 @@
         </div>
       </div>
 
+      <!-- Atingimento e Alternador Hoje/Mês -->
       <div class="flex items-center gap-2 sm:gap-3 shrink-0">
         <div class="bg-dark-850 border border-dark-750/70 rounded-xl px-3 py-2 sm:px-4 sm:py-3 flex flex-col items-center justify-center shrink-0 min-w-[90px] sm:min-w-[115px] h-full">
           <span class="text-[9px] sm:text-[11px] font-semibold text-gray-400 uppercase tracking-wider mb-0.5">ATING.</span>
