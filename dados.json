@@ -16,24 +16,24 @@
     "regional": "RS",
     "destaque_hoje": "V4 Company Lencina Oliveira & Associados",
     "destaque_mes": "V4 Company Lencina Oliveira & Associados",
-    "recebido": 1844083.6100000003,
+    "recebido": 1844083.6100000008,
     "provisionado": 3628635.33,
-    "realizado": 0.5082030687277689,
-    "dif": 1784551.7199999997,
+    "realizado": 0.508203068727769,
+    "dif": 1784551.7199999993,
     "meta_hoje": 2331268.17,
-    "realizado_hoje": 0.7910216566805356
+    "realizado_hoje": 0.7910216566805357
   },
   {
     "rank": 3,
     "regional": "MG1",
     "destaque_hoje": "V4 Company Pedro Rosa & Co",
     "destaque_mes": "V4 Company Pedro Rosa & Co",
-    "recebido": 1812542.6100000003,
+    "recebido": 1812542.61,
     "provisionado": 3672721.13,
-    "realizado": 0.4935149023960881,
-    "dif": 1860178.5199999996,
+    "realizado": 0.49351490239608803,
+    "dif": 1860178.5199999998,
     "meta_hoje": 2328106.22,
-    "realizado_hoje": 0.7785480724328807
+    "realizado_hoje": 0.7785480724328806
   },
   {
     "rank": 4,
@@ -52,36 +52,36 @@
     "regional": "RJ",
     "destaque_hoje": "V4 Company ALPS & Co.",
     "destaque_mes": "V4 Company ALPS & Co.",
-    "recebido": 926003.3000000002,
+    "recebido": 926003.3000000003,
     "provisionado": 2044163.19,
-    "realizado": 0.4529987158217051,
+    "realizado": 0.45299871582170514,
     "dif": 1118159.8899999997,
     "meta_hoje": 1391212.65,
-    "realizado_hoje": 0.66560874069108
+    "realizado_hoje": 0.6656087406910801
   },
   {
     "rank": 6,
     "regional": "SC",
     "destaque_hoje": "V4 Company Kuerten Ávila & Associados",
     "destaque_mes": "V4 Company Nk & Co.",
-    "recebido": 1342779.9400000002,
+    "recebido": 1342779.9399999997,
     "provisionado": 3167692.36,
-    "realizado": 0.42389846847375046,
-    "dif": 1824912.4199999997,
+    "realizado": 0.42389846847375034,
+    "dif": 1824912.4200000002,
     "meta_hoje": 1905588.15,
-    "realizado_hoje": 0.7046538046534349
+    "realizado_hoje": 0.7046538046534345
   },
   {
     "rank": 7,
     "regional": "SP1",
     "destaque_hoje": "V4 Company Ferreira Dias & Co",
     "destaque_mes": "V4 Company Agp & Co.",
-    "recebido": 2260601.84,
+    "recebido": 2260601.8400000003,
     "provisionado": 5504323.54,
-    "realizado": 0.4106956692447624,
-    "dif": 3243721.7,
+    "realizado": 0.41069566924476253,
+    "dif": 3243721.6999999997,
     "meta_hoje": 3295945.78,
-    "realizado_hoje": 0.6858734915232738
+    "realizado_hoje": 0.6858734915232739
   },
   {
     "rank": 8,
