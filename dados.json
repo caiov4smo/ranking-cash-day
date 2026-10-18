@@ -16,72 +16,72 @@
     "regional": "RS",
     "destaque_hoje": "V4 Company Lencina Oliveira & Associados",
     "destaque_mes": "V4 Company Lencina Oliveira & Associados",
-    "recebido": 1844083.6100000013,
+    "recebido": 1844083.609999999,
     "provisionado": 3628635.33,
-    "realizado": 0.5082030687277691,
-    "dif": 1784551.7199999988,
+    "realizado": 0.5082030687277684,
+    "dif": 1784551.7200000011,
     "meta_hoje": 2331268.17,
-    "realizado_hoje": 0.7910216566805359
+    "realizado_hoje": 0.7910216566805349
   },
   {
     "rank": 3,
     "regional": "MG1",
     "destaque_hoje": "V4 Company Pedro Rosa & Co",
     "destaque_mes": "V4 Company Pedro Rosa & Co",
-    "recebido": 1812542.6100000006,
+    "recebido": 1812542.6100000003,
     "provisionado": 3672721.13,
-    "realizado": 0.49351490239608814,
-    "dif": 1860178.5199999993,
+    "realizado": 0.4935149023960881,
+    "dif": 1860178.5199999996,
     "meta_hoje": 2328106.22,
-    "realizado_hoje": 0.7785480724328808
+    "realizado_hoje": 0.7785480724328807
   },
   {
     "rank": 4,
     "regional": "NE",
     "destaque_hoje": "V4 Company Lopes Santana & Associados",
     "destaque_mes": "V4 Company Affonso & Associados",
-    "recebido": 1136742.4499999995,
+    "recebido": 1136742.4499999997,
     "provisionado": 2414665.11,
-    "realizado": 0.4707660889670947,
-    "dif": 1277922.6600000004,
+    "realizado": 0.4707660889670948,
+    "dif": 1277922.6600000001,
     "meta_hoje": 1591004.81,
-    "realizado_hoje": 0.7144808380560455
+    "realizado_hoje": 0.7144808380560457
   },
   {
     "rank": 5,
     "regional": "RJ",
     "destaque_hoje": "V4 Company ALPS & Co.",
     "destaque_mes": "V4 Company ALPS & Co.",
-    "recebido": 926003.3,
+    "recebido": 926003.3000000002,
     "provisionado": 2044163.19,
-    "realizado": 0.45299871582170503,
-    "dif": 1118159.89,
+    "realizado": 0.4529987158217051,
+    "dif": 1118159.8899999997,
     "meta_hoje": 1391212.65,
-    "realizado_hoje": 0.6656087406910799
+    "realizado_hoje": 0.66560874069108
   },
   {
     "rank": 6,
     "regional": "SC",
     "destaque_hoje": "V4 Company Kuerten Ávila & Associados",
     "destaque_mes": "V4 Company Nk & Co.",
-    "recebido": 1342779.9400000004,
+    "recebido": 1342779.9399999997,
     "provisionado": 3167692.36,
-    "realizado": 0.42389846847375057,
-    "dif": 1824912.4199999995,
+    "realizado": 0.42389846847375034,
+    "dif": 1824912.4200000002,
     "meta_hoje": 1905588.15,
-    "realizado_hoje": 0.704653804653435
+    "realizado_hoje": 0.7046538046534345
   },
   {
     "rank": 7,
     "regional": "SP1",
     "destaque_hoje": "V4 Company Ferreira Dias & Co",
     "destaque_mes": "V4 Company Agp & Co.",
-    "recebido": 2260601.84,
+    "recebido": 2260601.8400000003,
     "provisionado": 5504323.54,
-    "realizado": 0.4106956692447624,
-    "dif": 3243721.7,
+    "realizado": 0.41069566924476253,
+    "dif": 3243721.6999999997,
     "meta_hoje": 3295945.78,
-    "realizado_hoje": 0.6858734915232738
+    "realizado_hoje": 0.6858734915232739
   },
   {
     "rank": 8,
@@ -112,23 +112,23 @@
     "regional": "COLLI",
     "destaque_hoje": "V4 Colli & Co.",
     "destaque_mes": "V4 Colli & Co.",
-    "recebido": 674802.3700000003,
+    "recebido": 674802.3700000002,
     "provisionado": 1934506.54,
-    "realizado": 0.3488240313728794,
-    "dif": 1259704.1699999997,
+    "realizado": 0.3488240313728793,
+    "dif": 1259704.17,
     "meta_hoje": 1380914.58,
-    "realizado_hoje": 0.48866336830189766
+    "realizado_hoje": 0.48866336830189755
   },
   {
     "rank": 11,
     "regional": "NUNES",
     "destaque_hoje": "V4 Company Nunes & Associados",
     "destaque_mes": "V4 Company Nunes & Associados",
-    "recebido": 357037.19000000006,
+    "recebido": 357037.19,
     "provisionado": 1068486.38,
-    "realizado": 0.33415230805281776,
-    "dif": 711449.1899999998,
+    "realizado": 0.3341523080528177,
+    "dif": 711449.19,
     "meta_hoje": 580301.17,
-    "realizado_hoje": 0.6152618820327383
+    "realizado_hoje": 0.6152618820327382
   }
 ]
