@@ -4,10 +4,10 @@
     "regional": "PR",
     "destaque_hoje": "V4 Company Kuri & Associados",
     "destaque_mes": "V4 Company Kuri & Associados",
-    "recebido": 506951.4100000001,
+    "recebido": 506951.41000000003,
     "provisionado": 814653.17,
-    "realizado": 0.6222910910663983,
-    "dif": 307701.75999999995,
+    "realizado": 0.6222910910663982,
+    "dif": 307701.76,
     "meta_hoje": 581086.68,
     "realizado_hoje": 0.8724196018397806
   },
@@ -16,48 +16,48 @@
     "regional": "RS",
     "destaque_hoje": "V4 Company Davi & Co.",
     "destaque_mes": "V4 Company Davi & Co.",
-    "recebido": 2169748.630000001,
+    "recebido": 2169748.6300000013,
     "provisionado": 3654288.83,
-    "realizado": 0.5937540054818274,
-    "dif": 1484540.1999999993,
+    "realizado": 0.5937540054818276,
+    "dif": 1484540.1999999988,
     "meta_hoje": 2812351.22,
-    "realizado_hoje": 0.771506991932537
+    "realizado_hoje": 0.7715069919325372
   },
   {
     "rank": 3,
     "regional": "MG1",
     "destaque_hoje": "V4 Company Pedro Rosa & Co",
     "destaque_mes": "V4 Company Pedro Rosa & Co",
-    "recebido": 2116754.5500000007,
+    "recebido": 2116754.5500000003,
     "provisionado": 3693528.29,
-    "realizado": 0.5730982366456981,
-    "dif": 1576773.7399999993,
+    "realizado": 0.573098236645698,
+    "dif": 1576773.7399999998,
     "meta_hoje": 2757891.19,
-    "realizado_hoje": 0.767526491862792
+    "realizado_hoje": 0.7675264918627919
   },
   {
     "rank": 4,
     "regional": "NE",
     "destaque_hoje": "V4 Company Affonso & Associados",
     "destaque_mes": "V4 Company Affonso & Associados",
-    "recebido": 1329939.4499999997,
+    "recebido": 1329939.4500000002,
     "provisionado": 2392107.65,
-    "realizado": 0.5559697323822361,
-    "dif": 1062168.2000000002,
+    "realizado": 0.5559697323822363,
+    "dif": 1062168.1999999997,
     "meta_hoje": 1939000.38,
-    "realizado_hoje": 0.6858892157617833
+    "realizado_hoje": 0.6858892157617835
   },
   {
     "rank": 5,
     "regional": "SC",
     "destaque_hoje": "V4 Company Kuerten Ávila & Associados",
     "destaque_mes": "V4 Company Nk & Co.",
-    "recebido": 1742270.7799999993,
+    "recebido": 1746003.3799999994,
     "provisionado": 3143059.67,
-    "realizado": 0.5543231637088198,
-    "dif": 1400788.8900000006,
+    "realizado": 0.5555107326358839,
+    "dif": 1397056.2900000005,
     "meta_hoje": 2487168.11,
-    "realizado_hoje": 0.7005038272221975
+    "realizado_hoje": 0.7020045701695651
   },
   {
     "rank": 6,
@@ -124,11 +124,11 @@
     "regional": "COLLI",
     "destaque_hoje": "V4 Company Colli & Associados",
     "destaque_mes": "V4 Company Colli & Associados",
-    "recebido": 806906.3400000001,
+    "recebido": 806906.3400000002,
     "provisionado": 2031820.81,
-    "realizado": 0.3971345977109074,
-    "dif": 1224914.47,
+    "realizado": 0.3971345977109075,
+    "dif": 1224914.4699999997,
     "meta_hoje": 1658782.87,
-    "realizado_hoje": 0.4864448232456126
+    "realizado_hoje": 0.4864448232456127
   }
 ]
