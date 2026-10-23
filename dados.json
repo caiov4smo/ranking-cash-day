@@ -16,72 +16,72 @@
     "regional": "RS",
     "destaque_hoje": "V4 Company Davi & Co.",
     "destaque_mes": "V4 Company Davi & Co.",
-    "recebido": 2427396.4100000006,
+    "recebido": 2432113.6100000013,
     "provisionado": 3701055.17,
-    "realizado": 0.6558660431965408,
-    "dif": 1273658.7599999993,
+    "realizado": 0.6571405986363617,
+    "dif": 1268941.5599999987,
     "meta_hoje": 3017200.99,
-    "realizado_hoje": 0.8045192938903286
+    "realizado_hoje": 0.8060827296758911
   },
   {
     "rank": 3,
     "regional": "MG1",
     "destaque_hoje": "V4 Company Pedro Rosa & Co",
     "destaque_mes": "V4 Company SBN & Co.",
-    "recebido": 2390310.87,
+    "recebido": 2390310.8700000006,
     "provisionado": 3705675.85,
-    "realizado": 0.645040464076209,
-    "dif": 1315364.98,
+    "realizado": 0.6450404640762091,
+    "dif": 1315364.9799999995,
     "meta_hoje": 2911489.42,
-    "realizado_hoje": 0.8209924630260206
+    "realizado_hoje": 0.8209924630260208
   },
   {
     "rank": 4,
     "regional": "NE",
     "destaque_hoje": "V4 Company Affonso & Associados",
     "destaque_mes": "V4 Company Affonso & Associados",
-    "recebido": 1543187.0199999996,
+    "recebido": 1543187.019999999,
     "provisionado": 2462750.72,
-    "realizado": 0.6266111334240111,
-    "dif": 919563.7000000007,
+    "realizado": 0.6266111334240109,
+    "dif": 919563.7000000011,
     "meta_hoje": 2079457.09,
-    "realizado_hoje": 0.7421105380924208
+    "realizado_hoje": 0.7421105380924206
   },
   {
     "rank": 5,
     "regional": "SC",
     "destaque_hoje": "V4 Company Kuerten Ávila & Associados",
     "destaque_mes": "V4 Company Nk & Co.",
-    "recebido": 1991234.7399999988,
+    "recebido": 1991234.7400000002,
     "provisionado": 3227011.01,
-    "realizado": 0.6170523539676424,
-    "dif": 1235776.270000001,
+    "realizado": 0.6170523539676428,
+    "dif": 1235776.2699999996,
     "meta_hoje": 2701153.24,
-    "realizado_hoje": 0.7371794796803156
+    "realizado_hoje": 0.7371794796803162
   },
   {
     "rank": 6,
     "regional": "SP3",
     "destaque_hoje": "V4 Company Sousa Gonçalves & Associados",
     "destaque_mes": "V4 Company Vera Ribeiro & Co",
-    "recebido": 2104059.3600000003,
+    "recebido": 2104059.359999999,
     "provisionado": 3454972.66,
-    "realizado": 0.6089945035918172,
-    "dif": 1350913.2999999998,
+    "realizado": 0.6089945035918168,
+    "dif": 1350913.3000000012,
     "meta_hoje": 2694128.94,
-    "realizado_hoje": 0.780979458243747
+    "realizado_hoje": 0.7809794582437465
   },
   {
     "rank": 7,
     "regional": "SP1",
     "destaque_hoje": "V4 Company Ferreira Dias & Co",
     "destaque_mes": "V4 Company Cotta CNG & CO",
-    "recebido": 3241458.23,
+    "recebido": 3241458.2300000004,
     "provisionado": 5384425.82,
-    "realizado": 0.6020062934027012,
-    "dif": 2142967.5900000003,
+    "realizado": 0.6020062934027013,
+    "dif": 2142967.59,
     "meta_hoje": 4123654.87,
-    "realizado_hoje": 0.7860643851603419
+    "realizado_hoje": 0.786064385160342
   },
   {
     "rank": 8,
@@ -112,23 +112,23 @@
     "regional": "NUNES",
     "destaque_hoje": "V4 Company Nunes & Associados",
     "destaque_mes": "V4 Company Nunes & Associados",
-    "recebido": 601375.5900000002,
+    "recebido": 601375.59,
     "provisionado": 1092098.44,
-    "realizado": 0.5506606071152342,
-    "dif": 490722.84999999974,
+    "realizado": 0.550660607115234,
+    "dif": 490722.85,
     "meta_hoje": 825369.51,
-    "realizado_hoje": 0.7286137696072638
+    "realizado_hoje": 0.7286137696072635
   },
   {
     "rank": 11,
     "regional": "COLLI",
     "destaque_hoje": "V4 Company Colli & Associados",
     "destaque_mes": "V4 Company Colli & Associados",
-    "recebido": 1201852.2199999997,
+    "recebido": 1201852.2199999995,
     "provisionado": 2264241.88,
-    "realizado": 0.5307967450897957,
-    "dif": 1062389.6600000001,
+    "realizado": 0.5307967450897956,
+    "dif": 1062389.6600000004,
     "meta_hoje": 1873572.3,
-    "realizado_hoje": 0.6414762963777804
+    "realizado_hoje": 0.6414762963777803
   }
 ]
