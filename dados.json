@@ -4,12 +4,12 @@
     "regional": "RS",
     "destaque_hoje": "V4 Company Lencina Oliveira & Associados",
     "destaque_mes": "V4 Company Dcastel & Co",
-    "recebido": 2513800.439999999,
+    "recebido": 2513800.4399999995,
     "provisionado": 3686609.83,
-    "realizado": 0.6818731994755189,
-    "dif": 1172809.390000001,
+    "realizado": 0.681873199475519,
+    "dif": 1172809.3900000006,
     "meta_hoje": 3043703.79,
-    "realizado_hoje": 0.8259018003851153
+    "realizado_hoje": 0.8259018003851155
   },
   {
     "rank": 2,
@@ -28,60 +28,60 @@
     "regional": "MG1",
     "destaque_hoje": "V4 Company Pedro Rosa & Co",
     "destaque_mes": "V4 Company SBN & Co.",
-    "recebido": 2465244.4600000014,
+    "recebido": 2465244.46,
     "provisionado": 3733952.37,
-    "realizado": 0.6602238635411414,
-    "dif": 1268707.9099999988,
+    "realizado": 0.6602238635411409,
+    "dif": 1268707.9100000001,
     "meta_hoje": 2913510.26,
-    "realizado_hoje": 0.8461423643656575
+    "realizado_hoje": 0.846142364365657
   },
   {
     "rank": 4,
     "regional": "SP3",
     "destaque_hoje": "V4 Company Sousa Gonçalves & Associados",
     "destaque_mes": "V4 Company Vera Ribeiro & Co",
-    "recebido": 2251737.4,
+    "recebido": 2251737.3999999994,
     "provisionado": 3449918.78,
-    "realizado": 0.6526928729609107,
-    "dif": 1198181.38,
+    "realizado": 0.6526928729609106,
+    "dif": 1198181.3800000004,
     "meta_hoje": 2718411.47,
-    "realizado_hoje": 0.8283283913601203
+    "realizado_hoje": 0.82832839136012
   },
   {
     "rank": 5,
     "regional": "SC",
     "destaque_hoje": "V4 Company Kuerten Ávila & Associados",
     "destaque_mes": "V4 Company Nk & Co.",
-    "recebido": 2055083.1899999988,
+    "recebido": 2055083.1899999997,
     "provisionado": 3195804.53,
-    "realizado": 0.6430565983333151,
-    "dif": 1140721.340000001,
+    "realizado": 0.6430565983333154,
+    "dif": 1140721.34,
     "meta_hoje": 2686126.72,
-    "realizado_hoje": 0.7650730602910643
+    "realizado_hoje": 0.7650730602910646
   },
   {
     "rank": 6,
     "regional": "COLLI",
     "destaque_hoje": "V4 Company Colli & Associados",
     "destaque_mes": "V4 Company Colli & Associados",
-    "recebido": 1366591.1699999995,
+    "recebido": 1366591.1699999997,
     "provisionado": 2146278.07,
-    "realizado": 0.6367260557249227,
-    "dif": 779686.9000000004,
+    "realizado": 0.6367260557249228,
+    "dif": 779686.9000000001,
     "meta_hoje": 1782372.03,
-    "realizado_hoje": 0.7667261082412741
+    "realizado_hoje": 0.7667261082412742
   },
   {
     "rank": 7,
     "regional": "SP1",
     "destaque_hoje": "V4 Company Ferreira Dias & Co",
     "destaque_mes": "V4 Company Cotta CNG & CO",
-    "recebido": 3416184.26,
+    "recebido": 3416184.2600000002,
     "provisionado": 5420620.9,
-    "realizado": 0.6302201026454367,
-    "dif": 2004436.6400000006,
+    "realizado": 0.6302201026454368,
+    "dif": 2004436.6400000001,
     "meta_hoje": 4173667.9,
-    "realizado_hoje": 0.8185088851942436
+    "realizado_hoje": 0.8185088851942437
   },
   {
     "rank": 8,
@@ -112,23 +112,23 @@
     "regional": "MG2",
     "destaque_hoje": "V4 Company Menezes & Co.",
     "destaque_mes": "V4 Company Menezes & Co.",
-    "recebido": 842376.3999999999,
+    "recebido": 842376.4000000001,
     "provisionado": 1381888.55,
-    "realizado": 0.6095834573634754,
-    "dif": 539512.1500000001,
+    "realizado": 0.6095834573634756,
+    "dif": 539512.1499999999,
     "meta_hoje": 1119121.95,
-    "realizado_hoje": 0.7527118916754335
+    "realizado_hoje": 0.7527118916754337
   },
   {
     "rank": 11,
     "regional": "NUNES",
     "destaque_hoje": "V4 Company Nunes & Associados",
     "destaque_mes": "V4 Company Nunes & Associados",
-    "recebido": 610875.5900000001,
+    "recebido": 610875.59,
     "provisionado": 1077732.89,
-    "realizado": 0.5668153915206208,
-    "dif": 466857.2999999998,
+    "realizado": 0.5668153915206207,
+    "dif": 466857.29999999993,
     "meta_hoje": 830522.41,
-    "realizado_hoje": 0.7355317359828979
+    "realizado_hoje": 0.7355317359828978
   }
 ]
