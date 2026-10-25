@@ -4,60 +4,60 @@
     "regional": "RS",
     "destaque_hoje": "V4 Company Lencina Oliveira & Associados",
     "destaque_mes": "V4 Company Dcastel & Co",
-    "recebido": 2518587.39,
+    "recebido": 2518587.3900000015,
     "provisionado": 3688147.89,
-    "realizado": 0.6828867673199515,
-    "dif": 1169560.5,
+    "realizado": 0.6828867673199519,
+    "dif": 1169560.4999999986,
     "meta_hoje": 3321108.68,
-    "realizado_hoje": 0.7583574139464777
+    "realizado_hoje": 0.758357413946478
   },
   {
     "rank": 2,
     "regional": "PR",
     "destaque_hoje": "V4 Company Kuri & Associados",
     "destaque_mes": "V4 Company Kuri & Associados",
-    "recebido": 545509.8999999999,
+    "recebido": 545509.9,
     "provisionado": 799764.38,
-    "realizado": 0.6820882670468519,
-    "dif": 254254.4800000001,
+    "realizado": 0.682088267046852,
+    "dif": 254254.47999999998,
     "meta_hoje": 701350.8,
-    "realizado_hoje": 0.7777989274411605
+    "realizado_hoje": 0.7777989274411606
   },
   {
     "rank": 3,
     "regional": "MG1",
     "destaque_hoje": "V4 Company Pedro Rosa & Co",
     "destaque_mes": "V4 Company SBN & Co.",
-    "recebido": 2465244.4600000004,
+    "recebido": 2465244.460000001,
     "provisionado": 3732508.57,
-    "realizado": 0.660479249750256,
-    "dif": 1267264.1099999994,
+    "realizado": 0.6604792497502561,
+    "dif": 1267264.109999999,
     "meta_hoje": 3280503.65,
-    "realizado_hoje": 0.7514835290611551
+    "realizado_hoje": 0.7514835290611552
   },
   {
     "rank": 4,
     "regional": "SP3",
     "destaque_hoje": "V4 Company Vera Ribeiro & Co",
     "destaque_mes": "V4 Company Vera Ribeiro & Co",
-    "recebido": 2251737.4000000004,
+    "recebido": 2251737.3999999994,
     "provisionado": 3448584.81,
-    "realizado": 0.652945345427071,
-    "dif": 1196847.4099999997,
+    "realizado": 0.6529453454270708,
+    "dif": 1196847.4100000006,
     "meta_hoje": 2931425.87,
-    "realizado_hoje": 0.7681372478301831
+    "realizado_hoje": 0.7681372478301829
   },
   {
     "rank": 5,
     "regional": "SC",
     "destaque_hoje": "V4 Company Kuerten Ávila & Associados",
     "destaque_mes": "V4 Company Kuerten Ávila & Associados",
-    "recebido": 2061335.3099999991,
+    "recebido": 2061335.3099999994,
     "provisionado": 3198673.29,
     "realizado": 0.6444344648902856,
-    "dif": 1137337.980000001,
+    "dif": 1137337.9800000007,
     "meta_hoje": 2896289.28,
-    "realizado_hoje": 0.711715961604498
+    "realizado_hoje": 0.7117159616044981
   },
   {
     "rank": 6,
@@ -76,24 +76,24 @@
     "regional": "SP1",
     "destaque_hoje": "V4 Company Ferreira Dias & Co",
     "destaque_mes": "V4 Company Cotta CNG & CO",
-    "recebido": 3419320.9399999995,
+    "recebido": 3419320.9400000004,
     "provisionado": 5421585.8,
-    "realizado": 0.6306864939774631,
-    "dif": 2002264.8600000003,
+    "realizado": 0.6306864939774633,
+    "dif": 2002264.8599999994,
     "meta_hoje": 4562808.68,
-    "realizado_hoje": 0.7493895054131439
+    "realizado_hoje": 0.7493895054131441
   },
   {
     "rank": 8,
     "regional": "NE",
     "destaque_hoje": "V4 Company Affonso & Associados",
     "destaque_mes": "V4 Company Affonso & Associados",
-    "recebido": 1778171.5699999994,
+    "recebido": 1778171.5699999987,
     "provisionado": 2831317.33,
-    "realizado": 0.6280368332997839,
-    "dif": 1053145.7600000007,
+    "realizado": 0.6280368332997837,
+    "dif": 1053145.7600000014,
     "meta_hoje": 2551887.15,
-    "realizado_hoje": 0.6968065065102896
+    "realizado_hoje": 0.6968065065102893
   },
   {
     "rank": 9,
@@ -112,12 +112,12 @@
     "regional": "MG2",
     "destaque_hoje": "V4 Company Menezes & Co.",
     "destaque_mes": "V4 Company Menezes & Co.",
-    "recebido": 842376.4,
+    "recebido": 842376.4000000001,
     "provisionado": 1381354.22,
-    "realizado": 0.6098192540360864,
-    "dif": 538977.82,
+    "realizado": 0.6098192540360865,
+    "dif": 538977.8199999998,
     "meta_hoje": 1227270.32,
-    "realizado_hoje": 0.6863821166961814
+    "realizado_hoje": 0.6863821166961815
   },
   {
     "rank": 11,
