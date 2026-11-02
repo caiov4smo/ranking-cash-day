@@ -4,36 +4,36 @@
     "regional": "RS",
     "destaque_hoje": "V4 Company Kessler & Co.",
     "destaque_mes": "V4 Company Kessler & Co.",
-    "recebido": 3809838.1300000018,
+    "recebido": 3809838.130000003,
     "provisionado": 3750562.05,
-    "realizado": 1.0158045858753362,
-    "dif": -59276.08000000194,
+    "realizado": 1.0158045858753366,
+    "dif": -59276.080000003334,
     "meta_hoje": 3750562.05,
-    "realizado_hoje": 1.0158045858753362
+    "realizado_hoje": 1.0158045858753366
   },
   {
     "rank": 2,
     "regional": "PR",
     "destaque_hoje": "V4 Company Kuri & Associados",
     "destaque_mes": "V4 Company Kuri & Associados",
-    "recebido": 781370.1,
+    "recebido": 781370.1000000001,
     "provisionado": 789437.05,
-    "realizado": 0.989781389155728,
-    "dif": 8066.95000000007,
+    "realizado": 0.9897813891557282,
+    "dif": 8066.949999999953,
     "meta_hoje": 789437.05,
-    "realizado_hoje": 0.989781389155728
+    "realizado_hoje": 0.9897813891557282
   },
   {
     "rank": 3,
     "regional": "SC",
     "destaque_hoje": "V4 Company Fernandes & Co",
     "destaque_mes": "V4 Company Fernandes & Co",
-    "recebido": 3042350.2199999997,
+    "recebido": 3042350.219999999,
     "provisionado": 3249867.19,
-    "realizado": 0.9361460152468568,
-    "dif": 207516.9700000002,
+    "realizado": 0.9361460152468566,
+    "dif": 207516.97000000114,
     "meta_hoje": 3249867.19,
-    "realizado_hoje": 0.9361460152468568
+    "realizado_hoje": 0.9361460152468566
   },
   {
     "rank": 4,
@@ -52,24 +52,24 @@
     "regional": "MG1",
     "destaque_hoje": "V4 Company Sousa Ferraz & Co.",
     "destaque_mes": "V4 Company Sousa Ferraz & Co.",
-    "recebido": 3164107.13,
+    "recebido": 3164107.1300000004,
     "provisionado": 3461605.26,
-    "realizado": 0.9140577542339418,
-    "dif": 297498.1299999999,
+    "realizado": 0.9140577542339419,
+    "dif": 297498.1299999994,
     "meta_hoje": 3461605.26,
-    "realizado_hoje": 0.9140577542339418
+    "realizado_hoje": 0.9140577542339419
   },
   {
     "rank": 6,
     "regional": "SP1",
     "destaque_hoje": "V4 Company Rossi & Co",
     "destaque_mes": "V4 Company Rossi & Co",
-    "recebido": 5128741.300000001,
+    "recebido": 5128741.3,
     "provisionado": 5619771.01,
-    "realizado": 0.9126246053217747,
-    "dif": 491029.70999999903,
+    "realizado": 0.9126246053217745,
+    "dif": 491029.70999999996,
     "meta_hoje": 5619771.01,
-    "realizado_hoje": 0.9126246053217747
+    "realizado_hoje": 0.9126246053217745
   },
   {
     "rank": 7,
@@ -88,36 +88,36 @@
     "regional": "NE",
     "destaque_hoje": "V4 Company Affonso & Associados",
     "destaque_mes": "V4 Company Affonso & Associados",
-    "recebido": 2504816.52,
+    "recebido": 2504816.5200000005,
     "provisionado": 2824817.93,
-    "realizado": 0.8867178636182049,
-    "dif": 320001.41000000015,
+    "realizado": 0.886717863618205,
+    "dif": 320001.4099999997,
     "meta_hoje": 2824817.93,
-    "realizado_hoje": 0.8867178636182049
+    "realizado_hoje": 0.886717863618205
   },
   {
     "rank": 9,
     "regional": "COLLI",
     "destaque_hoje": "V4 Company Colli & Associados",
     "destaque_mes": "V4 Company Colli & Associados",
-    "recebido": 2276459.22,
+    "recebido": 2276459.2199999997,
     "provisionado": 2629187.1,
-    "realizado": 0.8658414686425322,
-    "dif": 352727.8799999999,
+    "realizado": 0.865841468642532,
+    "dif": 352727.88000000035,
     "meta_hoje": 2629187.1,
-    "realizado_hoje": 0.8658414686425322
+    "realizado_hoje": 0.865841468642532
   },
   {
     "rank": 10,
     "regional": "MG2",
     "destaque_hoje": "V4 Company Lisboa Vieira & Associados",
     "destaque_mes": "V4 Company Lisboa Vieira & Associados",
-    "recebido": 1125279.8900000001,
+    "recebido": 1125279.89,
     "provisionado": 1308264.51,
-    "realizado": 0.8601317863464782,
-    "dif": 182984.61999999988,
+    "realizado": 0.8601317863464781,
+    "dif": 182984.6200000001,
     "meta_hoje": 1308264.51,
-    "realizado_hoje": 0.8601317863464782
+    "realizado_hoje": 0.8601317863464781
   },
   {
     "rank": 11,
