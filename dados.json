@@ -1,26 +1,38 @@
 [
   {
     "rank": 1,
+    "regional": "MG1",
+    "destaque_hoje": "V4 Company UDI & Co.",
+    "destaque_mes": "V4 Company UDI & Co.",
+    "recebido": 35017.01,
+    "provisionado": 10740153.52,
+    "realizado": 0.0032603826318490093,
+    "dif": 10705136.51,
+    "meta_hoje": 534705.7,
+    "realizado_hoje": 0.0654883798695245
+  },
+  {
+    "rank": 2,
     "regional": "MG2",
     "destaque_hoje": "V4 Company Barbosa Souza & Co.",
     "destaque_mes": "V4 Company Novaes & Co.",
     "recebido": 5500,
-    "provisionado": 6686099.27,
-    "realizado": 0.0008226022046483914,
-    "dif": 6680599.27,
-    "meta_hoje": 270575.99,
-    "realizado_hoje": 0.02032700684195963
+    "provisionado": 4386758.65,
+    "realizado": 0.001253773101923444,
+    "dif": 4381258.65,
+    "meta_hoje": 177525.27,
+    "realizado_hoje": 0.030981504773940072
   },
   {
-    "rank": 2,
+    "rank": 3,
     "regional": "SP1",
     "destaque_hoje": "V4 Company Rossi & Co",
     "destaque_mes": "V4 Company Rossi & Co",
     "recebido": 495.94,
-    "provisionado": 23088676.38,
-    "realizado": 0.000021479793464020134,
-    "dif": 23088180.439999998,
-    "meta_hoje": 1123864.24,
-    "realizado_hoje": 0.00044128105722093266
+    "provisionado": 15148511.37,
+    "realizado": 0.0000327385303999016,
+    "dif": 15148015.43,
+    "meta_hoje": 737368.82,
+    "realizado_hoje": 0.000672580649667286
   }
 ]
