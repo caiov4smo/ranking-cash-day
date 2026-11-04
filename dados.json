@@ -52,12 +52,12 @@
     "regional": "SP1",
     "destaque_hoje": "V4 Company Amaral & Associados",
     "destaque_mes": "V4 Company Pereira Lima & Associados",
-    "recebido": 220719.94,
+    "recebido": 223547.32000000004,
     "provisionado": 5521126.33,
-    "realizado": 0.03997733918904913,
-    "dif": 5300406.39,
+    "realizado": 0.040489441218781175,
+    "dif": 5297579.01,
     "meta_hoje": 334720.05,
-    "realizado_hoje": 0.6594165482468111
+    "realizado_hoje": 0.6678635474630218
   },
   {
     "rank": 6,
@@ -76,24 +76,24 @@
     "regional": "SC",
     "destaque_hoje": "V4 Company JLL Roque & Associados",
     "destaque_mes": "V4 Company Oxicore & Co.",
-    "recebido": 71050.29999999999,
+    "recebido": 71050.3,
     "provisionado": 2987911.39,
-    "realizado": 0.02377925270401007,
+    "realizado": 0.023779252704010073,
     "dif": 2916861.0900000003,
     "meta_hoje": 164780.77,
-    "realizado_hoje": 0.431180774310012
+    "realizado_hoje": 0.43118077431001206
   },
   {
     "rank": 8,
     "regional": "RS",
     "destaque_hoje": "V4 Company Schaussard Silva & Co",
     "destaque_mes": "V4 Company Schaussard Silva & Co",
-    "recebido": 75358.73,
+    "recebido": 75358.73000000001,
     "provisionado": 3542633.34,
-    "realizado": 0.021271953026897217,
+    "realizado": 0.02127195302689722,
     "dif": 3467274.61,
     "meta_hoje": 351225.92,
-    "realizado_hoje": 0.21455913618220432
+    "realizado_hoje": 0.21455913618220435
   },
   {
     "rank": 9,
