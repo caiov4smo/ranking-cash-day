@@ -16,12 +16,12 @@
     "regional": "NE",
     "destaque_hoje": "V4 Company Dias & Co.",
     "destaque_mes": "V4 Company Dias & Co.",
-    "recebido": 139102.89,
+    "recebido": 139102.88999999996,
     "provisionado": 2475138.75,
-    "realizado": 0.05620003727063786,
+    "realizado": 0.05620003727063784,
     "dif": 2336035.86,
     "meta_hoje": 296711.68,
-    "realizado_hoje": 0.46881501260752534
+    "realizado_hoje": 0.4688150126075251
   },
   {
     "rank": 3,
@@ -52,12 +52,12 @@
     "regional": "SP1",
     "destaque_hoje": "V4 Company Amaral & Associados",
     "destaque_mes": "V4 Company Pereira Lima & Associados",
-    "recebido": 216323.53000000003,
+    "recebido": 220719.94,
     "provisionado": 5525247.98,
-    "realizado": 0.03915182282913572,
-    "dif": 5308924.45,
+    "realizado": 0.03994751743251169,
+    "dif": 5304528.04,
     "meta_hoje": 237234.37,
-    "realizado_hoje": 0.9118557736806856
+    "realizado_hoje": 0.9303877005680079
   },
   {
     "rank": 6,
@@ -76,12 +76,12 @@
     "regional": "SC",
     "destaque_hoje": "V4 Company Jesus & Co.",
     "destaque_mes": "V4 Company Oxicore & Co.",
-    "recebido": 67619.09999999999,
+    "recebido": 67619.1,
     "provisionado": 2968734.91,
-    "realizado": 0.022777075774677365,
+    "realizado": 0.02277707577467737,
     "dif": 2901115.81,
     "meta_hoje": 127098.83,
-    "realizado_hoje": 0.5320198462881207
+    "realizado_hoje": 0.5320198462881208
   },
   {
     "rank": 8,
