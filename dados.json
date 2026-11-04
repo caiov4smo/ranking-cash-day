@@ -16,24 +16,24 @@
     "regional": "NE",
     "destaque_hoje": "V4 Company Dias & Co.",
     "destaque_mes": "V4 Company Dias & Co.",
-    "recebido": 139102.88999999996,
+    "recebido": 139102.89,
     "provisionado": 2473292.38,
-    "realizado": 0.0562419918990734,
+    "realizado": 0.05624199189907342,
     "dif": 2334189.4899999998,
     "meta_hoje": 319474.98,
-    "realizado_hoje": 0.4354109044783412
+    "realizado_hoje": 0.43541090447834135
   },
   {
     "rank": 3,
     "regional": "PR",
     "destaque_hoje": "V4 Company Kuri & Associados",
     "destaque_mes": "V4 Company Kuri & Associados",
-    "recebido": 37686.23,
+    "recebido": 37686.229999999996,
     "provisionado": 862722.38,
-    "realizado": 0.04368291686138941,
+    "realizado": 0.0436829168613894,
     "dif": 825036.15,
     "meta_hoje": 33706.79,
-    "realizado_hoje": 1.1180604857359602
+    "realizado_hoje": 1.11806048573596
   },
   {
     "rank": 4,
@@ -52,9 +52,9 @@
     "regional": "SP1",
     "destaque_hoje": "V4 Company Amaral & Associados",
     "destaque_mes": "V4 Company Pereira Lima & Associados",
-    "recebido": 223547.32000000004,
+    "recebido": 223547.32,
     "provisionado": 5521126.33,
-    "realizado": 0.040489441218781175,
+    "realizado": 0.04048944121878117,
     "dif": 5297579.01,
     "meta_hoje": 334720.05,
     "realizado_hoje": 0.6678635474630218
@@ -100,12 +100,12 @@
     "regional": "MG1",
     "destaque_hoje": "V4 Company Sousa Ferraz & Co.",
     "destaque_mes": "V4 Company Sousa Ferraz & Co.",
-    "recebido": 80127.76,
+    "recebido": 80127.76000000001,
     "provisionado": 3910351.84,
-    "realizado": 0.02049118935548265,
+    "realizado": 0.020491189355482654,
     "dif": 3830224.08,
     "meta_hoje": 257846.96,
-    "realizado_hoje": 0.31075704751376554
+    "realizado_hoje": 0.3107570475137656
   },
   {
     "rank": 10,
