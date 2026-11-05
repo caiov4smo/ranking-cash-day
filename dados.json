@@ -4,12 +4,12 @@
     "regional": "RS",
     "destaque_hoje": "V4 Company Kessler & Co.",
     "destaque_mes": "V4 Company Kessler & Co.",
-    "recebido": 3829844.020000003,
+    "recebido": 3829844.020000001,
     "provisionado": 3719479.34,
-    "realizado": 1.0296720777053712,
-    "dif": -110364.68000000296,
+    "realizado": 1.0296720777053707,
+    "dif": -110364.6800000011,
     "meta_hoje": 3719479.34,
-    "realizado_hoje": 1.0296720777053712
+    "realizado_hoje": 1.0296720777053707
   },
   {
     "rank": 2,
@@ -52,24 +52,24 @@
     "regional": "SP1",
     "destaque_hoje": "V4 Company Rossi & Co.",
     "destaque_mes": "V4 Company Rossi & Co.",
-    "recebido": 5137751.34,
+    "recebido": 5137751.340000001,
     "provisionado": 5586569.15,
-    "realizado": 0.9196612808417487,
-    "dif": 448817.8100000005,
+    "realizado": 0.9196612808417489,
+    "dif": 448817.8099999996,
     "meta_hoje": 5586569.15,
-    "realizado_hoje": 0.9196612808417487
+    "realizado_hoje": 0.9196612808417489
   },
   {
     "rank": 6,
     "regional": "MG1",
     "destaque_hoje": "V4 Company Costa Silva Faria & Associados",
     "destaque_mes": "V4 Company Costa Silva Faria & Associados",
-    "recebido": 3222321.4600000014,
+    "recebido": 3222321.4600000004,
     "provisionado": 3512885.43,
-    "realizado": 0.9172862378264358,
-    "dif": 290563.9699999988,
+    "realizado": 0.9172862378264356,
+    "dif": 290563.96999999974,
     "meta_hoje": 3512885.43,
-    "realizado_hoje": 0.9172862378264358
+    "realizado_hoje": 0.9172862378264356
   },
   {
     "rank": 7,
