@@ -4,12 +4,12 @@
     "regional": "RS",
     "destaque_hoje": "V4 Company Kessler & Co.",
     "destaque_mes": "V4 Company Kessler & Co.",
-    "recebido": 3829844.02,
+    "recebido": 3829844.0200000005,
     "provisionado": 3719479.34,
-    "realizado": 1.0296720777053705,
-    "dif": -110364.68000000017,
+    "realizado": 1.0296720777053707,
+    "dif": -110364.68000000063,
     "meta_hoje": 3719479.34,
-    "realizado_hoje": 1.0296720777053705
+    "realizado_hoje": 1.0296720777053707
   },
   {
     "rank": 2,
@@ -52,36 +52,36 @@
     "regional": "SP1",
     "destaque_hoje": "V4 Company Rossi & Co.",
     "destaque_mes": "V4 Company Rossi & Co.",
-    "recebido": 5137751.340000002,
+    "recebido": 5137751.340000001,
     "provisionado": 5586569.15,
-    "realizado": 0.919661280841749,
-    "dif": 448817.80999999866,
+    "realizado": 0.9196612808417489,
+    "dif": 448817.8099999996,
     "meta_hoje": 5586569.15,
-    "realizado_hoje": 0.919661280841749
+    "realizado_hoje": 0.9196612808417489
   },
   {
     "rank": 6,
     "regional": "MG1",
     "destaque_hoje": "V4 Company Costa Silva Faria & Associados",
     "destaque_mes": "V4 Company Costa Silva Faria & Associados",
-    "recebido": 3222321.4600000004,
+    "recebido": 3222321.46,
     "provisionado": 3512885.43,
-    "realizado": 0.9172862378264356,
-    "dif": 290563.96999999974,
+    "realizado": 0.9172862378264354,
+    "dif": 290563.9700000002,
     "meta_hoje": 3512885.43,
-    "realizado_hoje": 0.9172862378264356
+    "realizado_hoje": 0.9172862378264354
   },
   {
     "rank": 7,
     "regional": "NE",
     "destaque_hoje": "V4 Company Affonso & Associados",
     "destaque_mes": "V4 Company Affonso & Associados",
-    "recebido": 2529186.659999999,
+    "recebido": 2529186.66,
     "provisionado": 2811917.99,
-    "realizado": 0.8994524979016187,
-    "dif": 282731.330000001,
+    "realizado": 0.8994524979016191,
+    "dif": 282731.3300000001,
     "meta_hoje": 2811917.99,
-    "realizado_hoje": 0.8994524979016187
+    "realizado_hoje": 0.8994524979016191
   },
   {
     "rank": 8,
@@ -112,12 +112,12 @@
     "regional": "COLLI",
     "destaque_hoje": "V4 Company Colli & Associados",
     "destaque_mes": "V4 Company Colli & Associados",
-    "recebido": 2276459.2200000007,
+    "recebido": 2276459.220000001,
     "provisionado": 2652003.39,
-    "realizado": 0.8583922737745824,
-    "dif": 375544.16999999946,
+    "realizado": 0.8583922737745826,
+    "dif": 375544.169999999,
     "meta_hoje": 2652003.39,
-    "realizado_hoje": 0.8583922737745824
+    "realizado_hoje": 0.8583922737745826
   },
   {
     "rank": 11,
