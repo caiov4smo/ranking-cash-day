@@ -4,12 +4,12 @@
     "regional": "RS",
     "destaque_hoje": "V4 Company Kessler & Co.",
     "destaque_mes": "V4 Company Kessler & Co.",
-    "recebido": 3846223.08,
+    "recebido": 3846223.0799999996,
     "provisionado": 3718956.34,
-    "realizado": 1.0342210901029294,
-    "dif": -127266.74000000022,
+    "realizado": 1.0342210901029292,
+    "dif": -127266.73999999976,
     "meta_hoje": 3718956.34,
-    "realizado_hoje": 1.0342210901029294
+    "realizado_hoje": 1.0342210901029292
   },
   {
     "rank": 2,
@@ -28,24 +28,24 @@
     "regional": "SP3",
     "destaque_hoje": "V4 Company Santos Dias & Associados",
     "destaque_mes": "V4 Company Santos Dias & Associados",
-    "recebido": 2980418.0799999987,
+    "recebido": 2980418.08,
     "provisionado": 3161767.43,
-    "realizado": 0.9426430456967541,
-    "dif": 181349.3500000015,
+    "realizado": 0.9426430456967545,
+    "dif": 181349.3500000001,
     "meta_hoje": 3161767.43,
-    "realizado_hoje": 0.9426430456967541
+    "realizado_hoje": 0.9426430456967545
   },
   {
     "rank": 4,
     "regional": "SC",
     "destaque_hoje": "V4 Company Fernandes & Co",
     "destaque_mes": "V4 Company Fernandes & Co",
-    "recebido": 3052077.0699999984,
+    "recebido": 3052077.0700000008,
     "provisionado": 3276377.99,
-    "realizado": 0.9315399747267861,
-    "dif": 224300.9200000018,
+    "realizado": 0.9315399747267868,
+    "dif": 224300.91999999946,
     "meta_hoje": 3276377.99,
-    "realizado_hoje": 0.9315399747267861
+    "realizado_hoje": 0.9315399747267868
   },
   {
     "rank": 5,
@@ -64,60 +64,60 @@
     "regional": "MG1",
     "destaque_hoje": "V4 Company Costa Silva Faria & Associados",
     "destaque_mes": "V4 Company Costa Silva Faria & Associados",
-    "recebido": 3222321.459999999,
+    "recebido": 3222321.4600000004,
     "provisionado": 3532596.66,
-    "realizado": 0.9121679518317833,
-    "dif": 310275.2000000011,
+    "realizado": 0.9121679518317838,
+    "dif": 310275.1999999997,
     "meta_hoje": 3532596.66,
-    "realizado_hoje": 0.9121679518317833
+    "realizado_hoje": 0.9121679518317838
   },
   {
     "rank": 7,
     "regional": "NE",
     "destaque_hoje": "V4 Company Affonso & Associados",
     "destaque_mes": "V4 Company Affonso & Associados",
-    "recebido": 2532786.6599999988,
+    "recebido": 2532786.6599999997,
     "provisionado": 2838624.13,
-    "realizado": 0.8922585534422266,
-    "dif": 305837.47000000114,
+    "realizado": 0.8922585534422269,
+    "dif": 305837.4700000002,
     "meta_hoje": 2838624.13,
-    "realizado_hoje": 0.8922585534422266
+    "realizado_hoje": 0.8922585534422269
   },
   {
     "rank": 8,
     "regional": "RJ",
     "destaque_hoje": "V4 Company BFG & Co.",
     "destaque_mes": "V4 Company BFG & Co.",
-    "recebido": 1713035.36,
+    "recebido": 1713035.3599999996,
     "provisionado": 1934054.32,
-    "realizado": 0.8857224651270394,
-    "dif": 221018.95999999996,
+    "realizado": 0.8857224651270392,
+    "dif": 221018.96000000043,
     "meta_hoje": 1934054.32,
-    "realizado_hoje": 0.8857224651270394
+    "realizado_hoje": 0.8857224651270392
   },
   {
     "rank": 9,
     "regional": "COLLI",
     "destaque_hoje": "V4 Company Colli & Associados",
     "destaque_mes": "V4 Company Colli & Associados",
-    "recebido": 2276459.2199999997,
+    "recebido": 2276459.219999999,
     "provisionado": 2650407.92,
-    "realizado": 0.8589090014491052,
-    "dif": 373948.7000000002,
+    "realizado": 0.8589090014491048,
+    "dif": 373948.7000000011,
     "meta_hoje": 2650407.92,
-    "realizado_hoje": 0.8589090014491052
+    "realizado_hoje": 0.8589090014491048
   },
   {
     "rank": 10,
     "regional": "MG2",
     "destaque_hoje": "V4 Company Lisboa Vieira & Associados",
     "destaque_mes": "V4 Company Lisboa Vieira & Associados",
-    "recebido": 1126401.3,
+    "recebido": 1126401.2999999998,
     "provisionado": 1312499.76,
-    "realizado": 0.8582106712156656,
-    "dif": 186098.45999999996,
+    "realizado": 0.8582106712156654,
+    "dif": 186098.4600000002,
     "meta_hoje": 1312499.76,
-    "realizado_hoje": 0.8582106712156656
+    "realizado_hoje": 0.8582106712156654
   },
   {
     "rank": 11,
