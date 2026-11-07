@@ -16,48 +16,48 @@
     "regional": "COLLI",
     "destaque_hoje": "V4 Company Colli & Associados",
     "destaque_mes": "V4 Company Colli & Associados",
-    "recebido": 358446.06000000006,
+    "recebido": 358446.06,
     "provisionado": 2023155.75,
-    "realizado": 0.17717175753769826,
+    "realizado": 0.17717175753769823,
     "dif": 1664709.69,
     "meta_hoje": 519412.83,
-    "realizado_hoje": 0.6900985868985948
+    "realizado_hoje": 0.6900985868985947
   },
   {
     "rank": 3,
     "regional": "NE",
     "destaque_hoje": "V4 Company Leal Vieira & Co.",
     "destaque_mes": "V4 Company Leal Vieira & Co.",
-    "recebido": 426857.38000000006,
+    "recebido": 426857.38,
     "provisionado": 2655665.37,
-    "realizado": 0.16073462598941826,
+    "realizado": 0.16073462598941823,
     "dif": 2228807.99,
     "meta_hoje": 895797.74,
-    "realizado_hoje": 0.4765108918448489
+    "realizado_hoje": 0.47651089184484885
   },
   {
     "rank": 4,
     "regional": "SP1",
     "destaque_hoje": "V4 Company Pereira Lima & Associados",
     "destaque_mes": "V4 Company Amaral & Associados",
-    "recebido": 844639.8200000003,
+    "recebido": 844639.8200000005,
     "provisionado": 5548323.37,
-    "realizado": 0.15223334396243027,
+    "realizado": 0.15223334396243032,
     "dif": 4703683.55,
     "meta_hoje": 1112675.45,
-    "realizado_hoje": 0.7591070873362042
+    "realizado_hoje": 0.7591070873362045
   },
   {
     "rank": 5,
     "regional": "RJ",
     "destaque_hoje": "V4 Company Lima Bussolotti & Co",
     "destaque_mes": "V4 Company Alves & Co.",
-    "recebido": 306502.57000000007,
+    "recebido": 306502.57,
     "provisionado": 2029958.41,
-    "realizado": 0.1509895811116643,
+    "realizado": 0.15098958111166427,
     "dif": 1723455.8399999999,
     "meta_hoje": 546353.82,
-    "realizado_hoje": 0.560996480266213
+    "realizado_hoje": 0.5609964802662128
   },
   {
     "rank": 6,
@@ -88,12 +88,12 @@
     "regional": "MG1",
     "destaque_hoje": "V4 Company Campos Ramaldes & Co.",
     "destaque_mes": "V4 Company Campos Ramaldes & Co.",
-    "recebido": 515445.61,
+    "recebido": 515445.61000000004,
     "provisionado": 3786990.83,
-    "realizado": 0.13610954796000918,
+    "realizado": 0.1361095479600092,
     "dif": 3271545.22,
     "meta_hoje": 848669.13,
-    "realizado_hoje": 0.6073575575913783
+    "realizado_hoje": 0.6073575575913784
   },
   {
     "rank": 9,
