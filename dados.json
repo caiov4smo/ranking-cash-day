@@ -16,12 +16,12 @@
     "regional": "COLLI",
     "destaque_hoje": "V4 Company Colli & Associados",
     "destaque_mes": "V4 Company Colli & Associados",
-    "recebido": 358446.06000000006,
+    "recebido": 358446.06,
     "provisionado": 2023155.75,
-    "realizado": 0.17717175753769826,
+    "realizado": 0.17717175753769823,
     "dif": 1664709.69,
     "meta_hoje": 519412.83,
-    "realizado_hoje": 0.6900985868985948
+    "realizado_hoje": 0.6900985868985947
   },
   {
     "rank": 3,
@@ -40,12 +40,12 @@
     "regional": "SP1",
     "destaque_hoje": "V4 Company Pereira Lima & Associados",
     "destaque_mes": "V4 Company Amaral & Associados",
-    "recebido": 844639.8200000001,
+    "recebido": 844639.8200000005,
     "provisionado": 5548323.37,
-    "realizado": 0.15223334396243024,
+    "realizado": 0.15223334396243032,
     "dif": 4703683.55,
     "meta_hoje": 1112675.45,
-    "realizado_hoje": 0.759107087336204
+    "realizado_hoje": 0.7591070873362045
   },
   {
     "rank": 5,
@@ -64,12 +64,12 @@
     "regional": "RS",
     "destaque_hoje": "V4 Company Sacon Baseggio & Co",
     "destaque_mes": "V4 Company Mendes Santos & Co.",
-    "recebido": 542208.9299999999,
+    "recebido": 542208.93,
     "provisionado": 3617116.91,
-    "realizado": 0.1499008584712845,
-    "dif": 3074907.9800000004,
+    "realizado": 0.14990085847128454,
+    "dif": 3074907.98,
     "meta_hoje": 981324.63,
-    "realizado_hoje": 0.5525275871247621
+    "realizado_hoje": 0.5525275871247622
   },
   {
     "rank": 7,
@@ -88,21 +88,21 @@
     "regional": "MG1",
     "destaque_hoje": "V4 Company Campos Ramaldes & Co.",
     "destaque_mes": "V4 Company Campos Ramaldes & Co.",
-    "recebido": 515445.61000000004,
+    "recebido": 515445.6100000001,
     "provisionado": 3786990.83,
     "realizado": 0.1361095479600092,
-    "dif": 3271545.22,
+    "dif": 3271545.2199999997,
     "meta_hoje": 848669.13,
-    "realizado_hoje": 0.6073575575913784
+    "realizado_hoje": 0.6073575575913785
   },
   {
     "rank": 9,
     "regional": "SC",
     "destaque_hoje": "V4 Company JLL Roque & Associados",
     "destaque_mes": "V4 Company S Simplicio & Co",
-    "recebido": 410185.56,
+    "recebido": 410185.56000000006,
     "provisionado": 3086276.2,
-    "realizado": 0.13290630307164342,
+    "realizado": 0.13290630307164344,
     "dif": 2676090.64,
     "meta_hoje": 793555.56,
     "realizado_hoje": 0.516895830205008
@@ -112,9 +112,9 @@
     "regional": "SP3",
     "destaque_hoje": "V4 Company RB & Co.",
     "destaque_mes": "V4 Company Wendling & Associados",
-    "recebido": 455200.16000000003,
+    "recebido": 455200.16,
     "provisionado": 3595816.97,
-    "realizado": 0.1265915823296201,
+    "realizado": 0.12659158232962006,
     "dif": 3140616.81,
     "meta_hoje": 797953.51,
     "realizado_hoje": 0.5704594995766107
