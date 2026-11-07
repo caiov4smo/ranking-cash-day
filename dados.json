@@ -16,12 +16,12 @@
     "regional": "COLLI",
     "destaque_hoje": "V4 Company Colli & Associados",
     "destaque_mes": "V4 Company Colli & Associados",
-    "recebido": 358446.05999999994,
+    "recebido": 358446.06000000006,
     "provisionado": 2023155.75,
-    "realizado": 0.1771717575376982,
+    "realizado": 0.17717175753769826,
     "dif": 1664709.69,
     "meta_hoje": 519412.83,
-    "realizado_hoje": 0.6900985868985946
+    "realizado_hoje": 0.6900985868985948
   },
   {
     "rank": 3,
@@ -40,12 +40,12 @@
     "regional": "SP1",
     "destaque_hoje": "V4 Company Pereira Lima & Associados",
     "destaque_mes": "V4 Company Amaral & Associados",
-    "recebido": 844639.8200000001,
+    "recebido": 844639.82,
     "provisionado": 5548323.37,
-    "realizado": 0.15223334396243024,
+    "realizado": 0.1522333439624302,
     "dif": 4703683.55,
     "meta_hoje": 1112675.45,
-    "realizado_hoje": 0.759107087336204
+    "realizado_hoje": 0.7591070873362039
   },
   {
     "rank": 5,
@@ -88,12 +88,12 @@
     "regional": "MG1",
     "destaque_hoje": "V4 Company Campos Ramaldes & Co.",
     "destaque_mes": "V4 Company Campos Ramaldes & Co.",
-    "recebido": 515445.61000000004,
+    "recebido": 515445.61,
     "provisionado": 3786990.83,
-    "realizado": 0.1361095479600092,
+    "realizado": 0.13610954796000918,
     "dif": 3271545.22,
     "meta_hoje": 848669.13,
-    "realizado_hoje": 0.6073575575913784
+    "realizado_hoje": 0.6073575575913783
   },
   {
     "rank": 9,
@@ -124,12 +124,12 @@
     "regional": "PR",
     "destaque_hoje": "V4 Company Kuri & Associados",
     "destaque_mes": "V4 Company Kuri & Associados",
-    "recebido": 99763.45999999999,
+    "recebido": 99763.46,
     "provisionado": 867917.37,
-    "realizado": 0.11494580411497006,
+    "realizado": 0.11494580411497007,
     "dif": 768153.91,
     "meta_hoje": 185487.15,
-    "realizado_hoje": 0.5378456674761567
+    "realizado_hoje": 0.5378456674761568
   },
   {
     "rank": 12,
