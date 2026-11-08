@@ -28,36 +28,36 @@
     "regional": "NE",
     "destaque_hoje": "V4 Company Leal Vieira & Co.",
     "destaque_mes": "V4 Company Torque & Co",
-    "recebido": 457336.19000000006,
+    "recebido": 457336.19,
     "provisionado": 2695500.05,
     "realizado": 0.1696665485129559,
     "dif": 2238163.86,
     "meta_hoje": 840707.74,
-    "realizado_hoje": 0.5439895081731971
+    "realizado_hoje": 0.543989508173197
   },
   {
     "rank": 4,
     "regional": "SP1",
     "destaque_hoje": "ROSOLEM VERONEZE & CORDEIRO ASSESSORIA DE MARKETING LTDA",
     "destaque_mes": "V4 Company Amaral & Associados",
-    "recebido": 851669.8200000001,
+    "recebido": 851669.8200000004,
     "provisionado": 5577622.13,
-    "realizado": 0.15269406929149573,
+    "realizado": 0.15269406929149582,
     "dif": 4725952.31,
     "meta_hoje": 1129396.2,
-    "realizado_hoje": 0.754093045469783
+    "realizado_hoje": 0.7540930454697833
   },
   {
     "rank": 5,
     "regional": "RJ",
     "destaque_hoje": "V4 Company Lima Bussolotti & Co",
     "destaque_mes": "V4 Company Alves & Co.",
-    "recebido": 306502.57000000007,
+    "recebido": 306502.57,
     "provisionado": 2018979.91,
-    "realizado": 0.1518106091506379,
+    "realizado": 0.15181060915063788,
     "dif": 1712477.3399999999,
     "meta_hoje": 555584.43,
-    "realizado_hoje": 0.5516759531940088
+    "realizado_hoje": 0.5516759531940086
   },
   {
     "rank": 6,
@@ -88,24 +88,24 @@
     "regional": "MG1",
     "destaque_hoje": "V4 Company Campos Ramaldes & Co.",
     "destaque_mes": "V4 Company Campos Ramaldes & Co.",
-    "recebido": 515445.61000000004,
+    "recebido": 515445.61,
     "provisionado": 3766509.88,
     "realizado": 0.13684966359360778,
     "dif": 3251064.27,
     "meta_hoje": 866654.62,
-    "realizado_hoje": 0.5947532016848881
+    "realizado_hoje": 0.594753201684888
   },
   {
     "rank": 9,
     "regional": "SC",
     "destaque_hoje": "V4 Company JLL Roque & Associados",
     "destaque_mes": "V4 Company S Simplicio & Co",
-    "recebido": 410185.56,
+    "recebido": 410185.56000000006,
     "provisionado": 3069584.89,
-    "realizado": 0.13362900023918217,
+    "realizado": 0.1336290002391822,
     "dif": 2659399.33,
     "meta_hoje": 823722.83,
-    "realizado_hoje": 0.49796551104453424
+    "realizado_hoje": 0.49796551104453435
   },
   {
     "rank": 10,
