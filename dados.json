@@ -28,24 +28,24 @@
     "regional": "NE",
     "destaque_hoje": "V4 Company Leal Vieira & Co.",
     "destaque_mes": "V4 Company Leal Vieira & Co.",
-    "recebido": 436971.1599999999,
+    "recebido": 436971.16000000003,
     "provisionado": 2673390.9,
-    "realizado": 0.1634520264133464,
-    "dif": 2236419.74,
+    "realizado": 0.16345202641334644,
+    "dif": 2236419.7399999998,
     "meta_hoje": 816853.56,
-    "realizado_hoje": 0.5349443050722579
+    "realizado_hoje": 0.534944305072258
   },
   {
     "rank": 4,
     "regional": "SP1",
     "destaque_hoje": "ROSOLEM VERONEZE & CORDEIRO ASSESSORIA DE MARKETING LTDA",
     "destaque_mes": "V4 Company Amaral & Associados",
-    "recebido": 851669.8200000003,
+    "recebido": 851669.8200000004,
     "provisionado": 5582869.68,
-    "realizado": 0.1525505463706257,
+    "realizado": 0.15255054637062573,
     "dif": 4731199.859999999,
     "meta_hoje": 1130458.76,
-    "realizado_hoje": 0.7533842455252417
+    "realizado_hoje": 0.7533842455252419
   },
   {
     "rank": 5,
@@ -136,11 +136,11 @@
     "regional": "NUNES",
     "destaque_hoje": "V4 Company Nunes & Associados",
     "destaque_mes": "V4 Company Nunes & Associados",
-    "recebido": 81344.05999999998,
+    "recebido": 81344.06,
     "provisionado": 1094280.27,
-    "realizado": 0.07433567270659096,
-    "dif": 1012936.2100000001,
+    "realizado": 0.07433567270659097,
+    "dif": 1012936.21,
     "meta_hoje": 270435.23,
-    "realizado_hoje": 0.30078943486763904
+    "realizado_hoje": 0.3007894348676391
   }
 ]
