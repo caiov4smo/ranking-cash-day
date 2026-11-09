@@ -40,12 +40,12 @@
     "regional": "SP1",
     "destaque_hoje": "ROSOLEM VERONEZE & CORDEIRO ASSESSORIA DE MARKETING LTDA",
     "destaque_mes": "V4 Company Amaral & Associados",
-    "recebido": 851669.8200000003,
+    "recebido": 851669.8200000002,
     "provisionado": 5571070.85,
     "realizado": 0.15287362931311496,
     "dif": 4719401.029999999,
     "meta_hoje": 1272671.12,
-    "realizado_hoje": 0.6691986693310054
+    "realizado_hoje": 0.6691986693310052
   },
   {
     "rank": 5,
@@ -64,12 +64,12 @@
     "regional": "RS",
     "destaque_hoje": "V4 Company Dcastel & Co",
     "destaque_mes": "V4 Company Mendes Santos & Co.",
-    "recebido": 544753.98,
+    "recebido": 544753.9800000001,
     "provisionado": 3640415.13,
-    "realizado": 0.14964062079370602,
+    "realizado": 0.14964062079370605,
     "dif": 3095661.15,
     "meta_hoje": 1123628.93,
-    "realizado_hoje": 0.48481662002063264
+    "realizado_hoje": 0.48481662002063275
   },
   {
     "rank": 7,
@@ -112,24 +112,24 @@
     "regional": "SP3",
     "destaque_hoje": "V4 Company Candido & Co.",
     "destaque_mes": "V4 Company Wendling & Associados",
-    "recebido": 463109.36999999994,
+    "recebido": 463109.37,
     "provisionado": 3574278.67,
-    "realizado": 0.12956722537809284,
+    "realizado": 0.12956722537809287,
     "dif": 3111169.3,
     "meta_hoje": 901665.56,
-    "realizado_hoje": 0.5136154584855164
+    "realizado_hoje": 0.5136154584855165
   },
   {
     "rank": 11,
     "regional": "PR",
     "destaque_hoje": "V4 Company Kuri & Associados",
     "destaque_mes": "V4 Company Kuri & Associados",
-    "recebido": 99763.46,
+    "recebido": 99763.45999999999,
     "provisionado": 862209.56,
-    "realizado": 0.11570674303356135,
+    "realizado": 0.11570674303356134,
     "dif": 762446.1000000001,
     "meta_hoje": 215137.12,
-    "realizado_hoje": 0.46372034728363015
+    "realizado_hoje": 0.46372034728363004
   },
   {
     "rank": 12,
