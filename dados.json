@@ -20,8 +20,8 @@
     "provisionado": 2009850.57,
     "realizado": 0.17834463185987004,
     "dif": 1651404.51,
-    "meta_hoje": 520211.51,
-    "realizado_hoje": 0.6890390795082562
+    "meta_hoje": 564590.92,
+    "realizado_hoje": 0.6348774790781261
   },
   {
     "rank": 3,
@@ -32,56 +32,56 @@
     "provisionado": 2692334.01,
     "realizado": 0.1698660672492118,
     "dif": 2234997.82,
-    "meta_hoje": 839720.27,
-    "realizado_hoje": 0.5446292132497885
+    "meta_hoje": 1060570.34,
+    "realizado_hoje": 0.4312172165780159
   },
   {
     "rank": 4,
     "regional": "SP1",
     "destaque_hoje": "ROSOLEM VERONEZE & CORDEIRO ASSESSORIA DE MARKETING LTDA",
     "destaque_mes": "V4 Company Amaral & Associados",
-    "recebido": 851669.8200000002,
+    "recebido": 851669.8200000004,
     "provisionado": 5571070.85,
-    "realizado": 0.15287362931311496,
+    "realizado": 0.152873629313115,
     "dif": 4719401.029999999,
-    "meta_hoje": 1128069.65,
-    "realizado_hoje": 0.7549798188436327
+    "meta_hoje": 1272671.12,
+    "realizado_hoje": 0.6691986693310055
   },
   {
     "rank": 5,
     "regional": "RJ",
-    "destaque_hoje": "V4 Company Lima Bussolotti & Co",
+    "destaque_hoje": "V4 Company ACM & Co.",
     "destaque_mes": "V4 Company Alves & Co.",
     "recebido": 306502.57000000007,
     "provisionado": 2016608.48,
     "realizado": 0.1519891307806065,
     "dif": 1710105.91,
-    "meta_hoje": 554931.86,
-    "realizado_hoje": 0.5523246944228434
+    "meta_hoje": 624177.35,
+    "realizado_hoje": 0.49105045224726607
   },
   {
     "rank": 6,
     "regional": "RS",
-    "destaque_hoje": "V4 Company Sacon Baseggio & Co",
+    "destaque_hoje": "V4 Company Dcastel & Co",
     "destaque_mes": "V4 Company Mendes Santos & Co.",
-    "recebido": 544753.9800000001,
+    "recebido": 544753.9799999999,
     "provisionado": 3640415.13,
-    "realizado": 0.14964062079370605,
+    "realizado": 0.149640620793706,
     "dif": 3095661.15,
-    "meta_hoje": 987413.89,
-    "realizado_hoje": 0.5516977080401412
+    "meta_hoje": 1123628.93,
+    "realizado_hoje": 0.4848166200206325
   },
   {
     "rank": 7,
     "regional": "MG2",
-    "destaque_hoje": "V4 Company Canovas Mendes & Associados & Co.",
+    "destaque_hoje": "V4 Company Vieira & Associados",
     "destaque_mes": "V4 Company Menezes & Co.",
     "recebido": 225463.96999999997,
     "provisionado": 1551299.92,
     "realizado": 0.14533873630316438,
     "dif": 1325835.95,
-    "meta_hoje": 399902.1,
-    "realizado_hoje": 0.5637979145395835
+    "meta_hoje": 474887.46,
+    "realizado_hoje": 0.474773475804141
   },
   {
     "rank": 8,
@@ -92,8 +92,8 @@
     "provisionado": 3792854.03,
     "realizado": 0.13589914241967282,
     "dif": 3277408.42,
-    "meta_hoje": 868713.49,
-    "realizado_hoje": 0.5933436235691472
+    "meta_hoje": 945369.22,
+    "realizado_hoje": 0.5452320628759206
   },
   {
     "rank": 9,
@@ -104,32 +104,32 @@
     "provisionado": 3065979.46,
     "realizado": 0.13378614088954138,
     "dif": 2655793.9,
-    "meta_hoje": 822755.31,
-    "realizado_hoje": 0.4985510941278519
+    "meta_hoje": 1003688.67,
+    "realizado_hoje": 0.40867808142140327
   },
   {
     "rank": 10,
     "regional": "SP3",
-    "destaque_hoje": "V4 Company RB & Co.",
+    "destaque_hoje": "V4 Company Candido & Co.",
     "destaque_mes": "V4 Company Wendling & Associados",
-    "recebido": 460227.00000000006,
+    "recebido": 463109.37000000005,
     "provisionado": 3574278.67,
-    "realizado": 0.1287608053235536,
-    "dif": 3114051.67,
-    "meta_hoje": 807246.5,
-    "realizado_hoje": 0.5701195359781678
+    "realizado": 0.12956722537809287,
+    "dif": 3111169.3,
+    "meta_hoje": 901665.56,
+    "realizado_hoje": 0.5136154584855166
   },
   {
     "rank": 11,
     "regional": "PR",
     "destaque_hoje": "V4 Company Kuri & Associados",
     "destaque_mes": "V4 Company Kuri & Associados",
-    "recebido": 99763.46,
+    "recebido": 99763.45999999999,
     "provisionado": 862209.56,
-    "realizado": 0.11570674303356135,
+    "realizado": 0.11570674303356134,
     "dif": 762446.1000000001,
-    "meta_hoje": 193010.16,
-    "realizado_hoje": 0.5168819092217737
+    "meta_hoje": 215137.12,
+    "realizado_hoje": 0.46372034728363004
   },
   {
     "rank": 12,
@@ -140,7 +140,7 @@
     "provisionado": 1091967.62,
     "realizado": 0.0744931063065771,
     "dif": 1010623.56,
-    "meta_hoje": 269863.69,
-    "realizado_hoje": 0.30142647200888717
+    "meta_hoje": 300474.22,
+    "realizado_hoje": 0.2707189322265318
   }
 ]
