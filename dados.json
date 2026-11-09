@@ -28,12 +28,12 @@
     "regional": "NE",
     "destaque_hoje": "V4 Company Leal Vieira & Co.",
     "destaque_mes": "V4 Company Torque & Co",
-    "recebido": 457336.18999999994,
+    "recebido": 457336.19,
     "provisionado": 2692334.01,
-    "realizado": 0.16986606724921177,
+    "realizado": 0.1698660672492118,
     "dif": 2234997.82,
     "meta_hoje": 839720.27,
-    "realizado_hoje": 0.5446292132497884
+    "realizado_hoje": 0.5446292132497885
   },
   {
     "rank": 4,
@@ -52,9 +52,9 @@
     "regional": "RJ",
     "destaque_hoje": "V4 Company Lima Bussolotti & Co",
     "destaque_mes": "V4 Company Alves & Co.",
-    "recebido": 306502.5700000001,
+    "recebido": 306502.57000000007,
     "provisionado": 2016608.48,
-    "realizado": 0.15198913078060652,
+    "realizado": 0.1519891307806065,
     "dif": 1710105.91,
     "meta_hoje": 554931.86,
     "realizado_hoje": 0.5523246944228434
@@ -112,9 +112,9 @@
     "regional": "SP3",
     "destaque_hoje": "V4 Company RB & Co.",
     "destaque_mes": "V4 Company Wendling & Associados",
-    "recebido": 460227,
+    "recebido": 460227.00000000006,
     "provisionado": 3574278.67,
-    "realizado": 0.12876080532355358,
+    "realizado": 0.1287608053235536,
     "dif": 3114051.67,
     "meta_hoje": 807246.5,
     "realizado_hoje": 0.5701195359781678
@@ -124,12 +124,12 @@
     "regional": "PR",
     "destaque_hoje": "V4 Company Kuri & Associados",
     "destaque_mes": "V4 Company Kuri & Associados",
-    "recebido": 99763.45999999999,
+    "recebido": 99763.46,
     "provisionado": 862209.56,
-    "realizado": 0.11570674303356134,
+    "realizado": 0.11570674303356135,
     "dif": 762446.1000000001,
     "meta_hoje": 193010.16,
-    "realizado_hoje": 0.5168819092217736
+    "realizado_hoje": 0.5168819092217737
   },
   {
     "rank": 12,
