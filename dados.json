@@ -16,21 +16,21 @@
     "regional": "NE",
     "destaque_hoje": "V4 Company Arcanum & Co",
     "destaque_mes": "V4 Company J Silva Macena & Co.",
-    "recebido": 592642.9800000001,
+    "recebido": 592642.9799999999,
     "provisionado": 2680844.72,
-    "realizado": 0.22106576169021833,
+    "realizado": 0.22106576169021824,
     "dif": 2088201.7400000002,
     "meta_hoje": 1435708.52,
-    "realizado_hoje": 0.4127878129468787
+    "realizado_hoje": 0.41278781294687855
   },
   {
     "rank": 3,
     "regional": "PR",
     "destaque_hoje": "V4 Company Kuri & Associados",
     "destaque_mes": "V4 Company Kuri & Associados",
-    "recebido": 180263,
+    "recebido": 180262.99999999997,
     "provisionado": 844105.73,
-    "realizado": 0.21355500098311145,
+    "realizado": 0.21355500098311142,
     "dif": 663842.73,
     "meta_hoje": 303893.93,
     "realizado_hoje": 0.5931773629042212
@@ -64,36 +64,36 @@
     "regional": "MG1",
     "destaque_hoje": "V4 Company Campos Ramaldes & Co.",
     "destaque_mes": "V4 Company Souza Santos & Associados",
-    "recebido": 714102.5699999998,
+    "recebido": 714102.5700000001,
     "provisionado": 3778124.28,
-    "realizado": 0.18900981467978598,
+    "realizado": 0.18900981467978606,
     "dif": 3064021.71,
     "meta_hoje": 1562908.43,
-    "realizado_hoje": 0.45690621170940887
+    "realizado_hoje": 0.45690621170940904
   },
   {
     "rank": 7,
     "regional": "MG2",
     "destaque_hoje": "V4 Company Canovas Mendes & Associados & Co.",
     "destaque_mes": "V4 Company Menezes & Co.",
-    "recebido": 282585.07999999996,
+    "recebido": 282585.08,
     "provisionado": 1555006.49,
-    "realizado": 0.1817259810922075,
-    "dif": 1272421.4100000001,
+    "realizado": 0.18172598109220756,
+    "dif": 1272421.41,
     "meta_hoje": 607651.96,
-    "realizado_hoje": 0.46504429937163366
+    "realizado_hoje": 0.4650442993716338
   },
   {
     "rank": 8,
     "regional": "SC",
     "destaque_hoje": "V4 Company Kuerten Ávila & Associados",
     "destaque_mes": "V4 Company Buonnacorso & Co",
-    "recebido": 553431.7200000001,
+    "recebido": 553431.72,
     "provisionado": 3055868.87,
-    "realizado": 0.18110453803601856,
-    "dif": 2502437.15,
+    "realizado": 0.18110453803601853,
+    "dif": 2502437.1500000004,
     "meta_hoje": 1369465.04,
-    "realizado_hoje": 0.404122561609897
+    "realizado_hoje": 0.4041225616098969
   },
   {
     "rank": 9,
