@@ -16,12 +16,12 @@
     "regional": "NE",
     "destaque_hoje": "V4 Company Arcanum & Co",
     "destaque_mes": "V4 Company J Silva Macena & Co.",
-    "recebido": 592642.98,
+    "recebido": 592642.9799999997,
     "provisionado": 2680844.72,
-    "realizado": 0.22106576169021827,
-    "dif": 2088201.7400000002,
+    "realizado": 0.2210657616902182,
+    "dif": 2088201.7400000005,
     "meta_hoje": 1435708.52,
-    "realizado_hoje": 0.41278781294687866
+    "realizado_hoje": 0.4127878129468785
   },
   {
     "rank": 3,
@@ -40,36 +40,36 @@
     "regional": "COLLI",
     "destaque_hoje": "V4 Company Colli & Associados",
     "destaque_mes": "V4 Company Colli & Associados",
-    "recebido": 392422.7,
+    "recebido": 392422.70000000007,
     "provisionado": 1968872.39,
-    "realizado": 0.1993134252850181,
+    "realizado": 0.19931342528501814,
     "dif": 1576449.69,
     "meta_hoje": 785708.19,
-    "realizado_hoje": 0.4994509475585332
+    "realizado_hoje": 0.49945094755853325
   },
   {
     "rank": 5,
     "regional": "RJ",
     "destaque_hoje": "V4 Company Franzner & Co.",
     "destaque_mes": "V4 Company Alves & Co.",
-    "recebido": 371991.45999999996,
+    "recebido": 371991.46,
     "provisionado": 1959917.73,
-    "realizado": 0.18979952796283953,
+    "realizado": 0.18979952796283955,
     "dif": 1587926.27,
     "meta_hoje": 875718.19,
-    "realizado_hoje": 0.4247844389300626
+    "realizado_hoje": 0.4247844389300627
   },
   {
     "rank": 6,
     "regional": "MG1",
     "destaque_hoje": "V4 Company Campos Ramaldes & Co.",
     "destaque_mes": "V4 Company Souza Santos & Associados",
-    "recebido": 714102.5700000002,
+    "recebido": 714102.5700000001,
     "provisionado": 3778124.28,
-    "realizado": 0.1890098146797861,
-    "dif": 3064021.7099999995,
+    "realizado": 0.18900981467978606,
+    "dif": 3064021.71,
     "meta_hoje": 1562908.43,
-    "realizado_hoje": 0.4569062117094091
+    "realizado_hoje": 0.45690621170940904
   },
   {
     "rank": 7,
@@ -100,24 +100,24 @@
     "regional": "RS",
     "destaque_hoje": "V4 Company Mendes Santos & Co.",
     "destaque_mes": "V4 Company Mendes Santos & Co.",
-    "recebido": 657044.9899999998,
+    "recebido": 657044.9900000002,
     "provisionado": 3680649.03,
-    "realizado": 0.17851335040222507,
-    "dif": 3023604.04,
+    "realizado": 0.17851335040222518,
+    "dif": 3023604.0399999996,
     "meta_hoje": 1704611.73,
-    "realizado_hoje": 0.3854514071659003
+    "realizado_hoje": 0.3854514071659006
   },
   {
     "rank": 10,
     "regional": "SP1",
     "destaque_hoje": "ROSOLEM VERONEZE & CORDEIRO ASSESSORIA DE MARKETING LTDA",
     "destaque_mes": "V4 Company Pereira Lima & Associados",
-    "recebido": 1010336.8699999998,
+    "recebido": 1010336.8700000001,
     "provisionado": 5732785.01,
-    "realizado": 0.1762384021444404,
+    "realizado": 0.17623840214444048,
     "dif": 4722448.14,
     "meta_hoje": 2301173.87,
-    "realizado_hoje": 0.43905281698683624
+    "realizado_hoje": 0.4390528169868364
   },
   {
     "rank": 11,
