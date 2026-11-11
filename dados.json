@@ -52,12 +52,12 @@
     "regional": "RS",
     "destaque_hoje": "V4 Company Mendes Santos & Co.",
     "destaque_mes": "V4 Company Schaussard Silva & Co",
-    "recebido": 997431.4099999998,
+    "recebido": 997431.4100000001,
     "provisionado": 3804836.15,
-    "realizado": 0.26214832141983296,
-    "dif": 2807404.74,
+    "realizado": 0.2621483214198331,
+    "dif": 2807404.7399999998,
     "meta_hoje": 1903504.16,
-    "realizado_hoje": 0.5239974941793665
+    "realizado_hoje": 0.5239974941793667
   },
   {
     "rank": 6,
@@ -76,24 +76,24 @@
     "regional": "SC",
     "destaque_hoje": "V4 Company S Simplicio & Co",
     "destaque_mes": "V4 Company Buonnacorso & Co",
-    "recebido": 746940.21,
+    "recebido": 746940.2100000001,
     "provisionado": 3011359.8,
-    "realizado": 0.24804083856070602,
+    "realizado": 0.24804083856070608,
     "dif": 2264419.59,
     "meta_hoje": 1352829.88,
-    "realizado_hoje": 0.5521316619647697
+    "realizado_hoje": 0.5521316619647698
   },
   {
     "rank": 8,
     "regional": "MG1",
     "destaque_hoje": "V4 Company Campos Ramaldes & Co.",
     "destaque_mes": "V4 Company SBN & Co.",
-    "recebido": 921233.7600000001,
+    "recebido": 921233.76,
     "provisionado": 3770655.73,
-    "realizado": 0.24431659264740144,
+    "realizado": 0.2443165926474014,
     "dif": 2849421.9699999997,
     "meta_hoje": 1611303.99,
-    "realizado_hoje": 0.5717318182771955
+    "realizado_hoje": 0.5717318182771954
   },
   {
     "rank": 9,
