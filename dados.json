@@ -40,12 +40,12 @@
     "regional": "NE",
     "destaque_hoje": "V4 Company Arcanum & Co",
     "destaque_mes": "V4 Company J Silva Macena & Co.",
-    "recebido": 922387.9600000002,
+    "recebido": 922387.9599999997,
     "provisionado": 2748152.51,
-    "realizado": 0.33563929099407963,
-    "dif": 1825764.5499999996,
+    "realizado": 0.33563929099407946,
+    "dif": 1825764.55,
     "meta_hoje": 1618315.32,
-    "realizado_hoje": 0.5699680084595629
+    "realizado_hoje": 0.5699680084595625
   },
   {
     "rank": 5,
@@ -64,24 +64,24 @@
     "regional": "MG1",
     "destaque_hoje": "V4 Company Campos Ramaldes & Co.",
     "destaque_mes": "V4 Company SBN & Co.",
-    "recebido": 1206942.31,
+    "recebido": 1206942.3100000003,
     "provisionado": 3722472.38,
-    "realizado": 0.32423136743327563,
-    "dif": 2515530.07,
+    "realizado": 0.3242313674332757,
+    "dif": 2515530.0699999994,
     "meta_hoje": 1730113.21,
-    "realizado_hoje": 0.697608863410736
+    "realizado_hoje": 0.6976088634107361
   },
   {
     "rank": 7,
     "regional": "SC",
     "destaque_hoje": "V4 Company S Simplicio & Co",
     "destaque_mes": "V4 Company Nk & Co.",
-    "recebido": 923627.9600000002,
+    "recebido": 923627.9600000001,
     "provisionado": 2906068.51,
-    "realizado": 0.3178273178425516,
-    "dif": 1982440.5499999996,
+    "realizado": 0.3178273178425515,
+    "dif": 1982440.5499999998,
     "meta_hoje": 1425256.98,
-    "realizado_hoje": 0.6480431058825618
+    "realizado_hoje": 0.6480431058825616
   },
   {
     "rank": 8,
@@ -100,12 +100,12 @@
     "regional": "SP1",
     "destaque_hoje": "ROSOLEM VERONEZE & CORDEIRO ASSESSORIA DE MARKETING LTDA",
     "destaque_mes": "V4 Company Romano & Associados",
-    "recebido": 1745926.98,
+    "recebido": 1745926.9799999995,
     "provisionado": 5661936.94,
-    "realizado": 0.3083621379930098,
-    "dif": 3916009.9600000004,
+    "realizado": 0.30836213799300977,
+    "dif": 3916009.960000001,
     "meta_hoje": 2372034.93,
-    "realizado_hoje": 0.7360460665728897
+    "realizado_hoje": 0.7360460665728895
   },
   {
     "rank": 10,
