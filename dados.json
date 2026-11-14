@@ -16,60 +16,60 @@
     "regional": "COLLI",
     "destaque_hoje": "V4 Company Colli & Associados",
     "destaque_mes": "V4 Company Colli & Associados",
-    "recebido": 779462.4600000002,
+    "recebido": 779462.46,
     "provisionado": 1884359.59,
-    "realizado": 0.41364846929242427,
-    "dif": 1104897.13,
+    "realizado": 0.41364846929242416,
+    "dif": 1104897.1300000001,
     "meta_hoje": 992582.71,
-    "realizado_hoje": 0.7852871626184182
+    "realizado_hoje": 0.7852871626184179
   },
   {
     "rank": 3,
     "regional": "RS",
     "destaque_hoje": "V4 Company Sacon Baseggio & Co",
     "destaque_mes": "V4 Company Schaussard Silva & Co",
-    "recebido": 1483294.3699999999,
+    "recebido": 1483294.3699999996,
     "provisionado": 3852351.94,
-    "realizado": 0.385036048913018,
+    "realizado": 0.38503604891301796,
     "dif": 2369057.5700000003,
     "meta_hoje": 1942440.16,
-    "realizado_hoje": 0.7636242292272211
+    "realizado_hoje": 0.763624229227221
   },
   {
     "rank": 4,
     "regional": "PR",
     "destaque_hoje": "V4 Company Kuri & Associados",
     "destaque_mes": "V4 Company Kuri & Associados",
-    "recebido": 300642.15,
+    "recebido": 300642.14999999997,
     "provisionado": 785183.71,
-    "realizado": 0.38289402361646047,
-    "dif": 484541.55999999994,
+    "realizado": 0.38289402361646035,
+    "dif": 484541.56,
     "meta_hoje": 354709.19,
-    "realizado_hoje": 0.8475736137538472
+    "realizado_hoje": 0.8475736137538471
   },
   {
     "rank": 5,
     "regional": "SC",
     "destaque_hoje": "V4 Company Jesus & Co.",
     "destaque_mes": "V4 Company Nk & Co.",
-    "recebido": 1106010.6,
+    "recebido": 1106010.5999999999,
     "provisionado": 2913654.96,
-    "realizado": 0.3795955990615993,
-    "dif": 1807644.3599999999,
+    "realizado": 0.37959559906159923,
+    "dif": 1807644.36,
     "meta_hoje": 1437210.42,
-    "realizado_hoje": 0.7695537025121207
+    "realizado_hoje": 0.7695537025121206
   },
   {
     "rank": 6,
     "regional": "RJ",
     "destaque_hoje": "V4 Company Franzner & Co.",
     "destaque_mes": "V4 Company Weekes e Guedes & Co.",
-    "recebido": 726984.5100000002,
+    "recebido": 726984.5100000001,
     "provisionado": 1996464.02,
-    "realizado": 0.364136043884227,
+    "realizado": 0.36413604388422693,
     "dif": 1269479.5099999998,
     "meta_hoje": 1020878.18,
-    "realizado_hoje": 0.7121168071199251
+    "realizado_hoje": 0.712116807119925
   },
   {
     "rank": 7,
@@ -100,47 +100,47 @@
     "regional": "SP1",
     "destaque_hoje": "ROSOLEM VERONEZE & CORDEIRO ASSESSORIA DE MARKETING LTDA",
     "destaque_mes": "V4 Company Romano & Associados",
-    "recebido": 1935105.5099999998,
+    "recebido": 1935105.5100000002,
     "provisionado": 5629796.86,
-    "realizado": 0.34372563666533423,
-    "dif": 3694691.3500000006,
+    "realizado": 0.34372563666533434,
+    "dif": 3694691.35,
     "meta_hoje": 2342692.14,
-    "realizado_hoje": 0.8260178437274305
+    "realizado_hoje": 0.8260178437274307
   },
   {
     "rank": 10,
     "regional": "MG2",
     "destaque_hoje": "V4 Company Vieira & Associados",
     "destaque_mes": "V4 Company Menezes & Co.",
-    "recebido": 444656.49999999994,
+    "recebido": 444656.5,
     "provisionado": 1544655.4,
     "realizado": 0.28786776649341983,
     "dif": 1099998.9,
     "meta_hoje": 692764.75,
-    "realizado_hoje": 0.6418578601177383
+    "realizado_hoje": 0.6418578601177384
   },
   {
     "rank": 11,
     "regional": "SP3",
     "destaque_hoje": "V4 Company Candido & Co.",
     "destaque_mes": "V4 Company Akira & Co.",
-    "recebido": 1003055.7999999998,
+    "recebido": 1003055.7999999999,
     "provisionado": 3533804.96,
-    "realizado": 0.28384582945403974,
+    "realizado": 0.2838458294540398,
     "dif": 2530749.16,
     "meta_hoje": 1399265.53,
-    "realizado_hoje": 0.7168445005573744
+    "realizado_hoje": 0.7168445005573745
   },
   {
     "rank": 12,
     "regional": "NUNES",
     "destaque_hoje": "V4 Company Nunes & Associados",
     "destaque_mes": "V4 Company Nunes & Associados",
-    "recebido": 277232.88000000006,
+    "recebido": 277232.8800000001,
     "provisionado": 1038907.5,
-    "realizado": 0.26685039813457895,
+    "realizado": 0.266850398134579,
     "dif": 761674.6199999999,
     "meta_hoje": 529604.52,
-    "realizado_hoje": 0.5234715141781646
+    "realizado_hoje": 0.5234715141781647
   }
 ]
