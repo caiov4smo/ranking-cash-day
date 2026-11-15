@@ -28,12 +28,12 @@
     "regional": "RS",
     "destaque_hoje": "V4 Company Sacon Baseggio & Co",
     "destaque_mes": "V4 Company Schaussard Silva & Co",
-    "recebido": 1483294.3699999994,
+    "recebido": 1483294.3699999999,
     "provisionado": 3853459.84,
-    "realizado": 0.3849253480217921,
-    "dif": 2370165.4700000007,
+    "realizado": 0.3849253480217923,
+    "dif": 2370165.4699999997,
     "meta_hoje": 2408239.58,
-    "realizado_hoje": 0.6159247536326927
+    "realizado_hoje": 0.615924753632693
   },
   {
     "rank": 4,
@@ -52,12 +52,12 @@
     "regional": "SC",
     "destaque_hoje": "V4 Company Jesus & Co.",
     "destaque_mes": "V4 Company Nk & Co.",
-    "recebido": 1106010.6000000006,
+    "recebido": 1106010.6000000003,
     "provisionado": 2912771.66,
-    "realizado": 0.3797107116868888,
-    "dif": 1806761.0599999996,
+    "realizado": 0.37971071168688875,
+    "dif": 1806761.0599999998,
     "meta_hoje": 1796808.83,
-    "realizado_hoje": 0.6155416099552452
+    "realizado_hoje": 0.6155416099552451
   },
   {
     "rank": 6,
@@ -136,11 +136,11 @@
     "regional": "NUNES",
     "destaque_hoje": "V4 Company Nunes & Associados",
     "destaque_mes": "V4 Company Nunes & Associados",
-    "recebido": 277232.88,
+    "recebido": 277232.88000000006,
     "provisionado": 1038592.54,
-    "realizado": 0.2669313222681149,
-    "dif": 761359.66,
+    "realizado": 0.26693132226811495,
+    "dif": 761359.6599999999,
     "meta_hoje": 601696.28,
-    "realizado_hoje": 0.4607521921192532
+    "realizado_hoje": 0.46075219211925333
   }
 ]
