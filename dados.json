@@ -28,60 +28,60 @@
     "regional": "RS",
     "destaque_hoje": "V4 Company Sacon Baseggio & Co",
     "destaque_mes": "V4 Company Schaussard Silva & Co",
-    "recebido": 1489144.0099999995,
+    "recebido": 1489144.0099999993,
     "provisionado": 3853963.3,
-    "realizado": 0.3863928880692765,
-    "dif": 2364819.29,
+    "realizado": 0.38639288806927646,
+    "dif": 2364819.2900000005,
     "meta_hoje": 2499137.54,
-    "realizado_hoje": 0.5958631672588934
+    "realizado_hoje": 0.5958631672588933
   },
   {
     "rank": 4,
     "regional": "SC",
     "destaque_hoje": "V4 Company Jesus & Co.",
     "destaque_mes": "V4 Company Nk & Co.",
-    "recebido": 1124070.9000000001,
+    "recebido": 1124070.9,
     "provisionado": 2909729.76,
-    "realizado": 0.3863145352714818,
-    "dif": 1785658.8599999996,
+    "realizado": 0.3863145352714817,
+    "dif": 1785658.8599999999,
     "meta_hoje": 1906664.28,
-    "realizado_hoje": 0.5895484127913699
+    "realizado_hoje": 0.5895484127913698
   },
   {
     "rank": 5,
     "regional": "PR",
     "destaque_hoje": "V4 Company Kuri & Associados",
     "destaque_mes": "V4 Company Kuri & Associados",
-    "recebido": 300642.15,
+    "recebido": 300642.14999999997,
     "provisionado": 785048.23,
-    "realizado": 0.38296010169973893,
-    "dif": 484406.07999999996,
+    "realizado": 0.3829601016997388,
+    "dif": 484406.08,
     "meta_hoje": 481842.43,
-    "realizado_hoje": 0.6239428727768952
+    "realizado_hoje": 0.6239428727768951
   },
   {
     "rank": 6,
     "regional": "RJ",
     "destaque_hoje": "V4 Company Freitas Ramos & Associados",
     "destaque_mes": "V4 Company Weekes e Guedes & Co.",
-    "recebido": 746868.81,
+    "recebido": 746868.8100000003,
     "provisionado": 1996119.54,
-    "realizado": 0.3741603621594727,
-    "dif": 1249250.73,
+    "realizado": 0.3741603621594728,
+    "dif": 1249250.7299999997,
     "meta_hoje": 1322537.08,
-    "realizado_hoje": 0.5647242873523062
+    "realizado_hoje": 0.5647242873523064
   },
   {
     "rank": 7,
     "regional": "NE",
     "destaque_hoje": "V4 Company Arcanum & Co",
     "destaque_mes": "V4 Company Affonso & Associados",
-    "recebido": 1026567.5999999994,
+    "recebido": 1026567.6000000003,
     "provisionado": 2842103.26,
-    "realizado": 0.36119996569019786,
-    "dif": 1815535.6600000004,
+    "realizado": 0.3611999656901982,
+    "dif": 1815535.6599999995,
     "meta_hoje": 1973870.99,
-    "realizado_hoje": 0.5200783664184656
+    "realizado_hoje": 0.520078366418466
   },
   {
     "rank": 8,
@@ -100,12 +100,12 @@
     "regional": "SP1",
     "destaque_hoje": "V4 Company Pereira Lima & Associados",
     "destaque_mes": "V4 Company Romano & Associados",
-    "recebido": 1944840.1399999992,
+    "recebido": 1944840.1400000001,
     "provisionado": 5628825.45,
-    "realizado": 0.34551438080212615,
-    "dif": 3683985.310000001,
+    "realizado": 0.3455143808021263,
+    "dif": 3683985.31,
     "meta_hoje": 3172283.85,
-    "realizado_hoje": 0.6130725470862259
+    "realizado_hoje": 0.6130725470862263
   },
   {
     "rank": 10,
@@ -124,23 +124,23 @@
     "regional": "SP3",
     "destaque_hoje": "V4 Company Akira & Co.",
     "destaque_mes": "V4 Company Akira & Co.",
-    "recebido": 1003055.7999999998,
+    "recebido": 1003055.8000000002,
     "provisionado": 3533195.21,
-    "realizado": 0.2838948148579653,
-    "dif": 2530139.41,
+    "realizado": 0.2838948148579654,
+    "dif": 2530139.4099999997,
     "meta_hoje": 1884898.84,
-    "realizado_hoje": 0.5321536512802988
+    "realizado_hoje": 0.532153651280299
   },
   {
     "rank": 12,
     "regional": "NUNES",
     "destaque_hoje": "V4 Company Nunes & Associados",
     "destaque_mes": "V4 Company Nunes & Associados",
-    "recebido": 277232.88000000006,
+    "recebido": 277232.88,
     "provisionado": 1038728.24,
-    "realizado": 0.2668964502207046,
-    "dif": 761495.3599999999,
+    "realizado": 0.2668964502207045,
+    "dif": 761495.36,
     "meta_hoje": 652104.61,
-    "realizado_hoje": 0.4251355928920669
+    "realizado_hoje": 0.4251355928920668
   }
 ]
