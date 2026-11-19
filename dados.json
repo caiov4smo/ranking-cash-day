@@ -16,24 +16,24 @@
     "regional": "RS",
     "destaque_hoje": "V4 Company Sacon Baseggio & Co",
     "destaque_mes": "V4 Company Schaussard Silva & Co",
-    "recebido": 2023632.3199999998,
+    "recebido": 2023632.3199999994,
     "provisionado": 3843544.48,
-    "realizado": 0.5265016004185803,
-    "dif": 1819912.1600000001,
+    "realizado": 0.5265016004185802,
+    "dif": 1819912.1600000006,
     "meta_hoje": 2593428.58,
-    "realizado_hoje": 0.7802922878254083
+    "realizado_hoje": 0.780292287825408
   },
   {
     "rank": 3,
     "regional": "COLLI",
     "destaque_hoje": "V4 Company Colli & Associados",
     "destaque_mes": "V4 Company Colli & Associados",
-    "recebido": 1048207.7499999998,
+    "recebido": 1048207.7499999997,
     "provisionado": 2022832.05,
     "realizado": 0.5181882252656614,
-    "dif": 974624.3000000003,
+    "dif": 974624.3000000004,
     "meta_hoje": 1377539.21,
-    "realizado_hoje": 0.7609277052810713
+    "realizado_hoje": 0.7609277052810712
   },
   {
     "rank": 4,
@@ -64,60 +64,60 @@
     "regional": "RJ",
     "destaque_hoje": "V4 Company Freitas Ramos & Associados",
     "destaque_mes": "V4 Company ALPS & Co.",
-    "recebido": 1022948.5499999999,
+    "recebido": 1022948.5499999997,
     "provisionado": 2021315.26,
-    "realizado": 0.5060806546327662,
-    "dif": 998366.7100000001,
+    "realizado": 0.5060806546327661,
+    "dif": 998366.7100000003,
     "meta_hoje": 1381781.67,
-    "realizado_hoje": 0.7403112750800928
+    "realizado_hoje": 0.7403112750800926
   },
   {
     "rank": 7,
     "regional": "NE",
     "destaque_hoje": "V4 Company Venturini & Associados",
     "destaque_mes": "V4 Company J Silva Macena & Co.",
-    "recebido": 1549158.1699999995,
+    "recebido": 1549158.1699999992,
     "provisionado": 3068224.84,
-    "realizado": 0.5049037312402437,
-    "dif": 1519066.6700000004,
+    "realizado": 0.5049037312402436,
+    "dif": 1519066.6700000006,
     "meta_hoje": 2063916.79,
-    "realizado_hoje": 0.7505913889096272
+    "realizado_hoje": 0.7505913889096271
   },
   {
     "rank": 8,
     "regional": "MG1",
     "destaque_hoje": "V4 Company Campos Ramaldes & Co.",
     "destaque_mes": "V4 Company Sousa Ferraz & Co.",
-    "recebido": 1790301.1800000004,
+    "recebido": 1790301.1800000006,
     "provisionado": 3646345.47,
-    "realizado": 0.490985068400554,
-    "dif": 1856044.2899999998,
+    "realizado": 0.49098506840055406,
+    "dif": 1856044.2899999996,
     "meta_hoje": 2333610.01,
-    "realizado_hoje": 0.7671809652547731
+    "realizado_hoje": 0.7671809652547732
   },
   {
     "rank": 9,
     "regional": "SP1",
     "destaque_hoje": "V4 Company Pereira Lima & Associados",
     "destaque_mes": "V4 Company Silva Anchieta & Co.",
-    "recebido": 2705780.619999999,
+    "recebido": 2705780.62,
     "provisionado": 5511397.6,
-    "realizado": 0.49094273655742043,
-    "dif": 2805616.9800000004,
+    "realizado": 0.4909427365574206,
+    "dif": 2805616.9799999995,
     "meta_hoje": 3234216.49,
-    "realizado_hoje": 0.8366108540866413
+    "realizado_hoje": 0.8366108540866415
   },
   {
     "rank": 10,
     "regional": "NUNES",
     "destaque_hoje": "V4 Company Nunes & Associados",
     "destaque_mes": "V4 Company Nunes & Associados",
-    "recebido": 476295.0500000001,
+    "recebido": 476295.05000000016,
     "provisionado": 1041231.72,
-    "realizado": 0.4574342491217998,
-    "dif": 564936.6699999999,
+    "realizado": 0.45743424912179986,
+    "dif": 564936.6699999998,
     "meta_hoje": 743397.53,
-    "realizado_hoje": 0.640700339695775
+    "realizado_hoje": 0.6407003396957751
   },
   {
     "rank": 11,
@@ -136,11 +136,11 @@
     "regional": "SP3",
     "destaque_hoje": "V4 Company Antunes Bueno & Co",
     "destaque_mes": "V4 Company Akira & Co.",
-    "recebido": 1479384.2800000003,
+    "recebido": 1479384.2799999998,
     "provisionado": 3462077.62,
-    "realizado": 0.4273111242375901,
-    "dif": 1982693.3399999999,
+    "realizado": 0.42731112423758993,
+    "dif": 1982693.3400000003,
     "meta_hoje": 1950591.18,
-    "realizado_hoje": 0.7584286728908516
+    "realizado_hoje": 0.7584286728908514
   }
 ]
