@@ -28,12 +28,12 @@
     "regional": "SC",
     "destaque_hoje": "V4 Company Jesus & Co.",
     "destaque_mes": "V4 Company S Simplicio & Co",
-    "recebido": 1611954.6299999997,
+    "recebido": 1611954.6299999994,
     "provisionado": 2721454.2,
-    "realizado": 0.5923137086047597,
-    "dif": 1109499.5700000005,
+    "realizado": 0.5923137086047596,
+    "dif": 1109499.5700000008,
     "meta_hoje": 2279466.84,
-    "realizado_hoje": 0.7071630092236831
+    "realizado_hoje": 0.707163009223683
   },
   {
     "rank": 4,
@@ -52,10 +52,10 @@
     "regional": "MG1",
     "destaque_hoje": "V4 Company Sousa Ferraz & Co.",
     "destaque_mes": "V4 Company Sousa Ferraz & Co.",
-    "recebido": 1998457.0699999998,
+    "recebido": 1998457.0699999996,
     "provisionado": 3442817.88,
-    "realizado": 0.580471328910375,
-    "dif": 1444360.81,
+    "realizado": 0.5804713289103749,
+    "dif": 1444360.8100000003,
     "meta_hoje": 2688390.01,
     "realizado_hoje": 0.7433657551792494
   },
@@ -64,12 +64,12 @@
     "regional": "PR",
     "destaque_hoje": "V4 Company Kuri & Associados",
     "destaque_mes": "V4 Company Kuri & Associados",
-    "recebido": 411889.14000000013,
+    "recebido": 411889.1400000001,
     "provisionado": 713662.25,
     "realizado": 0.5771485601207015,
-    "dif": 301773.10999999987,
+    "dif": 301773.1099999999,
     "meta_hoje": 496351.47,
-    "realizado_hoje": 0.8298336257571679
+    "realizado_hoje": 0.8298336257571678
   },
   {
     "rank": 7,
@@ -88,24 +88,24 @@
     "regional": "RJ",
     "destaque_hoje": "V4 Company ALPS & Co.",
     "destaque_mes": "V4 Company ALPS & Co.",
-    "recebido": 1068843,
+    "recebido": 1068843.0000000002,
     "provisionado": 1916688.41,
-    "realizado": 0.557650891205629,
-    "dif": 847845.4099999999,
+    "realizado": 0.5576508912056292,
+    "dif": 847845.4099999997,
     "meta_hoje": 1573582.73,
-    "realizado_hoje": 0.6792416945246978
+    "realizado_hoje": 0.679241694524698
   },
   {
     "rank": 9,
     "regional": "SP1",
     "destaque_hoje": "V4 Company Pereira Lima & Associados",
     "destaque_mes": "V4 Company Silva Anchieta & Co.",
-    "recebido": 2877710.7700000005,
+    "recebido": 2895994.25,
     "provisionado": 5257677.84,
-    "realizado": 0.547334937128822,
-    "dif": 2379967.0699999994,
+    "realizado": 0.5508124191192362,
+    "dif": 2361683.59,
     "meta_hoje": 3739932.44,
-    "realizado_hoje": 0.7694552819248255
+    "realizado_hoje": 0.7743440012515307
   },
   {
     "rank": 10,
