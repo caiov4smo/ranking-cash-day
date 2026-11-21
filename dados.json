@@ -28,24 +28,24 @@
     "regional": "SC",
     "destaque_hoje": "V4 Company JLL Roque & Associados",
     "destaque_mes": "V4 Company S Simplicio & Co",
-    "recebido": 1623050.2000000002,
+    "recebido": 1623050.2,
     "provisionado": 2740964.93,
-    "realizado": 0.5921455551056614,
-    "dif": 1117914.73,
+    "realizado": 0.5921455551056612,
+    "dif": 1117914.7300000002,
     "meta_hoje": 2315620.03,
-    "realizado_hoje": 0.7009138714351164
+    "realizado_hoje": 0.7009138714351163
   },
   {
     "rank": 4,
     "regional": "RS",
     "destaque_hoje": "V4 Company Sacon Baseggio & Co",
     "destaque_mes": "V4 Company Schaussard Silva & Co",
-    "recebido": 2137965.5299999993,
+    "recebido": 2137965.53,
     "provisionado": 3615352.63,
-    "realizado": 0.5913573996238368,
-    "dif": 1477387.1000000006,
+    "realizado": 0.5913573996238369,
+    "dif": 1477387.1,
     "meta_hoje": 2853498.14,
-    "realizado_hoje": 0.7492437089866122
+    "realizado_hoje": 0.7492437089866124
   },
   {
     "rank": 5,
@@ -88,12 +88,12 @@
     "regional": "NE",
     "destaque_hoje": "V4 Company J Silva Macena & Co.",
     "destaque_mes": "V4 Company J Silva Macena & Co.",
-    "recebido": 1689750.6400000004,
+    "recebido": 1689750.6400000006,
     "provisionado": 2973447.56,
     "realizado": 0.5682799531194693,
-    "dif": 1283696.9199999997,
+    "dif": 1283696.9199999995,
     "meta_hoje": 2359273.61,
-    "realizado_hoje": 0.7162164798681406
+    "realizado_hoje": 0.7162164798681407
   },
   {
     "rank": 9,
@@ -124,12 +124,12 @@
     "regional": "NUNES",
     "destaque_hoje": "V4 Company Nunes & Associados",
     "destaque_mes": "V4 Company Nunes & Associados",
-    "recebido": 482295.05000000016,
+    "recebido": 482295.05000000005,
     "provisionado": 970719.97,
-    "realizado": 0.49684261672292596,
-    "dif": 488424.9199999998,
+    "realizado": 0.49684261672292584,
+    "dif": 488424.9199999999,
     "meta_hoje": 799909.28,
-    "realizado_hoje": 0.6029371855768446
+    "realizado_hoje": 0.6029371855768445
   },
   {
     "rank": 12,
