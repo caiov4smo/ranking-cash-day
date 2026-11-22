@@ -16,60 +16,60 @@
     "regional": "COLLI",
     "destaque_hoje": "V4 Company Colli & Associados",
     "destaque_mes": "V4 Company Colli & Associados",
-    "recebido": 1142519.2699999996,
+    "recebido": 1142519.2699999993,
     "provisionado": 1908350.03,
-    "realizado": 0.59869481596099,
-    "dif": 765830.7600000005,
+    "realizado": 0.5986948159609897,
+    "dif": 765830.7600000007,
     "meta_hoje": 1539372.17,
-    "realizado_hoje": 0.7421982105860726
+    "realizado_hoje": 0.7421982105860725
   },
   {
     "rank": 3,
     "regional": "SC",
     "destaque_hoje": "V4 Company JLL Roque & Associados",
     "destaque_mes": "V4 Company S Simplicio & Co",
-    "recebido": 1623050.1999999993,
+    "recebido": 1623050.1999999997,
     "provisionado": 2738857.7,
-    "realizado": 0.5926011417095526,
-    "dif": 1115807.500000001,
+    "realizado": 0.5926011417095527,
+    "dif": 1115807.5000000005,
     "meta_hoje": 2313839.8,
-    "realizado_hoje": 0.7014531429531117
+    "realizado_hoje": 0.7014531429531119
   },
   {
     "rank": 4,
     "regional": "RS",
     "destaque_hoje": "V4 Company Sacon Baseggio & Co",
     "destaque_mes": "V4 Company Schaussard Silva & Co",
-    "recebido": 2137965.529999999,
+    "recebido": 2137965.5300000003,
     "provisionado": 3612573.18,
-    "realizado": 0.591812379562647,
-    "dif": 1474607.6500000013,
+    "realizado": 0.5918123795626474,
+    "dif": 1474607.65,
     "meta_hoje": 2851304.4,
-    "realizado_hoje": 0.7498201630103046
+    "realizado_hoje": 0.7498201630103052
   },
   {
     "rank": 5,
     "regional": "MG1",
     "destaque_hoje": "V4 Company Sousa Ferraz & Co.",
     "destaque_mes": "V4 Company Sousa Ferraz & Co.",
-    "recebido": 2038861.3099999996,
+    "recebido": 2038861.31,
     "provisionado": 3480403.11,
-    "realizado": 0.5858118285614334,
-    "dif": 1441541.8000000003,
+    "realizado": 0.5858118285614335,
+    "dif": 1441541.7999999998,
     "meta_hoje": 2730299.76,
-    "realizado_hoje": 0.7467536494967131
+    "realizado_hoje": 0.7467536494967132
   },
   {
     "rank": 6,
     "regional": "PR",
     "destaque_hoje": "V4 Company Kuri & Associados",
     "destaque_mes": "V4 Company Kuri & Associados",
-    "recebido": 411889.14,
+    "recebido": 411889.13999999996,
     "provisionado": 708323.05,
-    "realizado": 0.5814989925853747,
-    "dif": 296433.91000000003,
+    "realizado": 0.5814989925853746,
+    "dif": 296433.9100000001,
     "meta_hoje": 501864.1,
-    "realizado_hoje": 0.8207184773726593
+    "realizado_hoje": 0.8207184773726592
   },
   {
     "rank": 7,
@@ -100,12 +100,12 @@
     "regional": "SP1",
     "destaque_hoje": "V4 Company Pereira Lima & Associados",
     "destaque_mes": "V4 Company Silva Anchieta & Co.",
-    "recebido": 2899497.439999999,
+    "recebido": 2899497.4399999995,
     "provisionado": 5219116.24,
-    "realizado": 0.5555533363633225,
-    "dif": 2319618.800000001,
+    "realizado": 0.5555533363633226,
+    "dif": 2319618.8000000007,
     "meta_hoje": 3748056.33,
-    "realizado_hoje": 0.7736002836435489
+    "realizado_hoje": 0.773600283643549
   },
   {
     "rank": 10,
@@ -124,10 +124,10 @@
     "regional": "NUNES",
     "destaque_hoje": "V4 Company Nunes & Associados",
     "destaque_mes": "V4 Company Nunes & Associados",
-    "recebido": 482295.05000000005,
+    "recebido": 482295.05,
     "provisionado": 969973.69,
-    "realizado": 0.4972248783366486,
-    "dif": 487678.6399999999,
+    "realizado": 0.4972248783366485,
+    "dif": 487678.63999999996,
     "meta_hoje": 799294.32,
     "realizado_hoje": 0.6034010725861283
   },
@@ -136,11 +136,11 @@
     "regional": "SP3",
     "destaque_hoje": "V4 Company Wendling & Associados",
     "destaque_mes": "V4 Company Akira & Co.",
-    "recebido": 1527049.23,
+    "recebido": 1527049.2300000002,
     "provisionado": 3249956.21,
-    "realizado": 0.469867632462654,
-    "dif": 1722906.98,
+    "realizado": 0.46986763246265406,
+    "dif": 1722906.9799999997,
     "meta_hoje": 2340093.99,
-    "realizado_hoje": 0.652558929908623
+    "realizado_hoje": 0.6525589299086231
   }
 ]
