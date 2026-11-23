@@ -16,12 +16,12 @@
     "regional": "COLLI",
     "destaque_hoje": "V4 Company Colli & Associados",
     "destaque_mes": "V4 Company Colli & Associados",
-    "recebido": 1142519.27,
+    "recebido": 1142519.2699999996,
     "provisionado": 1908350.03,
-    "realizado": 0.5986948159609902,
-    "dif": 765830.76,
-    "meta_hoje": 1539372.17,
-    "realizado_hoje": 0.7421982105860729
+    "realizado": 0.59869481596099,
+    "dif": 765830.7600000005,
+    "meta_hoje": 1594909.82,
+    "realizado_hoje": 0.7163535239879578
   },
   {
     "rank": 3,
@@ -32,92 +32,92 @@
     "provisionado": 2738857.7,
     "realizado": 0.5947889881245016,
     "dif": 1109815.3000000003,
-    "meta_hoje": 2336855.78,
-    "realizado_hoje": 0.6971086593970296
+    "meta_hoje": 2393540.32,
+    "realizado_hoje": 0.6805995229693895
   },
   {
     "rank": 4,
     "regional": "RS",
     "destaque_hoje": "V4 Company Sacon Baseggio & Co",
     "destaque_mes": "V4 Company Schaussard Silva & Co",
-    "recebido": 2137965.529999999,
+    "recebido": 2137965.5299999993,
     "provisionado": 3612573.18,
-    "realizado": 0.591812379562647,
-    "dif": 1474607.6500000013,
-    "meta_hoje": 2913898.43,
-    "realizado_hoje": 0.7337131273995706
+    "realizado": 0.5918123795626472,
+    "dif": 1474607.6500000008,
+    "meta_hoje": 2965845.76,
+    "realizado_hoje": 0.7208620080094791
   },
   {
     "rank": 5,
     "regional": "MG1",
     "destaque_hoje": "V4 Company Sousa Ferraz & Co.",
     "destaque_mes": "V4 Company Sousa Ferraz & Co.",
-    "recebido": 2043350.6699999995,
+    "recebido": 2043350.67,
     "provisionado": 3480403.11,
-    "realizado": 0.58710172512172,
-    "dif": 1437052.4400000004,
-    "meta_hoje": 2775958.23,
-    "realizado_hoje": 0.7360884064887386
+    "realizado": 0.5871017251217202,
+    "dif": 1437052.44,
+    "meta_hoje": 2866461.88,
+    "realizado_hoje": 0.7128476691969823
   },
   {
     "rank": 6,
     "regional": "PR",
     "destaque_hoje": "V4 Company Kuri & Associados",
     "destaque_mes": "V4 Company Kuri & Associados",
-    "recebido": 411889.14,
+    "recebido": 411889.1400000001,
     "provisionado": 708323.05,
     "realizado": 0.5814989925853747,
-    "dif": 296433.91000000003,
-    "meta_hoje": 506322.5,
-    "realizado_hoje": 0.8134916777350405
+    "dif": 296433.91,
+    "meta_hoje": 520445.29,
+    "realizado_hoje": 0.7914167884966354
   },
   {
     "rank": 7,
     "regional": "RJ",
     "destaque_hoje": "V4 Company ALPS & Co.",
     "destaque_mes": "V4 Company ALPS & Co.",
-    "recebido": 1082584.93,
+    "recebido": 1082584.9300000002,
     "provisionado": 1902348.88,
-    "realizado": 0.5690780179080506,
-    "dif": 819763.95,
-    "meta_hoje": 1568450.28,
-    "realizado_hoje": 0.690225851469133
+    "realizado": 0.5690780179080507,
+    "dif": 819763.9499999997,
+    "meta_hoje": 1588195.94,
+    "realizado_hoje": 0.681644438657865
   },
   {
     "rank": 8,
     "regional": "NE",
     "destaque_hoje": "V4 Company J Silva Macena & Co.",
     "destaque_mes": "V4 Company J Silva Macena & Co.",
-    "recebido": 1689750.6400000006,
+    "recebido": 1689750.6400000001,
     "provisionado": 2996550.78,
-    "realizado": 0.5638985500522706,
-    "dif": 1306800.1399999992,
-    "meta_hoje": 2369187.15,
-    "realizado_hoje": 0.7132195698427626
+    "realizado": 0.5638985500522705,
+    "dif": 1306800.1399999997,
+    "meta_hoje": 2470909.34,
+    "realizado_hoje": 0.6838578059687128
   },
   {
     "rank": 9,
     "regional": "SP1",
-    "destaque_hoje": "V4 Company Silva Anchieta & Co.",
+    "destaque_hoje": "V4 Company Ferraz Piai & Co.",
     "destaque_mes": "V4 Company Silva Anchieta & Co.",
-    "recebido": 2899497.4400000004,
+    "recebido": 2899497.4399999995,
     "provisionado": 5219116.24,
-    "realizado": 0.5555533363633227,
-    "dif": 2319618.8,
-    "meta_hoje": 3876073.83,
-    "realizado_hoje": 0.7480501061560018
+    "realizado": 0.5555533363633226,
+    "dif": 2319618.8000000007,
+    "meta_hoje": 4008283.14,
+    "realizado_hoje": 0.7233764029953231
   },
   {
     "rank": 10,
     "regional": "MG2",
     "destaque_hoje": "V4 Company Menezes & Co.",
     "destaque_mes": "V4 Company Menezes & Co.",
-    "recebido": 696498.52,
+    "recebido": 696498.5200000001,
     "provisionado": 1343711.71,
-    "realizado": 0.5183392500166573,
-    "dif": 647213.19,
-    "meta_hoje": 1073626.8,
-    "realizado_hoje": 0.6487342901648878
+    "realizado": 0.5183392500166574,
+    "dif": 647213.1899999998,
+    "meta_hoje": 1104252.61,
+    "realizado_hoje": 0.6307420183503122
   },
   {
     "rank": 11,
@@ -128,19 +128,19 @@
     "provisionado": 969973.69,
     "realizado": 0.49722487833664863,
     "dif": 487678.63999999984,
-    "meta_hoje": 811563.44,
-    "realizado_hoje": 0.5942789266110856
+    "meta_hoje": 838676.94,
+    "realizado_hoje": 0.5750665446935982
   },
   {
     "rank": 12,
     "regional": "SP3",
-    "destaque_hoje": "V4 Company Wendling & Associados",
+    "destaque_hoje": "V4 Company Akira & Co.",
     "destaque_mes": "V4 Company Akira & Co.",
-    "recebido": 1527049.2299999995,
+    "recebido": 1527049.23,
     "provisionado": 3249956.21,
-    "realizado": 0.4698676324626539,
-    "dif": 1722906.9800000004,
-    "meta_hoje": 2366897.7,
-    "realizado_hoje": 0.645169087789472
+    "realizado": 0.469867632462654,
+    "dif": 1722906.98,
+    "meta_hoje": 2538023.42,
+    "realizado_hoje": 0.6016686914575438
   }
 ]
