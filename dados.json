@@ -40,12 +40,12 @@
     "regional": "RS",
     "destaque_hoje": "V4 Company Sacon Baseggio & Co",
     "destaque_mes": "V4 Company Schaussard Silva & Co",
-    "recebido": 2137965.5299999993,
+    "recebido": 2137965.53,
     "provisionado": 3612573.18,
-    "realizado": 0.5918123795626472,
-    "dif": 1474607.6500000008,
+    "realizado": 0.5918123795626473,
+    "dif": 1474607.6500000004,
     "meta_hoje": 2965845.76,
-    "realizado_hoje": 0.7208620080094791
+    "realizado_hoje": 0.7208620080094792
   },
   {
     "rank": 5,
@@ -64,36 +64,36 @@
     "regional": "PR",
     "destaque_hoje": "V4 Company Kuri & Associados",
     "destaque_mes": "V4 Company Kuri & Associados",
-    "recebido": 411889.14,
+    "recebido": 411889.1400000001,
     "provisionado": 708323.05,
     "realizado": 0.5814989925853747,
-    "dif": 296433.91000000003,
+    "dif": 296433.91,
     "meta_hoje": 520445.29,
-    "realizado_hoje": 0.7914167884966353
+    "realizado_hoje": 0.7914167884966354
   },
   {
     "rank": 7,
     "regional": "RJ",
     "destaque_hoje": "V4 Company ALPS & Co.",
     "destaque_mes": "V4 Company ALPS & Co.",
-    "recebido": 1082584.93,
+    "recebido": 1082584.9300000002,
     "provisionado": 1902348.88,
-    "realizado": 0.5690780179080506,
-    "dif": 819763.95,
+    "realizado": 0.5690780179080507,
+    "dif": 819763.9499999997,
     "meta_hoje": 1588195.94,
-    "realizado_hoje": 0.6816444386578648
+    "realizado_hoje": 0.681644438657865
   },
   {
     "rank": 8,
     "regional": "NE",
     "destaque_hoje": "V4 Company J Silva Macena & Co.",
     "destaque_mes": "V4 Company J Silva Macena & Co.",
-    "recebido": 1689750.6400000001,
+    "recebido": 1689750.6400000004,
     "provisionado": 2996550.78,
-    "realizado": 0.5638985500522705,
-    "dif": 1306800.1399999997,
+    "realizado": 0.5638985500522706,
+    "dif": 1306800.1399999994,
     "meta_hoje": 2470909.34,
-    "realizado_hoje": 0.6838578059687128
+    "realizado_hoje": 0.6838578059687129
   },
   {
     "rank": 9,
@@ -136,10 +136,10 @@
     "regional": "SP3",
     "destaque_hoje": "V4 Company Akira & Co.",
     "destaque_mes": "V4 Company Akira & Co.",
-    "recebido": 1527049.2299999995,
+    "recebido": 1527049.2299999993,
     "provisionado": 3249956.21,
-    "realizado": 0.4698676324626539,
-    "dif": 1722906.9800000004,
+    "realizado": 0.4698676324626538,
+    "dif": 1722906.9800000007,
     "meta_hoje": 2538023.42,
     "realizado_hoje": 0.6016686914575435
   }
