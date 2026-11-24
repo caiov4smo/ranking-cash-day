@@ -16,12 +16,12 @@
     "regional": "SC",
     "destaque_hoje": "V4 Company JLL Roque & Associados",
     "destaque_mes": "V4 Company JLL Roque & Associados",
-    "recebido": 1854665.5299999998,
+    "recebido": 1854665.5300000003,
     "provisionado": 2735774.2,
-    "realizado": 0.6779307773280411,
-    "dif": 881108.6700000004,
+    "realizado": 0.6779307773280412,
+    "dif": 881108.6699999999,
     "meta_hoje": 2408747.86,
-    "realizado_hoje": 0.7699708054955988
+    "realizado_hoje": 0.769970805495599
   },
   {
     "rank": 3,
@@ -52,24 +52,24 @@
     "regional": "COLLI",
     "destaque_hoje": "V4 Company Colli & Associados",
     "destaque_mes": "V4 Company Colli & Associados",
-    "recebido": 1266244.04,
+    "recebido": 1266244.0399999998,
     "provisionado": 1941443.98,
-    "realizado": 0.6522176550260287,
-    "dif": 675199.94,
+    "realizado": 0.6522176550260286,
+    "dif": 675199.9400000002,
     "meta_hoje": 1628571.42,
-    "realizado_hoje": 0.7775182742676401
+    "realizado_hoje": 0.77751827426764
   },
   {
     "rank": 6,
     "regional": "RS",
     "destaque_hoje": "V4 Company Sacon Baseggio & Co",
     "destaque_mes": "V4 Company Schaussard Silva & Co",
-    "recebido": 2328564.1299999994,
+    "recebido": 2328564.13,
     "provisionado": 3616452.17,
-    "realizado": 0.6438808037657524,
-    "dif": 1287888.0400000005,
+    "realizado": 0.6438808037657525,
+    "dif": 1287888.04,
     "meta_hoje": 3003518.99,
-    "realizado_hoje": 0.7752786440681033
+    "realizado_hoje": 0.7752786440681035
   },
   {
     "rank": 7,
@@ -88,24 +88,24 @@
     "regional": "SP1",
     "destaque_hoje": "V4 Company Ferraz Piai & Co.",
     "destaque_mes": "V4 Company Borges & Co.",
-    "recebido": 3174043.5999999996,
+    "recebido": 3174043.599999999,
     "provisionado": 5189887.78,
-    "realizado": 0.611582318259683,
-    "dif": 2015844.1800000006,
+    "realizado": 0.6115823182596829,
+    "dif": 2015844.180000001,
     "meta_hoje": 4087905.98,
-    "realizado_hoje": 0.7764473095831816
+    "realizado_hoje": 0.7764473095831815
   },
   {
     "rank": 9,
     "regional": "NE",
     "destaque_hoje": "V4 Company J Silva Macena & Co.",
     "destaque_mes": "V4 Company J Silva Macena & Co.",
-    "recebido": 1832401.8899999997,
+    "recebido": 1832401.89,
     "provisionado": 3048779.26,
     "realizado": 0.6010280619660211,
-    "dif": 1216377.37,
+    "dif": 1216377.3699999999,
     "meta_hoje": 2554449.27,
-    "realizado_hoje": 0.7173373578094192
+    "realizado_hoje": 0.7173373578094193
   },
   {
     "rank": 10,
