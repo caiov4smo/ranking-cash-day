@@ -28,24 +28,24 @@
     "regional": "MG1",
     "destaque_hoje": "V4 Company Souza Santos & Associados",
     "destaque_mes": "V4 Company Sousa Ferraz & Co.",
-    "recebido": 2457268.64,
+    "recebido": 2457268.639999999,
     "provisionado": 3401329.88,
-    "realizado": 0.7224434931903754,
-    "dif": 944061.2399999998,
+    "realizado": 0.722443493190375,
+    "dif": 944061.2400000007,
     "meta_hoje": 2811247.17,
-    "realizado_hoje": 0.8740848781361336
+    "realizado_hoje": 0.8740848781361332
   },
   {
     "rank": 4,
     "regional": "COLLI",
     "destaque_hoje": "V4 Company Colli & Associados",
     "destaque_mes": "V4 Company Colli & Associados",
-    "recebido": 1419660.0199999996,
+    "recebido": 1419660.0199999998,
     "provisionado": 1969840.05,
-    "realizado": 0.7206981196265146,
-    "dif": 550180.0300000005,
+    "realizado": 0.7206981196265148,
+    "dif": 550180.0300000003,
     "meta_hoje": 1655385.7,
-    "realizado_hoje": 0.8576007512931878
+    "realizado_hoje": 0.8576007512931879
   },
   {
     "rank": 5,
@@ -64,60 +64,60 @@
     "regional": "RS",
     "destaque_hoje": "V4 Company Sacon Baseggio & Co",
     "destaque_mes": "V4 Company AF & Co",
-    "recebido": 2473958.079999999,
+    "recebido": 2473958.08,
     "provisionado": 3631436.03,
-    "realizado": 0.6812616440334209,
-    "dif": 1157477.9500000007,
+    "realizado": 0.6812616440334212,
+    "dif": 1157477.9499999997,
     "meta_hoje": 2958192.42,
-    "realizado_hoje": 0.8363073555573505
+    "realizado_hoje": 0.8363073555573508
   },
   {
     "rank": 7,
     "regional": "SP1",
     "destaque_hoje": "V4 Company Amaral & Associados",
     "destaque_mes": "V4 Company Amaral & Associados",
-    "recebido": 3506176.5699999984,
+    "recebido": 3506176.569999997,
     "provisionado": 5187656.06,
-    "realizado": 0.6758691265280218,
-    "dif": 1681479.4900000012,
+    "realizado": 0.6758691265280214,
+    "dif": 1681479.4900000026,
     "meta_hoje": 3994369.27,
-    "realizado_hoje": 0.8777797777319668
+    "realizado_hoje": 0.8777797777319665
   },
   {
     "rank": 8,
     "regional": "PR",
     "destaque_hoje": "V4 Company Kuri & Associados",
     "destaque_mes": "V4 Company Kuri & Associados",
-    "recebido": 456621.42000000004,
+    "recebido": 456621.42000000016,
     "provisionado": 700725.24,
-    "realizado": 0.6516411767899213,
-    "dif": 244103.81999999995,
+    "realizado": 0.6516411767899215,
+    "dif": 244103.81999999983,
     "meta_hoje": 513533.39,
-    "realizado_hoje": 0.8891757165001481
+    "realizado_hoje": 0.8891757165001484
   },
   {
     "rank": 9,
     "regional": "MG2",
     "destaque_hoje": "V4 Company Sepulvida & Co.",
     "destaque_mes": "V4 Company Menezes & Co.",
-    "recebido": 836130.7300000002,
+    "recebido": 836130.73,
     "provisionado": 1338051.71,
-    "realizado": 0.6248867093484752,
-    "dif": 501920.97999999975,
+    "realizado": 0.624886709348475,
+    "dif": 501920.98,
     "meta_hoje": 1077319.18,
-    "realizado_hoje": 0.7761216411277485
+    "realizado_hoje": 0.7761216411277483
   },
   {
     "rank": 10,
     "regional": "NE",
     "destaque_hoje": "V4 Company J Silva Macena & Co.",
     "destaque_mes": "V4 Company J Silva Macena & Co.",
-    "recebido": 1901602.3399999994,
+    "recebido": 1901602.34,
     "provisionado": 3066318.25,
-    "realizado": 0.6201581782973765,
-    "dif": 1164715.9100000006,
+    "realizado": 0.6201581782973767,
+    "dif": 1164715.91,
     "meta_hoje": 2518455.26,
-    "realizado_hoje": 0.7550669532243347
+    "realizado_hoje": 0.7550669532243349
   },
   {
     "rank": 11,
@@ -136,11 +136,11 @@
     "regional": "SP3",
     "destaque_hoje": "V4 Company Antunes Bueno & Co",
     "destaque_mes": "V4 Company Akira & Co.",
-    "recebido": 1819921.15,
+    "recebido": 1819921.149999999,
     "provisionado": 3257648.62,
-    "realizado": 0.5586609736933505,
-    "dif": 1437727.4700000002,
+    "realizado": 0.5586609736933503,
+    "dif": 1437727.4700000011,
     "meta_hoje": 2472580.6,
-    "realizado_hoje": 0.7360411830457619
+    "realizado_hoje": 0.7360411830457615
   }
 ]
