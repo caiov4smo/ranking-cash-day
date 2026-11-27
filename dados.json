@@ -28,24 +28,24 @@
     "regional": "COLLI",
     "destaque_hoje": "V4 Company Colli & Associados",
     "destaque_mes": "V4 Company Colli & Associados",
-    "recebido": 1722249.7199999997,
+    "recebido": 1722249.7199999993,
     "provisionado": 2057185.91,
-    "realizado": 0.8371872039508572,
-    "dif": 334936.1900000002,
+    "realizado": 0.837187203950857,
+    "dif": 334936.19000000064,
     "meta_hoje": 1962067.7,
-    "realizado_hoje": 0.8777728311821248
+    "realizado_hoje": 0.8777728311821245
   },
   {
     "rank": 4,
     "regional": "SC",
     "destaque_hoje": "V4 Company Jesus & Co.",
     "destaque_mes": "V4 Company Jesus & Co.",
-    "recebido": 2334512.33,
+    "recebido": 2334512.3299999996,
     "provisionado": 2840883.18,
-    "realizado": 0.8217558350991399,
-    "dif": 506370.8500000001,
+    "realizado": 0.8217558350991396,
+    "dif": 506370.85000000056,
     "meta_hoje": 2650368.33,
-    "realizado_hoje": 0.8808256209430332
+    "realizado_hoje": 0.8808256209430331
   },
   {
     "rank": 5,
@@ -76,12 +76,12 @@
     "regional": "SP1",
     "destaque_hoje": "V4 Company Amaral & Associados",
     "destaque_mes": "V4 Company Amaral & Associados",
-    "recebido": 3885161.639999997,
+    "recebido": 3885161.6399999987,
     "provisionado": 5096534.9,
-    "realizado": 0.7623143402785286,
-    "dif": 1211373.2600000035,
+    "realizado": 0.762314340278529,
+    "dif": 1211373.2600000016,
     "meta_hoje": 4535194.75,
-    "realizado_hoje": 0.8566691959590041
+    "realizado_hoje": 0.8566691959590046
   },
   {
     "rank": 8,
@@ -100,47 +100,47 @@
     "regional": "NE",
     "destaque_hoje": "V4 Company Leal Vieira & Co.",
     "destaque_mes": "V4 Company J Silva Macena & Co.",
-    "recebido": 2345894.1200000006,
+    "recebido": 2345894.12,
     "provisionado": 3121894.77,
-    "realizado": 0.751432797332884,
-    "dif": 776000.6499999994,
+    "realizado": 0.7514327973328838,
+    "dif": 776000.6499999999,
     "meta_hoje": 2934048.86,
-    "realizado_hoje": 0.7995415999991222
+    "realizado_hoje": 0.7995415999991221
   },
   {
     "rank": 10,
     "regional": "MG2",
     "destaque_hoje": "V4 Company Menezes & Co.",
     "destaque_mes": "V4 Company Menezes & Co.",
-    "recebido": 944959.9099999999,
+    "recebido": 944959.9100000001,
     "provisionado": 1334022.76,
-    "realizado": 0.7083536640709188,
-    "dif": 389062.8500000001,
+    "realizado": 0.7083536640709189,
+    "dif": 389062.84999999986,
     "meta_hoje": 1236811.97,
-    "realizado_hoje": 0.7640287553167843
+    "realizado_hoje": 0.7640287553167845
   },
   {
     "rank": 11,
     "regional": "NUNES",
     "destaque_hoje": "V4 Company Nunes & Associados",
     "destaque_mes": "V4 Company Nunes & Associados",
-    "recebido": 640218,
+    "recebido": 640218.0000000001,
     "provisionado": 933952.64,
-    "realizado": 0.6854930031569909,
-    "dif": 293734.64,
+    "realizado": 0.685493003156991,
+    "dif": 293734.6399999999,
     "meta_hoje": 843846.71,
-    "realizado_hoje": 0.7586899284112869
+    "realizado_hoje": 0.7586899284112871
   },
   {
     "rank": 12,
     "regional": "SP3",
     "destaque_hoje": "V4 Company RB & Co.",
     "destaque_mes": "V4 Company RB & Co.",
-    "recebido": 2145417.889999999,
+    "recebido": 2145417.8899999997,
     "provisionado": 3223860.09,
-    "realizado": 0.6654810786159145,
-    "dif": 1078442.2000000007,
+    "realizado": 0.6654810786159147,
+    "dif": 1078442.2000000002,
     "meta_hoje": 2933012.82,
-    "realizado_hoje": 0.7314723874953943
+    "realizado_hoje": 0.7314723874953946
   }
 ]
