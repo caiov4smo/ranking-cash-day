@@ -52,36 +52,36 @@
     "regional": "RJ",
     "destaque_hoje": "V4 Company Freitas Ramos & Associados",
     "destaque_mes": "V4 Company Franzner & Co.",
-    "recebido": 1528496.0499999998,
+    "recebido": 1528496.05,
     "provisionado": 1837094.31,
-    "realizado": 0.8320182810865054,
-    "dif": 308598.26000000024,
+    "realizado": 0.8320182810865056,
+    "dif": 308598.26,
     "meta_hoje": 1727061.88,
-    "realizado_hoje": 0.8850268005452127
+    "realizado_hoje": 0.8850268005452128
   },
   {
     "rank": 6,
     "regional": "SP1",
     "destaque_hoje": "V4 Company Amaral & Associados",
     "destaque_mes": "V4 Company Borges & Co.",
-    "recebido": 4134139.0599999973,
+    "recebido": 4134139.0599999977,
     "provisionado": 4998182.76,
     "realizado": 0.8271284301736893,
-    "dif": 864043.7000000025,
+    "dif": 864043.700000002,
     "meta_hoje": 4615639.49,
-    "realizado_hoje": 0.8956806676424369
+    "realizado_hoje": 0.895680667642437
   },
   {
     "rank": 7,
     "regional": "NE",
     "destaque_hoje": "V4 Company Leal Vieira & Co.",
     "destaque_mes": "V4 Company Torque & Co",
-    "recebido": 2520995.5799999987,
+    "recebido": 2520995.579999999,
     "provisionado": 3063195.51,
-    "realizado": 0.8229953235991779,
-    "dif": 542199.9300000011,
+    "realizado": 0.822995323599178,
+    "dif": 542199.9300000006,
     "meta_hoje": 2893030.28,
-    "realizado_hoje": 0.8714031088537375
+    "realizado_hoje": 0.8714031088537377
   },
   {
     "rank": 8,
@@ -124,23 +124,23 @@
     "regional": "SC",
     "destaque_hoje": "V4 Company JLL Roque & Associados",
     "destaque_mes": "V4 Company Rodrigues Menezes & Associados",
-    "recebido": 2401666.1200000006,
+    "recebido": 2401666.12,
     "provisionado": 3273429.12,
-    "realizado": 0.7336850843436012,
-    "dif": 871762.9999999995,
+    "realizado": 0.7336850843436011,
+    "dif": 871763,
     "meta_hoje": 3119241.33,
-    "realizado_hoje": 0.7699520062463395
+    "realizado_hoje": 0.7699520062463394
   },
   {
     "rank": 12,
     "regional": "SP3",
     "destaque_hoje": "V4 Company RB & Co.",
     "destaque_mes": "V4 Company RB & Co.",
-    "recebido": 2223205.6699999985,
+    "recebido": 2223205.669999999,
     "provisionado": 3142408.97,
-    "realizado": 0.7074845098854203,
-    "dif": 919203.3000000017,
+    "realizado": 0.7074845098854204,
+    "dif": 919203.3000000012,
     "meta_hoje": 3023574.41,
-    "realizado_hoje": 0.7352905430893624
+    "realizado_hoje": 0.7352905430893625
   }
 ]
